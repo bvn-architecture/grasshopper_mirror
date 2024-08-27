@@ -89,7 +89,7 @@ The code in `main.py` starts work on making it a proper piece of software, and t
 
 This shows that graphviz can show a structured node that parallels a grasshopper node.
 
-![](docs\structured_nodes.png)
+![](docs/structured_nodes.png)
 
 ```
 graph mygraph {
@@ -124,9 +124,9 @@ graph mygraph {
 
 And this example shows that we're actually able to parse a grasshopper file for the topology.
 
-![](docs\nodes_from_gh.png)
+![](docs/nodes_from_gh.png)
 
-![](docs\GH_source_file.PNG)
+![](docs/GH_source_file.PNG)
 
 ```
 digraph G {
