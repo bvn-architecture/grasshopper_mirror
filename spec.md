@@ -12,7 +12,7 @@ It's a tool that inspects/reflects the graph of grasshopper components on the ca
 It will output a dot file that captures the topology of the graph. 
 The graph nodes have multiple inputs and outputs, so it'll probably need a Record-based Node because where the edge is connected matters. But I'm open to other suggestions on how to construct each node. It may be a subgraph or cluster.
 
-Ideally I'll be written in python and run in a python node in the graph, or be a C# component.
+Ideally It'll be written in python and run in a python node in the graph, or be a C# component.
 
 The dot file will be put into a folder with the .gh file. That folder will then be initialised as a git repo and pushed to github.
 
