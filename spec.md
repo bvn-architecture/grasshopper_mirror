@@ -12,7 +12,7 @@ It's a tool that inspects/reflects the graph of grasshopper components on the ca
 It will output a dot file that captures the topology of the graph. 
 The graph nodes have multiple inputs and outputs, so it'll probably need a Record-based Node because where the edge is connected matters. But I'm open to other suggestions on how to construct each node. It may be a subgraph or cluster.
 
-Ideally I'll be written in python and run in a python node in the graph, or be a C# component.
+Ideally It'll be written in python and run in a python node in the graph, or be a C# component.
 
 The dot file will be put into a folder with the .gh file. That folder will then be initialised as a git repo and pushed to github.
 
@@ -89,7 +89,7 @@ The code in `main.py` starts work on making it a proper piece of software, and t
 
 This shows that graphviz can show a structured node that parallels a grasshopper node.
 
-![](docs\structured_nodes.png)
+![](docs/structured_nodes.png)
 
 ``` dot
 graph mygraph {
@@ -147,9 +147,9 @@ digraph G {
 
 And this example shows that we're actually able to parse a grasshopper file for the topology.
 
-![](docs\nodes_from_gh.png)
+![](docs/nodes_from_gh.png)
 
-![](docs\GH_source_file.PNG)
+![](docs/GH_source_file.PNG)
 
 ``` dot
 digraph G {
@@ -183,4 +183,5 @@ It leaves out a lot of nodes, and it could definitely be clearer (i.e. hiding th
 
 BUT IT'S A START
 
-Please, pick this up and hack some more.
+Please, pick this up and hack some more
+.
