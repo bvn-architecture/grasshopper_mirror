@@ -1,351 +1,349 @@
 digraph G {
     rankdir = LR;
+    # Subgraphs
     
+subgraph "cluster_subgraph_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Ellipse";
+    # Nodes
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="Ellipse", fillcolor="blueviolet", fontsize=20];
+    "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="P \nParam_Plane"];
+    "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="R1 \nParam_Number"];
+    "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="R2 \nParam_Number"];
+    "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="E \nParam_Curve"];
+    "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="F1 \nParam_Point"];
+    "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="F2 \nParam_Point"];
     
-    subgraph "cluster_subgraph_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Ellipse";
-        # Nodes
-        "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "Ellipse";fillcolor = "blueviolet";fontsize = 20;];
-        "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "P \nParam_Plane";];
-        "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "R1 \nParam_Number";];
-        "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "R2 \nParam_Number";];
-        "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "E \nParam_Curve";];
-        "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "F1 \nParam_Point";];
-        "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label = "F2 \nParam_Point";];
-        
-        # Edges
-        "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
-        
-        # 0
-    }
+    # Edges
+    "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
     
-    subgraph "cluster_subgraph__d9728bb0-9967-449f-b352-182acd5a7aef" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "small_angle\n(Number)";
-        # Nodes
-        "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" [label = "small_angle\n(Number)\nValue: 85.4";fillcolor = "brown";fontsize = 20;];
-        "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out" [label = "out •→";];
-        # Edges
-        "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" -> "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out";
-        
-        # 1
-    }
+    #0
+  }
+
+subgraph "cluster_subgraph_d9728bb0-9967-449f-b352-182acd5a7aef" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "small_angle\n(Number)";
+    # Nodes
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" [label="small_angle\n(Number)\nValue: 85.4", fillcolor="brown", fontsize=20];
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out" [label="•→ out"];
+    # Edges
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" -> "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out";
     
-    subgraph "cluster_subgraph__14465b62-ae35-49a8-bba2-e50b935551b5" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "big_angle\n(Number)";
-        # Nodes
-        "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" [label = "big_angle\n(Number)\nValue: 105";fillcolor = "burlywood";fontsize = 20;];
-        "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out" [label = "out •→";];
-        # Edges
-        "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" -> "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out";
-        
-        # 2
-    }
+    #1
+  }
+
+subgraph "cluster_subgraph_14465b62-ae35-49a8-bba2-e50b935551b5" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "big_angle\n(Number)";
+    # Nodes
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" [label="big_angle\n(Number)\nValue: 105", fillcolor="burlywood", fontsize=20];
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out" [label="•→ out"];
+    # Edges
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" -> "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out";
     
-    subgraph "cluster_subgraph__87d28aaa-18a9-41a5-86b7-4c1685edb815" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "height\n(Number Slider)";
-        # Nodes
-        "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" [label = "height\n(Number Slider)\nValue: 2250";fillcolor = "cadetblue";fontsize = 20;];
-        "height_87d28aaa-18a9-41a5-86b7-4c1685edb815_out" [label = "out •→";];
-        # Edges
-        "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_87d28aaa-18a9-41a5-86b7-4c1685edb815_out";
-        
-        # 3
-    }
+    #2
+  }
+
+subgraph "cluster_subgraph_87d28aaa-18a9-41a5-86b7-4c1685edb815" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "height\n(Number Slider)";
+    # Nodes
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" [label="height\n(Number Slider)\nValue: 2250", fillcolor="cadetblue", fontsize=20];
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815_out" [label="•→ out"];
+    # Edges
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_87d28aaa-18a9-41a5-86b7-4c1685edb815_out";
     
-    subgraph "cluster_subgraph_59cb3897-f400-43f3-9461-0701f2ceb61b" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Rad2\n(Radians)";
-        # Nodes
-        "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b" [label = "Rad2\n(Radians)";fillcolor = "chartreuse";fontsize = 20;];
-        "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" [label = "D \nParam_Number";];
-        "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b" [label = "R \nParam_Number";];
-        
-        # Edges
-        "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b";
-        "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b";
-        
-        # 4
-    }
+    #3
+  }
+
+subgraph "cluster_subgraph_59cb3897-f400-43f3-9461-0701f2ceb61b" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Rad2\n(Radians)";
+    # Nodes
+    "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="Rad2\n(Radians)", fillcolor="chartreuse", fontsize=20];
+    "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="D \nParam_Number"];
+    "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="R \nParam_Number"];
     
-    subgraph "cluster_subgraph_2a326121-470f-4022-9477-ef4b47e3853d" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Rad1\n(Radians)";
-        # Nodes
-        "Rad1_2a326121-470f-4022-9477-ef4b47e3853d" [label = "Rad1\n(Radians)";fillcolor = "chocolate";fontsize = 20;];
-        "D_in_2a326121-470f-4022-9477-ef4b47e3853d" [label = "D \nParam_Number";];
-        "R_out_2a326121-470f-4022-9477-ef4b47e3853d" [label = "R \nParam_Number";];
-        
-        # Edges
-        "D_in_2a326121-470f-4022-9477-ef4b47e3853d" -> "Rad1_2a326121-470f-4022-9477-ef4b47e3853d";
-        "Rad1_2a326121-470f-4022-9477-ef4b47e3853d" -> "R_out_2a326121-470f-4022-9477-ef4b47e3853d";
-        
-        # 5
-    }
+    # Edges
+    "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b";
+    "Rad2_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b";
     
-    subgraph "cluster_subgraph__a4599816-cbc1-40cb-af2f-95c15603b142" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Crv\n(Curve)";
-        # Nodes
-        "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" [label = "Crv\n(Curve)\nValue: Line-like Curve";fillcolor = "coral";fontsize = 20;];
-        "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out" [label = "out •→";];
-        # Edges
-        "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" -> "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out";
-        
-        # 6
-    }
+    #4
+  }
+
+subgraph "cluster_subgraph_2a326121-470f-4022-9477-ef4b47e3853d" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Rad1\n(Radians)";
+    # Nodes
+    "Rad1_2a326121-470f-4022-9477-ef4b47e3853d" [label="Rad1\n(Radians)", fillcolor="chocolate", fontsize=20];
+    "D_in_2a326121-470f-4022-9477-ef4b47e3853d" [label="D \nParam_Number"];
+    "R_out_2a326121-470f-4022-9477-ef4b47e3853d" [label="R \nParam_Number"];
     
-    subgraph "cluster_subgraph_41047c00-e8c0-42f0-99aa-d3177a8bd895" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Flip\n(Flip Curve)";
-        # Nodes
-        "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label = "Flip\n(Flip Curve)";fillcolor = "cornflowerblue";fontsize = 20;];
-        "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label = "C \nParam_Curve";];
-        "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label = "G \nParam_Curve";];
-        "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label = "C \nParam_Curve";];
-        "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label = "F \nParam_Boolean";];
-        
-        # Edges
-        "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
-        "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
-        "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
-        "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
-        
-        # 7
-    }
+    # Edges
+    "D_in_2a326121-470f-4022-9477-ef4b47e3853d" -> "Rad1_2a326121-470f-4022-9477-ef4b47e3853d";
+    "Rad1_2a326121-470f-4022-9477-ef4b47e3853d" -> "R_out_2a326121-470f-4022-9477-ef4b47e3853d";
     
-    subgraph "cluster_subgraph_cdffa07a-a8b6-4077-978a-eda881b24570" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "XY\n(XY Plane)";
-        # Nodes
-        "XY_cdffa07a-a8b6-4077-978a-eda881b24570" [label = "XY\n(XY Plane)";fillcolor = "cornsilk";fontsize = 20;];
-        "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" [label = "O \nParam_Point";];
-        "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" [label = "P \nParam_Plane";];
-        
-        # Edges
-        "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" -> "XY_cdffa07a-a8b6-4077-978a-eda881b24570";
-        "XY_cdffa07a-a8b6-4077-978a-eda881b24570" -> "P_out_cdffa07a-a8b6-4077-978a-eda881b24570";
-        
-        # 8
-    }
+    #5
+  }
+
+subgraph "cluster_subgraph_a4599816-cbc1-40cb-af2f-95c15603b142" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Crv\n(Curve)";
+    # Nodes
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" [label="Crv\n(Curve)\nValue: Line-like Curve", fillcolor="coral", fontsize=20];
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out" [label="•→ out"];
+    # Edges
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" -> "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out";
     
-    subgraph "cluster_subgraph__6c767123-f309-40da-af83-09b32ece5832" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Line";
-        # Nodes
-        "Line_6c767123-f309-40da-af83-09b32ece5832" [label = "Line\nValue: Line(L:3000.00 mm)";fillcolor = "crimson";fontsize = 20;];
-        "Line_6c767123-f309-40da-af83-09b32ece5832_in" [label = "in →•";];
-        "Line_6c767123-f309-40da-af83-09b32ece5832_out" [label = "out •→";];
-        # Edges
-        "Line_6c767123-f309-40da-af83-09b32ece5832_in" -> "Line_6c767123-f309-40da-af83-09b32ece5832";
-        "Line_6c767123-f309-40da-af83-09b32ece5832" -> "Line_6c767123-f309-40da-af83-09b32ece5832_out";
-        
-        # 9
-    }
+    #6
+  }
+
+subgraph "cluster_subgraph_41047c00-e8c0-42f0-99aa-d3177a8bd895" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Flip\n(Flip Curve)";
+    # Nodes
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="Flip\n(Flip Curve)", fillcolor="cornflowerblue", fontsize=20];
+    "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="C \nParam_Curve"];
+    "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="G \nParam_Curve"];
+    "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="C \nParam_Curve"];
+    "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="F \nParam_Boolean"];
     
-    subgraph "cluster_subgraph__be341bd1-f76a-45e9-a82c-b36bca905729" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Vec\n(Vector)";
-        # Nodes
-        "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" [label = "Vec\n(Vector)\nValue: {0,0,-3000}";fillcolor = "cyan";fontsize = 20;];
-        "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in" [label = "in →•";];
-        "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_out" [label = "out •→";];
-        # Edges
-        "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729";
-        "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_out";
-        
-        # 10
-    }
+    # Edges
+    "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
     
-    subgraph "cluster_subgraph_d8a179fc-7fab-4814-b4b9-20be26bfe82c" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Move";
-        # Nodes
-        "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label = "Move";fillcolor = "orangered";fontsize = 20;];
-        "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label = "G \nParam_Geometry";];
-        "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label = "T \nParam_Vector";];
-        "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label = "G \nParam_Geometry";];
-        "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label = "X \nParam_Transform";];
-        
-        # Edges
-        "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
-        "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
-        "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
-        "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
-        
-        # 11
-    }
+    #7
+  }
+
+subgraph "cluster_subgraph_cdffa07a-a8b6-4077-978a-eda881b24570" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "XY\n(XY Plane)";
+    # Nodes
+    "XY_cdffa07a-a8b6-4077-978a-eda881b24570" [label="XY\n(XY Plane)", fillcolor="cornsilk", fontsize=20];
+    "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" [label="O \nParam_Point"];
+    "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" [label="P \nParam_Plane"];
     
-    subgraph "cluster_subgraph_71ee981e-b545-4cb0-907c-8955b015922f" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "End\n(End Points)";
-        # Nodes
-        "End_71ee981e-b545-4cb0-907c-8955b015922f" [label = "End\n(End Points)";fillcolor = "orchid";fontsize = 20;];
-        "C_in_71ee981e-b545-4cb0-907c-8955b015922f" [label = "C \nParam_Curve";];
-        "S_out_71ee981e-b545-4cb0-907c-8955b015922f" [label = "S \nParam_Point";];
-        "E_out_71ee981e-b545-4cb0-907c-8955b015922f" [label = "E \nParam_Point";];
-        
-        # Edges
-        "C_in_71ee981e-b545-4cb0-907c-8955b015922f" -> "End_71ee981e-b545-4cb0-907c-8955b015922f";
-        "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "S_out_71ee981e-b545-4cb0-907c-8955b015922f";
-        "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "E_out_71ee981e-b545-4cb0-907c-8955b015922f";
-        
-        # 12
-    }
+    # Edges
+    "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" -> "XY_cdffa07a-a8b6-4077-978a-eda881b24570";
+    "XY_cdffa07a-a8b6-4077-978a-eda881b24570" -> "P_out_cdffa07a-a8b6-4077-978a-eda881b24570";
     
-    subgraph "cluster_subgraph_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Amp\n(Amplitude)";
-        # Nodes
-        "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label = "Amp\n(Amplitude)";fillcolor = "blueviolet";fontsize = 20;];
-        "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label = "V \nParam_Vector";];
-        "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label = "A \nParam_Number";];
-        "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label = "V \nParam_Vector";];
-        
-        # Edges
-        "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
-        "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
-        "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
-        
-        # 13
-    }
+    #8
+  }
+
+subgraph "cluster_subgraph_6c767123-f309-40da-af83-09b32ece5832" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Line";
+    # Nodes
+    "Line_6c767123-f309-40da-af83-09b32ece5832" [label="Line\nValue: Line(L:3000.00 mm)", fillcolor="crimson", fontsize=20];
+    "Line_6c767123-f309-40da-af83-09b32ece5832_in" [label="in →•"];"Line_6c767123-f309-40da-af83-09b32ece5832_out" [label="•→ out"];
+    # Edges
+    "Line_6c767123-f309-40da-af83-09b32ece5832_in" -> "Line_6c767123-f309-40da-af83-09b32ece5832";
+    "Line_6c767123-f309-40da-af83-09b32ece5832" -> "Line_6c767123-f309-40da-af83-09b32ece5832_out";
     
-    subgraph "cluster_subgraph_10f0c688-9b64-4a5b-97aa-419aa174c25c" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "b2\n(Cluster)";
-        # Nodes
-        "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label = "b2\n(Cluster)";fillcolor = "brown";fontsize = 20;];
-        "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label = "height \nParam_ScriptVariable";];
-        "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label = "angle \nParam_ScriptVariable";];
-        "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label = "base \nParam_GenericObject";];
-        
-        # Edges
-        "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c";
-        "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c";
-        "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c";
-        
-        # 14
-    }
+    #9
+  }
+
+subgraph "cluster_subgraph_be341bd1-f76a-45e9-a82c-b36bca905729" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Vec\n(Vector)";
+    # Nodes
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" [label="Vec\n(Vector)\nValue: {0,0,-3000}", fillcolor="cyan", fontsize=20];
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in" [label="in →•"];"Vec_be341bd1-f76a-45e9-a82c-b36bca905729_out" [label="•→ out"];
+    # Edges
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729";
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_out";
     
-    subgraph "cluster_subgraph_a6456689-42ae-4206-a7a4-5324d1a4934a" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "b1\n(Cluster)";
-        # Nodes
-        "b1_a6456689-42ae-4206-a7a4-5324d1a4934a" [label = "b1\n(Cluster)";fillcolor = "burlywood";fontsize = 20;];
-        "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label = "height \nParam_ScriptVariable";];
-        "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label = "angle \nParam_ScriptVariable";];
-        "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" [label = "base \nParam_GenericObject";];
-        
-        # Edges
-        "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b1_a6456689-42ae-4206-a7a4-5324d1a4934a";
-        "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b1_a6456689-42ae-4206-a7a4-5324d1a4934a";
-        "b1_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a";
-        
-        # 15
-    }
+    #10
+  }
+
+subgraph "cluster_subgraph_d8a179fc-7fab-4814-b4b9-20be26bfe82c" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Move";
+    # Nodes
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="Move", fillcolor="orangered", fontsize=20];
+    "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="G \nParam_Geometry"];
+    "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="T \nParam_Vector"];
+    "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="G \nParam_Geometry"];
+    "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="X \nParam_Transform"];
     
-    subgraph "cluster_subgraph__2f48438c-75c3-443c-a1c8-95eccd8670fc" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "\n(Panel)";
-        # Nodes
-        "_2f48438c-75c3-443c-a1c8-95eccd8670fc" [label = "\n(Panel)\nValue: 105";fillcolor = "cadetblue";fontsize = 20;];
-        "_2f48438c-75c3-443c-a1c8-95eccd8670fc_in" [label = "in →•";];
-        # Edges
-        "_2f48438c-75c3-443c-a1c8-95eccd8670fc_in" -> "_2f48438c-75c3-443c-a1c8-95eccd8670fc";
-        
-        # 16
-    }
+    # Edges
+    "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
     
-    subgraph "cluster_subgraph__db3162a4-9892-487b-b2fa-a2d005e3726b" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "\n(Panel)";
-        # Nodes
-        "_db3162a4-9892-487b-b2fa-a2d005e3726b" [label = "\n(Panel)\nValue: 85.4";fillcolor = "chartreuse";fontsize = 20;];
-        "_db3162a4-9892-487b-b2fa-a2d005e3726b_in" [label = "in →•";];
-        # Edges
-        "_db3162a4-9892-487b-b2fa-a2d005e3726b_in" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b";
-        
-        # 17
-    }
+    #11
+  }
+
+subgraph "cluster_subgraph_71ee981e-b545-4cb0-907c-8955b015922f" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "End\n(End Points)";
+    # Nodes
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" [label="End\n(End Points)", fillcolor="orchid", fontsize=20];
+    "C_in_71ee981e-b545-4cb0-907c-8955b015922f" [label="C \nParam_Curve"];
+    "S_out_71ee981e-b545-4cb0-907c-8955b015922f" [label="S \nParam_Point"];
+    "E_out_71ee981e-b545-4cb0-907c-8955b015922f" [label="E \nParam_Point"];
     
-    subgraph "cluster_subgraph__51209a31-00e0-4b05-b172-4c0230265a66" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "dot panel\n(Panel)";
-        # Nodes
-        "dot panel_51209a31-00e0-4b05-b172-4c0230265a66" [label = "dot panel\n(Panel)\nValue: empty structure";fillcolor = "chocolate";fontsize = 20;];
-        "dot panel_51209a31-00e0-4b05-b172-4c0230265a66_in" [label = "in →•";];
-        # Edges
-        "dot panel_51209a31-00e0-4b05-b172-4c0230265a66_in" -> "dot panel_51209a31-00e0-4b05-b172-4c0230265a66";
-        
-        # 18
-    }
+    # Edges
+    "C_in_71ee981e-b545-4cb0-907c-8955b015922f" -> "End_71ee981e-b545-4cb0-907c-8955b015922f";
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "S_out_71ee981e-b545-4cb0-907c-8955b015922f";
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "E_out_71ee981e-b545-4cb0-907c-8955b015922f";
     
-    subgraph "cluster_subgraph_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
-        node [style = filled;];
-        nodesep = "0.05";
-        style = "rounded";
-        label = "Python\n(GhPython Script)";
-        # Nodes
-        "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label = "Python\n(GhPython Script)";fillcolor = "coral";fontsize = 20;];
-        "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label = "trigger \nParam_ScriptVariable";];
-        "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label = "out \nParam_String";];
-        "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label = "graph \nParam_GenericObject";];
-        
-        # Edges
-        "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68";
-        "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
-        "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
-        
-        # 19
-    }
+    #12
+  }
+
+subgraph "cluster_subgraph_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Amp\n(Amplitude)";
+    # Nodes
+    "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="Amp\n(Amplitude)", fillcolor="blueviolet", fontsize=20];
+    "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="V \nParam_Vector"];
+    "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="A \nParam_Number"];
+    "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="V \nParam_Vector"];
     
+    # Edges
+    "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
     
+    #13
+  }
+
+subgraph "cluster_subgraph_10f0c688-9b64-4a5b-97aa-419aa174c25c" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b2\n(Cluster)";
+    # Nodes
+    "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="b2\n(Cluster)", fillcolor="brown", fontsize=20];
+    "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="height \nParam_ScriptVariable"];
+    "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="angle \nParam_ScriptVariable"];
+    "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="base \nParam_GenericObject"];
+    
+    # Edges
+    "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "b2_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    
+    #14
+  }
+
+subgraph "cluster_subgraph_a6456689-42ae-4206-a7a4-5324d1a4934a" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b1\n(Cluster)";
+    # Nodes
+    "b1_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="b1\n(Cluster)", fillcolor="burlywood", fontsize=20];
+    "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="height \nParam_ScriptVariable"];
+    "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="angle \nParam_ScriptVariable"];
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="base \nParam_GenericObject"];
+    
+    # Edges
+    "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b1_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b1_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "b1_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    
+    #15
+  }
+
+subgraph "cluster_subgraph_2f48438c-75c3-443c-a1c8-95eccd8670fc" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_2f48438c-75c3-443c-a1c8-95eccd8670fc" [label="\n(Panel)\nValue: 105", fillcolor="cadetblue", fontsize=20];
+    "_2f48438c-75c3-443c-a1c8-95eccd8670fc_in" [label="in →•"];
+    # Edges
+    "_2f48438c-75c3-443c-a1c8-95eccd8670fc_in" -> "_2f48438c-75c3-443c-a1c8-95eccd8670fc";
+    
+    #16
+  }
+
+subgraph "cluster_subgraph_db3162a4-9892-487b-b2fa-a2d005e3726b" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_db3162a4-9892-487b-b2fa-a2d005e3726b" [label="\n(Panel)\nValue: 85.4", fillcolor="chartreuse", fontsize=20];
+    "_db3162a4-9892-487b-b2fa-a2d005e3726b_in" [label="in →•"];
+    # Edges
+    "_db3162a4-9892-487b-b2fa-a2d005e3726b_in" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b";
+    
+    #17
+  }
+
+subgraph "cluster_subgraph_51209a31-00e0-4b05-b172-4c0230265a66" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "dot panel\n(Panel)";
+    # Nodes
+    "dot panel_51209a31-00e0-4b05-b172-4c0230265a66" [label="dot panel\n(Panel)\nValue: empty structure", fillcolor="chocolate", fontsize=20];
+    "dot panel_51209a31-00e0-4b05-b172-4c0230265a66_in" [label="in →•"];
+    # Edges
+    "dot panel_51209a31-00e0-4b05-b172-4c0230265a66_in" -> "dot panel_51209a31-00e0-4b05-b172-4c0230265a66";
+    
+    #18
+  }
+
+subgraph "cluster_subgraph_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Python\n(GhPython Script)";
+    # Nodes
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="Python\n(GhPython Script)", fillcolor="coral", fontsize=20];
+    "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="trigger \nParam_ScriptVariable"];
+    "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="out \nParam_String"];
+    "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="graph \nParam_GenericObject"];
+    
+    # Edges
+    "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    
+    #19
+  }
+
+    # Generated Connections
     "P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb" -> "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
     "base_out_1b6a957c-4f27-4a22-a8dc-2a8d2414a7f4" -> "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
     "base_out_456f3f62-e4af-496e-acc2-5c099a9e905e" -> "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
@@ -391,8 +389,9 @@ digraph G {
     "E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d" -> "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68";
     "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "dot panel_in_51209a31-00e0-4b05-b172-4c0230265a66";
     
-    
-    # Manually connected
+    # Manually Connected Connections
+    # These are the connections that I've manually created that actually connect teh graph the way it ought to be connected.
+    # These should be automatically generated, but I can't work out why they're not yet.
     "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
     "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "O_in_cdffa07a-a8b6-4077-978a-eda881b24570";
     "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" -> "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
@@ -406,12 +405,13 @@ digraph G {
     "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c";
     "R_out_2a326121-470f-4022-9477-ef4b47e3853d" -> "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a";
     "S_out_71ee981e-b545-4cb0-907c-8955b015922f" -> "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
-    "Line_6c767123-f309-40da-af83-09b32ece5832_out" -> "C_in_71ee981e-b545-4cb0-907c-8955b015922f";
-    "Line_6c767123-f309-40da-af83-09b32ece5832_out" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in";
-    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out" -> "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895";
-    "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Line_6c767123-f309-40da-af83-09b32ece5832_in";
-    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out" -> "_2f48438c-75c3-443c-a1c8-95eccd8670fc_in";
-    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b_in";
+    "Line_6c767123-f309-40da-af83-09b32ece5832_out"->"C_in_71ee981e-b545-4cb0-907c-8955b015922f";
+    "Line_6c767123-f309-40da-af83-09b32ece5832_out"->"Vec_be341bd1-f76a-45e9-a82c-b36bca905729_in";
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142_out"->"C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895"->"Line_6c767123-f309-40da-af83-09b32ece5832_in";
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5_out"->"_2f48438c-75c3-443c-a1c8-95eccd8670fc_in"
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef_out" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b_in"
     "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "trigger_in_6ff0ff7e-a539-4919-acff-d2ed22901e68";
     "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "dot panel_51209a31-00e0-4b05-b172-4c0230265a66_in";
+
 }
