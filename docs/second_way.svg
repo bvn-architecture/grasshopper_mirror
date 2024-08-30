@@ -1,0 +1,1296 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3245pt" height="3071pt" viewBox="0.00 0.00 3245.00 3071.00" style="">
+<g id="graph0" class="graph" transform="translate(4,3067) scale(1)" data-name="G">
+
+<polygon fill="white" stroke="none" points="-4,4 -4,-3067 3241,-3067 3241,4 -4,4" style=""/>
+<g id="clust1" class="cluster" data-name="cluster_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<polygon fill="none" stroke="black" points="494.78,-366 494.78,-619 1293.76,-619 1293.76,-366 494.78,-366" style=""/>
+<text text-anchor="middle" x="894.27" y="-602.4" font-family="Times,serif" font-size="14.00" style="">Ellipse</text>
+</g>
+<g id="clust2" class="cluster" data-name="cluster_d9728bb0-9967-449f-b352-182acd5a7aef">
+
+<polygon fill="none" stroke="black" points="739.82,-627 739.82,-798 915.12,-798 915.12,-627 739.82,-627" style=""/>
+<text text-anchor="middle" x="827.47" y="-781.4" font-family="Times,serif" font-size="14.00" style="">small_angle</text>
+<text text-anchor="middle" x="827.47" y="-764.6" font-family="Times,serif" font-size="14.00" style="">(Number)</text>
+</g>
+<g id="clust3" class="cluster" data-name="cluster_14465b62-ae35-49a8-bba2-e50b935551b5">
+
+<polygon fill="none" stroke="black" points="745.71,-187 745.71,-358 909.23,-358 909.23,-187 745.71,-187" style=""/>
+<text text-anchor="middle" x="827.47" y="-341.4" font-family="Times,serif" font-size="14.00" style="">big_angle</text>
+<text text-anchor="middle" x="827.47" y="-324.6" font-family="Times,serif" font-size="14.00" style="">(Number)</text>
+</g>
+<g id="clust4" class="cluster" data-name="cluster_87d28aaa-18a9-41a5-86b7-4c1685edb815">
+
+<polygon fill="none" stroke="black" points="715.08,-8 715.08,-179 939.86,-179 939.86,-8 715.08,-8" style=""/>
+<text text-anchor="middle" x="827.47" y="-162.4" font-family="Times,serif" font-size="14.00" style="">height</text>
+<text text-anchor="middle" x="827.47" y="-145.6" font-family="Times,serif" font-size="14.00" style="">(Number Slider)</text>
+</g>
+<g id="clust5" class="cluster" data-name="cluster_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<polygon fill="none" stroke="black" points="1621.95,-1885 1621.95,-2022 2672.27,-2022 2672.27,-1885 1621.95,-1885" style=""/>
+<text text-anchor="middle" x="2147.11" y="-2005.4" font-family="Times,serif" font-size="14.00" style="">Rad</text>
+<text text-anchor="middle" x="2147.11" y="-1988.6" font-family="Times,serif" font-size="14.00" style="">(Radians)</text>
+</g>
+<g id="clust6" class="cluster" data-name="cluster_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<polygon fill="none" stroke="black" points="1621.95,-1562 1621.95,-1699 2672.27,-1699 2672.27,-1562 1621.95,-1562" style=""/>
+<text text-anchor="middle" x="2147.11" y="-1682.4" font-family="Times,serif" font-size="14.00" style="">Rad</text>
+<text text-anchor="middle" x="2147.11" y="-1665.6" font-family="Times,serif" font-size="14.00" style="">(Radians)</text>
+</g>
+<g id="clust7" class="cluster" data-name="cluster_a4599816-cbc1-40cb-af2f-95c15603b142">
+
+<polygon fill="none" stroke="black" points="2001.98,-1383 2001.98,-1554 2302.93,-1554 2302.93,-1383 2001.98,-1383" style=""/>
+<text text-anchor="middle" x="2152.46" y="-1537.4" font-family="Times,serif" font-size="14.00" style="">Crv</text>
+<text text-anchor="middle" x="2152.46" y="-1520.6" font-family="Times,serif" font-size="14.00" style="">(Curve)</text>
+</g>
+<g id="clust8" class="cluster" data-name="cluster_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<polygon fill="none" stroke="black" points="503.03,-2011 503.03,-2204 1302.56,-2204 1302.56,-2011 503.03,-2011" style=""/>
+<text text-anchor="middle" x="902.79" y="-2187.4" font-family="Times,serif" font-size="14.00" style="">Flip</text>
+<text text-anchor="middle" x="902.79" y="-2170.6" font-family="Times,serif" font-size="14.00" style="">(Flip Curve)</text>
+</g>
+<g id="clust9" class="cluster" data-name="cluster_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<polygon fill="none" stroke="black" points="506.32,-2471 506.32,-2608 1291.56,-2608 1291.56,-2471 506.32,-2471" style=""/>
+<text text-anchor="middle" x="898.94" y="-2591.4" font-family="Times,serif" font-size="14.00" style="">XY</text>
+<text text-anchor="middle" x="898.94" y="-2574.6" font-family="Times,serif" font-size="14.00" style="">(XY Plane)</text>
+</g>
+<g id="clust10" class="cluster" data-name="cluster_6c767123-f309-40da-af83-09b32ece5832">
+
+<polygon fill="none" stroke="black" points="1524,-2564 1524,-2684 1883.89,-2684 1883.89,-2564 1524,-2564" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2667.4" font-family="Times,serif" font-size="14.00" style="">Line</text>
+</g>
+<g id="clust11" class="cluster" data-name="cluster_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<polygon fill="none" stroke="black" points="1575.62,-2328 1575.62,-2499 1832.27,-2499 1832.27,-2328 1575.62,-2328" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2482.4" font-family="Times,serif" font-size="14.00" style="">Vec</text>
+<text text-anchor="middle" x="1703.94" y="-2465.6" font-family="Times,serif" font-size="14.00" style="">(Vector)</text>
+</g>
+<g id="clust12" class="cluster" data-name="cluster_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<polygon fill="none" stroke="black" points="487.64,-2678 487.64,-2854 1311.35,-2854 1311.35,-2678 487.64,-2678" style=""/>
+<text text-anchor="middle" x="899.49" y="-2837.4" font-family="Times,serif" font-size="14.00" style="">Move</text>
+</g>
+<g id="clust13" class="cluster" data-name="cluster_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<polygon fill="none" stroke="black" points="1630.2,-2127 1630.2,-2320 2660.73,-2320 2660.73,-2127 1630.2,-2127" style=""/>
+<text text-anchor="middle" x="2145.47" y="-2303.4" font-family="Times,serif" font-size="14.00" style="">End</text>
+<text text-anchor="middle" x="2145.47" y="-2286.6" font-family="Times,serif" font-size="14.00" style="">(End Points)</text>
+</g>
+<g id="clust14" class="cluster" data-name="cluster_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<polygon fill="none" stroke="black" points="494.78,-1007 494.78,-1200 1296.5,-1200 1296.5,-1007 494.78,-1007" style=""/>
+<text text-anchor="middle" x="895.64" y="-1183.4" font-family="Times,serif" font-size="14.00" style="">Amp</text>
+<text text-anchor="middle" x="895.64" y="-1166.6" font-family="Times,serif" font-size="14.00" style="">(Amplitude)</text>
+</g>
+<g id="clust15" class="cluster" data-name="cluster_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<polygon fill="none" stroke="black" points="469.5,-806 469.5,-999 1327.28,-999 1327.28,-806 469.5,-806" style=""/>
+<text text-anchor="middle" x="898.39" y="-982.4" font-family="Times,serif" font-size="14.00" style="">b</text>
+<text text-anchor="middle" x="898.39" y="-965.6" font-family="Times,serif" font-size="14.00" style="">(Cluster)</text>
+</g>
+<g id="clust16" class="cluster" data-name="cluster_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<polygon fill="none" stroke="black" points="469.5,-1252 469.5,-1445 1327.28,-1445 1327.28,-1252 469.5,-1252" style=""/>
+<text text-anchor="middle" x="898.39" y="-1428.4" font-family="Times,serif" font-size="14.00" style="">b</text>
+<text text-anchor="middle" x="898.39" y="-1411.6" font-family="Times,serif" font-size="14.00" style="">(Cluster)</text>
+</g>
+<g id="clust17" class="cluster" data-name="cluster_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<polygon fill="none" stroke="black" points="1622.19,-1384 1622.19,-1554 1785.7,-1554 1785.7,-1384 1622.19,-1384" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1521.4" font-family="Times,serif" font-size="14.00" style="">(Panel)</text>
+</g>
+<g id="clust18" class="cluster" data-name="cluster_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<polygon fill="none" stroke="black" points="1618.65,-1707 1618.65,-1877 1789.24,-1877 1789.24,-1707 1618.65,-1707" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1844.4" font-family="Times,serif" font-size="14.00" style="">(Panel)</text>
+</g>
+<g id="clust19" class="cluster" data-name="cluster_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<polygon fill="none" stroke="black" points="1555.04,-1160 1555.04,-1330 1852.85,-1330 1852.85,-1160 1555.04,-1160" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1297.4" font-family="Times,serif" font-size="14.00" style="">(Panel)</text>
+</g>
+<g id="clust20" class="cluster" data-name="cluster_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<polygon fill="none" stroke="black" points="469.5,-2862 469.5,-3055 1327.28,-3055 1327.28,-2862 469.5,-2862" style=""/>
+<text text-anchor="middle" x="898.39" y="-3038.4" font-family="Times,serif" font-size="14.00" style="">Python</text>
+<text text-anchor="middle" x="898.39" y="-3021.6" font-family="Times,serif" font-size="14.00" style="">(GhPython Script)</text>
+</g>
+<!-- Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node1" class="node" pointer-events="visible" data-name="Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-480" rx="50.68" ry="22.76" style=""/>
+<text text-anchor="middle" x="827.47" y="-474" font-family="Times,serif" font-size="20.00" style="">Ellipse</text>
+</g>
+<!-- E_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node5" class="node" pointer-events="visible" data-name="E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-557" rx="65.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-561.2" font-family="Times,serif" font-size="14.00" style="">E </text>
+<text text-anchor="middle" x="1220.01" y="-544.4" font-family="Times,serif" font-size="14.00" style="">Param_Curve</text>
+</g>
+<!-- Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;E_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge4" class="edge" data-name="Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M871.35,-491.89C901.32,-499.93 942.35,-510.43 978.88,-518 1034.4,-529.5 1097.72,-539.66 1145.4,-546.73" style=""/>
+<polygon fill="black" stroke="black" points="1144.65,-550.16 1155.05,-548.15 1145.67,-543.23 1144.65,-550.16" style=""/>
+</g>
+<!-- F1_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node6" class="node" pointer-events="visible" data-name="F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-480" rx="62.42" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-484.2" font-family="Times,serif" font-size="14.00" style="">F1 </text>
+<text text-anchor="middle" x="1220.01" y="-467.4" font-family="Times,serif" font-size="14.00" style="">Param_Point</text>
+</g>
+<!-- Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;F1_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge5" class="edge" data-name="Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M878.33,-480C946.14,-480 1067.94,-480 1146.04,-480" style=""/>
+<polygon fill="black" stroke="black" points="1145.72,-483.5 1155.72,-480 1145.72,-476.5 1145.72,-483.5" style=""/>
+</g>
+<!-- F2_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node7" class="node" pointer-events="visible" data-name="F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-403" rx="62.42" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-407.2" font-family="Times,serif" font-size="14.00" style="">F2 </text>
+<text text-anchor="middle" x="1220.01" y="-390.4" font-family="Times,serif" font-size="14.00" style="">Param_Point</text>
+</g>
+<!-- Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;F2_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge6" class="edge" data-name="Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M871.35,-468.11C901.32,-460.07 942.35,-449.57 978.88,-442 1035.55,-430.26 1100.34,-419.92 1148.33,-412.84" style=""/>
+<polygon fill="black" stroke="black" points="1148.65,-416.33 1158.04,-411.42 1147.64,-409.4 1148.65,-416.33" style=""/>
+</g>
+<!-- P_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node2" class="node" pointer-events="visible" data-name="P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-403" rx="63.59" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-407.2" font-family="Times,serif" font-size="14.00" style="">P </text>
+<text text-anchor="middle" x="576.78" y="-390.4" font-family="Times,serif" font-size="14.00" style="">Param_Plane</text>
+</g>
+<!-- P_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge1" class="edge" data-name="P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M630.21,-419.24C672.6,-432.36 731.97,-450.74 774.28,-463.84" style=""/>
+<polygon fill="black" stroke="black" points="773.16,-467.16 783.75,-466.77 775.23,-460.47 773.16,-467.16" style=""/>
+</g>
+<!-- R1_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node3" class="node" pointer-events="visible" data-name="R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-557" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-561.2" font-family="Times,serif" font-size="14.00" style="">R1 </text>
+<text text-anchor="middle" x="576.78" y="-544.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- R1_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge2" class="edge" data-name="R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M635.77,-539.04C677.62,-526.09 733.65,-508.74 774.14,-496.2" style=""/>
+<polygon fill="black" stroke="black" points="775.16,-499.55 783.68,-493.25 773.09,-492.86 775.16,-499.55" style=""/>
+</g>
+<!-- R2_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="node4" class="node" pointer-events="visible" data-name="R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-480" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-484.2" font-family="Times,serif" font-size="14.00" style="">R2 </text>
+<text text-anchor="middle" x="576.78" y="-467.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- R2_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;Ellipse_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge3" class="edge" data-name="R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M651.05,-480C687.35,-480 730.68,-480 765.19,-480" style=""/>
+<polygon fill="black" stroke="black" points="765.02,-483.5 775.02,-480 765.02,-476.5 765.02,-483.5" style=""/>
+</g>
+<!-- x_in_e133d724&#45;991a&#45;4449&#45;bd31&#45;a7a71fdea039 -->
+<g id="node60" class="node" pointer-events="visible" data-name="x_in_e133d724-991a-4449-bd31-a7a71fdea039">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-557" rx="195.58" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-552.8" font-family="Times,serif" font-size="14.00" style="">x_in_e133d724-991a-4449-bd31-a7a71fdea039</text>
+</g>
+<!-- E_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e&#45;&gt;x_in_e133d724&#45;991a&#45;4449&#45;bd31&#45;a7a71fdea039 -->
+<g id="edge51" class="edge" data-name="E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e-&gt;x_in_e133d724-991a-4449-bd31-a7a71fdea039">
+
+<path fill="none" stroke="black" d="M1286.26,-557C1340.61,-557 1421.09,-557 1496.87,-557" style=""/>
+<polygon fill="black" stroke="black" points="1496.5,-560.5 1506.5,-557 1496.5,-553.5 1496.5,-560.5" style=""/>
+</g>
+<!-- small_angle_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef -->
+<g id="node8" class="node" pointer-events="visible" data-name="small_angle_d9728bb0-9967-449f-b352-182acd5a7aef">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-692" rx="79.8" ry="56.64" style=""/>
+<text text-anchor="middle" x="827.47" y="-710" font-family="Times,serif" font-size="20.00" style="">small_angle</text>
+<text text-anchor="middle" x="827.47" y="-686" font-family="Times,serif" font-size="20.00" style="">(Number)</text>
+<text text-anchor="middle" x="827.47" y="-662" font-family="Times,serif" font-size="20.00" style="">Value: 85.4</text>
+</g>
+<!-- small_angle_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef&#45;&gt;F2_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge7" class="edge" data-name="small_angle_d9728bb0-9967-449f-b352-182acd5a7aef-&gt;F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M896.76,-663.26C914.16,-652.93 931.21,-639.61 942.88,-623 990.01,-555.88 919.87,-498.96 978.88,-442 1023.04,-399.37 1094.46,-392.57 1147.95,-394.66" style=""/>
+<polygon fill="black" stroke="black" points="1147.74,-398.16 1157.9,-395.18 1148.1,-391.17 1147.74,-398.16" style=""/>
+</g>
+<!-- D_in_cec57bff&#45;6764&#45;4e74&#45;a961&#45;db162d033ea3 -->
+<g id="node61" class="node" pointer-events="visible" data-name="D_in_cec57bff-6764-4e74-a961-db162d033ea3">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-722" rx="195.56" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-717.8" font-family="Times,serif" font-size="14.00" style="">D_in_cec57bff-6764-4e74-a961-db162d033ea3</text>
+</g>
+<!-- small_angle_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef&#45;&gt;D_in_cec57bff&#45;6764&#45;4e74&#45;a961&#45;db162d033ea3 -->
+<g id="edge52" class="edge" data-name="small_angle_d9728bb0-9967-449f-b352-182acd5a7aef-&gt;D_in_cec57bff-6764-4e74-a961-db162d033ea3">
+
+<path fill="none" stroke="black" d="M907.03,-698.03C949.99,-701.33 1004.84,-705.55 1056.54,-709.52" style=""/>
+<polygon fill="black" stroke="black" points="1056.12,-713 1066.36,-710.27 1056.66,-706.02 1056.12,-713" style=""/>
+</g>
+<!-- _in_db3162a4&#45;9892&#45;487b&#45;b2fa&#45;a2d005e3726b -->
+<g id="node62" class="node" pointer-events="visible" data-name="_in_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-668" rx="191.6" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-663.8" font-family="Times,serif" font-size="14.00" style="">_in_db3162a4-9892-487b-b2fa-a2d005e3726b</text>
+</g>
+<!-- small_angle_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef&#45;&gt;_in_db3162a4&#45;9892&#45;487b&#45;b2fa&#45;a2d005e3726b -->
+<g id="edge53" class="edge" data-name="small_angle_d9728bb0-9967-449f-b352-182acd5a7aef-&gt;_in_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<path fill="none" stroke="black" d="M907.03,-687.17C947.22,-684.7 997.84,-681.59 1046.53,-678.6" style=""/>
+<polygon fill="black" stroke="black" points="1046.59,-682.1 1056.36,-678 1046.16,-675.12 1046.59,-682.1" style=""/>
+</g>
+<!-- big_angle_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5 -->
+<g id="node9" class="node" pointer-events="visible" data-name="big_angle_14465b62-ae35-49a8-bba2-e50b935551b5">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-252" rx="73.52" ry="56.64" style=""/>
+<text text-anchor="middle" x="827.47" y="-270" font-family="Times,serif" font-size="20.00" style="">big_angle</text>
+<text text-anchor="middle" x="827.47" y="-246" font-family="Times,serif" font-size="20.00" style="">(Number)</text>
+<text text-anchor="middle" x="827.47" y="-222" font-family="Times,serif" font-size="20.00" style="">Value: 105</text>
+</g>
+<!-- big_angle_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5&#45;&gt;F2_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge8" class="edge" data-name="big_angle_14465b62-ae35-49a8-bba2-e50b935551b5-&gt;F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M893.84,-277.27C968.29,-306.06 1088.87,-352.68 1160.4,-380.34" style=""/>
+<polygon fill="black" stroke="black" points="1159.01,-383.55 1169.6,-383.89 1161.53,-377.02 1159.01,-383.55" style=""/>
+</g>
+<!-- D_in_d499d6c4&#45;1932&#45;46e4&#45;a22e&#45;573fab3bc7a2 -->
+<g id="node63" class="node" pointer-events="visible" data-name="D_in_d499d6c4-1932-46e4-a22e-573fab3bc7a2">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-279" rx="197.29" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-274.8" font-family="Times,serif" font-size="14.00" style="">D_in_d499d6c4-1932-46e4-a22e-573fab3bc7a2</text>
+</g>
+<!-- big_angle_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5&#45;&gt;D_in_d499d6c4&#45;1932&#45;46e4&#45;a22e&#45;573fab3bc7a2 -->
+<g id="edge54" class="edge" data-name="big_angle_14465b62-ae35-49a8-bba2-e50b935551b5-&gt;D_in_d499d6c4-1932-46e4-a22e-573fab3bc7a2">
+
+<path fill="none" stroke="black" d="M901.01,-257.02C942.83,-259.91 997.28,-263.67 1049.28,-267.27" style=""/>
+<polygon fill="black" stroke="black" points="1048.95,-270.75 1059.17,-267.95 1049.43,-263.77 1048.95,-270.75" style=""/>
+</g>
+<!-- _in_2f48438c&#45;75c3&#45;443c&#45;a1c8&#45;95eccd8670fc -->
+<g id="node64" class="node" pointer-events="visible" data-name="_in_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-225" rx="187.45" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-220.8" font-family="Times,serif" font-size="14.00" style="">_in_2f48438c-75c3-443c-a1c8-95eccd8670fc</text>
+</g>
+<!-- big_angle_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5&#45;&gt;_in_2f48438c&#45;75c3&#45;443c&#45;a1c8&#45;95eccd8670fc -->
+<g id="edge55" class="edge" data-name="big_angle_14465b62-ae35-49a8-bba2-e50b935551b5-&gt;_in_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<path fill="none" stroke="black" d="M901.01,-246.98C944.26,-243.99 1001.01,-240.07 1054.59,-236.37" style=""/>
+<polygon fill="black" stroke="black" points="1054.72,-239.87 1064.46,-235.69 1054.24,-232.88 1054.72,-239.87" style=""/>
+</g>
+<!-- height_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815 -->
+<g id="node10" class="node" pointer-events="visible" data-name="height_87d28aaa-18a9-41a5-86b7-4c1685edb815">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-73" rx="104.28" ry="56.64" style=""/>
+<text text-anchor="middle" x="827.47" y="-91" font-family="Times,serif" font-size="20.00" style="">height</text>
+<text text-anchor="middle" x="827.47" y="-67" font-family="Times,serif" font-size="20.00" style="">(Number Slider)</text>
+<text text-anchor="middle" x="827.47" y="-43" font-family="Times,serif" font-size="20.00" style="">Value: 2250</text>
+</g>
+<!-- height_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;F2_out_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge9" class="edge" data-name="height_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M888.23,-119.51C908.01,-137.5 928.6,-159.44 942.88,-183 972.4,-231.71 940.65,-263.78 978.88,-306 1023.04,-354.78 1095.18,-379.48 1148.89,-391.7" style=""/>
+<polygon fill="black" stroke="black" points="1148.05,-395.1 1158.57,-393.8 1149.54,-388.26 1148.05,-395.1" style=""/>
+</g>
+<!-- A_in_8cc4c648&#45;6b50&#45;440b&#45;a69d&#45;06b04e9a4a89 -->
+<g id="node65" class="node" pointer-events="visible" data-name="A_in_8cc4c648-6b50-440b-a69d-06b04e9a4a89">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-19" rx="198.52" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-14.8" font-family="Times,serif" font-size="14.00" style="">A_in_8cc4c648-6b50-440b-a69d-06b04e9a4a89</text>
+</g>
+<!-- height_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;A_in_8cc4c648&#45;6b50&#45;440b&#45;a69d&#45;06b04e9a4a89 -->
+<g id="edge56" class="edge" data-name="height_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;A_in_8cc4c648-6b50-440b-a69d-06b04e9a4a89">
+
+<path fill="none" stroke="black" d="M926.22,-54.49C943.72,-51.45 961.81,-48.49 978.88,-46 1009.38,-41.55 1042.16,-37.43 1073.39,-33.82" style=""/>
+<polygon fill="black" stroke="black" points="1073.78,-37.3 1083.31,-32.69 1072.98,-30.35 1073.78,-37.3" style=""/>
+</g>
+<!-- height_in_bf6d16cc&#45;8fc4&#45;4e7f&#45;83e7&#45;a2299a619f95 -->
+<g id="node66" class="node" pointer-events="visible" data-name="height_in_bf6d16cc-8fc4-4e7f-83e7-a2299a619f95">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-127" rx="209.44" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-122.8" font-family="Times,serif" font-size="14.00" style="">height_in_bf6d16cc-8fc4-4e7f-83e7-a2299a619f95</text>
+</g>
+<!-- height_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;height_in_bf6d16cc&#45;8fc4&#45;4e7f&#45;83e7&#45;a2299a619f95 -->
+<g id="edge57" class="edge" data-name="height_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;height_in_bf6d16cc-8fc4-4e7f-83e7-a2299a619f95">
+
+<path fill="none" stroke="black" d="M926.22,-91.51C943.72,-94.55 961.81,-97.51 978.88,-100 1008.46,-104.31 1040.17,-108.32 1070.54,-111.85" style=""/>
+<polygon fill="black" stroke="black" points="1069.83,-115.29 1080.16,-112.96 1070.63,-108.34 1069.83,-115.29" style=""/>
+</g>
+<!-- height_in_ce12d76a&#45;1a80&#45;4e70&#45;820e&#45;8fc1a3287fd7 -->
+<g id="node67" class="node" pointer-events="visible" data-name="height_in_ce12d76a-1a80-4e70-820e-8fc1a3287fd7">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-73" rx="212.31" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-68.8" font-family="Times,serif" font-size="14.00" style="">height_in_ce12d76a-1a80-4e70-820e-8fc1a3287fd7</text>
+</g>
+<!-- height_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;height_in_ce12d76a&#45;1a80&#45;4e70&#45;820e&#45;8fc1a3287fd7 -->
+<g id="edge58" class="edge" data-name="height_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;height_in_ce12d76a-1a80-4e70-820e-8fc1a3287fd7">
+
+<path fill="none" stroke="black" d="M932.1,-73C952.21,-73 973.99,-73 996.25,-73" style=""/>
+<polygon fill="black" stroke="black" points="996.06,-76.5 1006.06,-73 996.06,-69.5 996.06,-76.5" style=""/>
+</g>
+<!-- Rad_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="node11" class="node" pointer-events="visible" data-name="Rad_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<ellipse fill="pink" stroke="black" cx="2152.46" cy="-1933" rx="66.09" ry="39.7" style=""/>
+<text text-anchor="middle" x="2152.46" y="-1939" font-family="Times,serif" font-size="20.00" style="">Rad</text>
+<text text-anchor="middle" x="2152.46" y="-1915" font-family="Times,serif" font-size="20.00" style="">(Radians)</text>
+</g>
+<!-- R_out_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="node13" class="node" pointer-events="visible" data-name="R_out_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<ellipse fill="lightgrey" stroke="black" cx="2590.27" cy="-1933" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="2590.27" y="-1937.2" font-family="Times,serif" font-size="14.00" style="">R </text>
+<text text-anchor="middle" x="2590.27" y="-1920.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- Rad_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b&#45;&gt;R_out_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="edge11" class="edge" data-name="Rad_59cb3897-f400-43f3-9461-0701f2ceb61b-&gt;R_out_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<path fill="none" stroke="black" d="M2218.7,-1933C2294.79,-1933 2420.78,-1933 2504.42,-1933" style=""/>
+<polygon fill="black" stroke="black" points="2504.41,-1936.5 2514.41,-1933 2504.41,-1929.5 2504.41,-1936.5" style=""/>
+</g>
+<!-- D_in_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="node12" class="node" pointer-events="visible" data-name="D_in_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<ellipse fill="lightgrey" stroke="black" cx="1703.94" cy="-1927" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1931.2" font-family="Times,serif" font-size="14.00" style="">D </text>
+<text text-anchor="middle" x="1703.94" y="-1914.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- D_in_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b&#45;&gt;Rad_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="edge10" class="edge" data-name="D_in_59cb3897-f400-43f3-9461-0701f2ceb61b-&gt;Rad_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<path fill="none" stroke="black" d="M1778.18,-1927.98C1859.94,-1929.08 1991.66,-1930.85 2074.78,-1931.97" style=""/>
+<polygon fill="black" stroke="black" points="2074.62,-1935.47 2084.67,-1932.1 2074.72,-1928.47 2074.62,-1935.47" style=""/>
+</g>
+<!-- angle_in_f56f9b56&#45;c31d&#45;41c4&#45;92f4&#45;443aa9f0d1f1 -->
+<g id="node69" class="node" pointer-events="visible" data-name="angle_in_f56f9b56-c31d-41c4-92f4-443aa9f0d1f1">
+
+<ellipse fill="none" stroke="black" cx="3029.69" cy="-1933" rx="206.02" ry="18" style=""/>
+<text text-anchor="middle" x="3029.69" y="-1928.8" font-family="Times,serif" font-size="14.00" style="">angle_in_f56f9b56-c31d-41c4-92f4-443aa9f0d1f1</text>
+</g>
+<!-- R_out_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b&#45;&gt;angle_in_f56f9b56&#45;c31d&#45;41c4&#45;92f4&#45;443aa9f0d1f1 -->
+<g id="edge60" class="edge" data-name="R_out_59cb3897-f400-43f3-9461-0701f2ceb61b-&gt;angle_in_f56f9b56-c31d-41c4-92f4-443aa9f0d1f1">
+
+<path fill="none" stroke="black" d="M2664.49,-1933C2705.47,-1933 2758.93,-1933 2812.21,-1933" style=""/>
+<polygon fill="black" stroke="black" points="2812.06,-1936.5 2822.06,-1933 2812.06,-1929.5 2812.06,-1936.5" style=""/>
+</g>
+<!-- Rad_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="node14" class="node" pointer-events="visible" data-name="Rad_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<ellipse fill="pink" stroke="black" cx="2152.46" cy="-1610" rx="66.09" ry="39.7" style=""/>
+<text text-anchor="middle" x="2152.46" y="-1616" font-family="Times,serif" font-size="20.00" style="">Rad</text>
+<text text-anchor="middle" x="2152.46" y="-1592" font-family="Times,serif" font-size="20.00" style="">(Radians)</text>
+</g>
+<!-- R_out_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="node16" class="node" pointer-events="visible" data-name="R_out_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<ellipse fill="lightgrey" stroke="black" cx="2590.27" cy="-1604" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="2590.27" y="-1608.2" font-family="Times,serif" font-size="14.00" style="">R </text>
+<text text-anchor="middle" x="2590.27" y="-1591.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- Rad_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d&#45;&gt;R_out_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="edge13" class="edge" data-name="Rad_2a326121-470f-4022-9477-ef4b47e3853d-&gt;R_out_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<path fill="none" stroke="black" d="M2218.7,-1609.1C2294.79,-1608.05 2420.78,-1606.32 2504.42,-1605.17" style=""/>
+<polygon fill="black" stroke="black" points="2504.46,-1608.67 2514.41,-1605.03 2504.37,-1601.67 2504.46,-1608.67" style=""/>
+</g>
+<!-- D_in_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="node15" class="node" pointer-events="visible" data-name="D_in_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<ellipse fill="lightgrey" stroke="black" cx="1703.94" cy="-1604" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1608.2" font-family="Times,serif" font-size="14.00" style="">D </text>
+<text text-anchor="middle" x="1703.94" y="-1591.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- D_in_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d&#45;&gt;Rad_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="edge12" class="edge" data-name="D_in_2a326121-470f-4022-9477-ef4b47e3853d-&gt;Rad_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<path fill="none" stroke="black" d="M1778.18,-1604.98C1859.94,-1606.08 1991.66,-1607.85 2074.78,-1608.97" style=""/>
+<polygon fill="black" stroke="black" points="2074.62,-1612.47 2084.67,-1609.1 2074.72,-1605.47 2074.62,-1612.47" style=""/>
+</g>
+<!-- angle_in_faefa20b&#45;47cb&#45;47ef&#45;a098&#45;7bde9623171e -->
+<g id="node71" class="node" pointer-events="visible" data-name="angle_in_faefa20b-47cb-47ef-a098-7bde9623171e">
+
+<ellipse fill="none" stroke="black" cx="3029.69" cy="-1604" rx="207.13" ry="18" style=""/>
+<text text-anchor="middle" x="3029.69" y="-1599.8" font-family="Times,serif" font-size="14.00" style="">angle_in_faefa20b-47cb-47ef-a098-7bde9623171e</text>
+</g>
+<!-- R_out_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d&#45;&gt;angle_in_faefa20b&#45;47cb&#45;47ef&#45;a098&#45;7bde9623171e -->
+<g id="edge62" class="edge" data-name="R_out_2a326121-470f-4022-9477-ef4b47e3853d-&gt;angle_in_faefa20b-47cb-47ef-a098-7bde9623171e">
+
+<path fill="none" stroke="black" d="M2664.49,-1604C2705.13,-1604 2758.04,-1604 2810.88,-1604" style=""/>
+<polygon fill="black" stroke="black" points="2810.64,-1607.5 2820.64,-1604 2810.64,-1600.5 2810.64,-1607.5" style=""/>
+</g>
+<!-- Crv_a4599816&#45;cbc1&#45;40cb&#45;af2f&#45;95c15603b142 -->
+<g id="node17" class="node" pointer-events="visible" data-name="Crv_a4599816-cbc1-40cb-af2f-95c15603b142">
+
+<ellipse fill="pink" stroke="black" cx="2152.46" cy="-1448" rx="142.45" ry="56.64" style=""/>
+<text text-anchor="middle" x="2152.46" y="-1466" font-family="Times,serif" font-size="20.00" style="">Crv</text>
+<text text-anchor="middle" x="2152.46" y="-1442" font-family="Times,serif" font-size="20.00" style="">(Curve)</text>
+<text text-anchor="middle" x="2152.46" y="-1418" font-family="Times,serif" font-size="20.00" style="">Value: Line-like Curve</text>
+</g>
+<!-- Crv_a4599816&#45;cbc1&#45;40cb&#45;af2f&#45;95c15603b142&#45;&gt;R_out_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="edge14" class="edge" data-name="Crv_a4599816-cbc1-40cb-af2f-95c15603b142-&gt;R_out_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<path fill="none" stroke="black" d="M2259.24,-1485.86C2341.91,-1515.46 2454.18,-1555.64 2524.15,-1580.69" style=""/>
+<polygon fill="black" stroke="black" points="2522.56,-1583.84 2533.16,-1583.91 2524.92,-1577.25 2522.56,-1583.84" style=""/>
+</g>
+<!-- C_in_203c4544&#45;9158&#45;4df0&#45;8773&#45;2a0f2bd3bf50 -->
+<g id="node72" class="node" pointer-events="visible" data-name="C_in_203c4544-9158-4df0-8773-2a0f2bd3bf50">
+
+<ellipse fill="none" stroke="black" cx="2590.27" cy="-1448" rx="196.2" ry="18" style=""/>
+<text text-anchor="middle" x="2590.27" y="-1443.8" font-family="Times,serif" font-size="14.00" style="">C_in_203c4544-9158-4df0-8773-2a0f2bd3bf50</text>
+</g>
+<!-- Crv_a4599816&#45;cbc1&#45;40cb&#45;af2f&#45;95c15603b142&#45;&gt;C_in_203c4544&#45;9158&#45;4df0&#45;8773&#45;2a0f2bd3bf50 -->
+<g id="edge63" class="edge" data-name="Crv_a4599816-cbc1-40cb-af2f-95c15603b142-&gt;C_in_203c4544-9158-4df0-8773-2a0f2bd3bf50">
+
+<path fill="none" stroke="black" d="M2295.26,-1448C2323.13,-1448 2352.9,-1448 2382.4,-1448" style=""/>
+<polygon fill="black" stroke="black" points="2382.17,-1451.5 2392.17,-1448 2382.17,-1444.5 2382.17,-1451.5" style=""/>
+</g>
+<!-- Flip_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="node18" class="node" pointer-events="visible" data-name="Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-2087" rx="81.75" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-2093" font-family="Times,serif" font-size="20.00" style="">Flip</text>
+<text text-anchor="middle" x="827.47" y="-2069" font-family="Times,serif" font-size="20.00" style="">(Flip Curve)</text>
+</g>
+<!-- C_out_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="node21" class="node" pointer-events="visible" data-name="C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2048" rx="65.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2052.2" font-family="Times,serif" font-size="14.00" style="">C </text>
+<text text-anchor="middle" x="1220.01" y="-2035.4" font-family="Times,serif" font-size="14.00" style="">Param_Curve</text>
+</g>
+<!-- Flip_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895&#45;&gt;C_out_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="edge17" class="edge" data-name="Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895-&gt;C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<path fill="none" stroke="black" d="M907.97,-2079.06C976.91,-2072.18 1075.98,-2062.28 1143.68,-2055.52" style=""/>
+<polygon fill="black" stroke="black" points="1143.99,-2059.01 1153.59,-2054.53 1143.29,-2052.04 1143.99,-2059.01" style=""/>
+</g>
+<!-- F_out_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="node22" class="node" pointer-events="visible" data-name="F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2125" rx="74.59" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2129.2" font-family="Times,serif" font-size="14.00" style="">F </text>
+<text text-anchor="middle" x="1220.01" y="-2112.4" font-family="Times,serif" font-size="14.00" style="">Param_Boolean</text>
+</g>
+<!-- Flip_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895&#45;&gt;F_out_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="edge18" class="edge" data-name="Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895-&gt;F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<path fill="none" stroke="black" d="M907.97,-2094.74C974.28,-2101.19 1068.45,-2110.35 1135.78,-2116.9" style=""/>
+<polygon fill="black" stroke="black" points="1135.38,-2120.38 1145.68,-2117.86 1136.06,-2113.41 1135.38,-2120.38" style=""/>
+</g>
+<!-- C_in_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="node19" class="node" pointer-events="visible" data-name="C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2125" rx="65.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2129.2" font-family="Times,serif" font-size="14.00" style="">C </text>
+<text text-anchor="middle" x="576.78" y="-2112.4" font-family="Times,serif" font-size="14.00" style="">Param_Curve</text>
+</g>
+<!-- C_in_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895&#45;&gt;Flip_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="edge15" class="edge" data-name="C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895-&gt;Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<path fill="none" stroke="black" d="M639.57,-2115.56C669.17,-2111.04 705.16,-2105.54 737.62,-2100.58" style=""/>
+<polygon fill="black" stroke="black" points="738.09,-2104.04 747.45,-2099.07 737.03,-2097.13 738.09,-2104.04" style=""/>
+</g>
+<!-- G_in_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="node20" class="node" pointer-events="visible" data-name="G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2048" rx="65.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2052.2" font-family="Times,serif" font-size="14.00" style="">G </text>
+<text text-anchor="middle" x="576.78" y="-2035.4" font-family="Times,serif" font-size="14.00" style="">Param_Curve</text>
+</g>
+<!-- G_in_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895&#45;&gt;Flip_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="edge16" class="edge" data-name="G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895-&gt;Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<path fill="none" stroke="black" d="M639.57,-2057.69C669.3,-2062.35 705.47,-2068.03 738.05,-2073.13" style=""/>
+<polygon fill="black" stroke="black" points="737.48,-2076.59 747.91,-2074.68 738.57,-2069.67 737.48,-2076.59" style=""/>
+</g>
+<!-- Line_in_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="node74" class="node" pointer-events="visible" data-name="Line_in_6c767123-f309-40da-af83-09b32ece5832">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-2048" rx="206.59" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2043.8" font-family="Times,serif" font-size="14.00" style="">Line_in_6c767123-f309-40da-af83-09b32ece5832</text>
+</g>
+<!-- C_out_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895&#45;&gt;Line_in_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="edge65" class="edge" data-name="C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895-&gt;Line_in_6c767123-f309-40da-af83-09b32ece5832">
+
+<path fill="none" stroke="black" d="M1286.26,-2048C1337.99,-2048 1413.4,-2048 1485.89,-2048" style=""/>
+<polygon fill="black" stroke="black" points="1485.51,-2051.5 1495.51,-2048 1485.51,-2044.5 1485.51,-2051.5" style=""/>
+</g>
+<!-- XY_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="node23" class="node" pointer-events="visible" data-name="XY_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-2519" rx="76.23" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-2525" font-family="Times,serif" font-size="20.00" style="">XY</text>
+<text text-anchor="middle" x="827.47" y="-2501" font-family="Times,serif" font-size="20.00" style="">(XY Plane)</text>
+</g>
+<!-- P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="node25" class="node" pointer-events="visible" data-name="P_out_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2522" rx="63.59" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2526.2" font-family="Times,serif" font-size="14.00" style="">P </text>
+<text text-anchor="middle" x="1220.01" y="-2509.4" font-family="Times,serif" font-size="14.00" style="">Param_Plane</text>
+</g>
+<!-- XY_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570&#45;&gt;P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="edge20" class="edge" data-name="XY_cdffa07a-a8b6-4077-978a-eda881b24570-&gt;P_out_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<path fill="none" stroke="black" d="M903.77,-2519.58C973.27,-2520.11 1075.87,-2520.9 1144.97,-2521.43" style=""/>
+<polygon fill="black" stroke="black" points="1144.64,-2524.93 1154.67,-2521.51 1144.7,-2517.93 1144.64,-2524.93" style=""/>
+</g>
+<!-- O_in_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="node24" class="node" pointer-events="visible" data-name="O_in_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2519" rx="62.42" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2523.2" font-family="Times,serif" font-size="14.00" style="">O </text>
+<text text-anchor="middle" x="576.78" y="-2506.4" font-family="Times,serif" font-size="14.00" style="">Param_Point</text>
+</g>
+<!-- O_in_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570&#45;&gt;XY_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="edge19" class="edge" data-name="O_in_cdffa07a-a8b6-4077-978a-eda881b24570-&gt;XY_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<path fill="none" stroke="black" d="M639.57,-2519C669.68,-2519 706.41,-2519 739.31,-2519" style=""/>
+<polygon fill="black" stroke="black" points="739.26,-2522.5 749.26,-2519 739.26,-2515.5 739.26,-2522.5" style=""/>
+</g>
+<!-- Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="node26" class="node" pointer-events="visible" data-name="Line_6c767123-f309-40da-af83-09b32ece5832">
+
+<ellipse fill="pink" stroke="black" cx="1703.94" cy="-2612" rx="171.89" ry="39.7" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2618" font-family="Times,serif" font-size="20.00" style="">Line</text>
+<text text-anchor="middle" x="1703.94" y="-2594" font-family="Times,serif" font-size="20.00" style="">Value: Line(L:3000.00 mm)</text>
+</g>
+<!-- P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570&#45;&gt;Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="edge21" class="edge" data-name="P_out_cdffa07a-a8b6-4077-978a-eda881b24570-&gt;Line_6c767123-f309-40da-af83-09b32ece5832">
+
+<path fill="none" stroke="black" d="M1275.36,-2536.61C1340.59,-2550.94 1452.83,-2572.53 1545.94,-2589.05" style=""/>
+<polygon fill="black" stroke="black" points="1545.25,-2592.48 1555.71,-2590.78 1546.47,-2585.59 1545.25,-2592.48" style=""/>
+</g>
+<!-- Vec_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="node27" class="node" pointer-events="visible" data-name="Vec_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<ellipse fill="pink" stroke="black" cx="1703.94" cy="-2393" rx="120.16" ry="56.64" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2411" font-family="Times,serif" font-size="20.00" style="">Vec</text>
+<text text-anchor="middle" x="1703.94" y="-2387" font-family="Times,serif" font-size="20.00" style="">(Vector)</text>
+<text text-anchor="middle" x="1703.94" y="-2363" font-family="Times,serif" font-size="20.00" style="">Value: {0,0,-3000}</text>
+</g>
+<!-- P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570&#45;&gt;Vec_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="edge23" class="edge" data-name="P_out_cdffa07a-a8b6-4077-978a-eda881b24570-&gt;Vec_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<path fill="none" stroke="black" d="M1279.15,-2511.02C1356.84,-2492.65 1496.07,-2455.77 1593.68,-2428.01" style=""/>
+<polygon fill="black" stroke="black" points="1594.37,-2431.45 1603.02,-2425.34 1592.45,-2424.72 1594.37,-2431.45" style=""/>
+</g>
+<!-- P_in_14604b89&#45;1acc&#45;4ddd&#45;bde3&#45;132487b5fdfe -->
+<g id="node76" class="node" pointer-events="visible" data-name="P_in_14604b89-1acc-4ddd-bde3-132487b5fdfe">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-2525" rx="195.03" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2520.8" font-family="Times,serif" font-size="14.00" style="">P_in_14604b89-1acc-4ddd-bde3-132487b5fdfe</text>
+</g>
+<!-- P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570&#45;&gt;P_in_14604b89&#45;1acc&#45;4ddd&#45;bde3&#45;132487b5fdfe -->
+<g id="edge67" class="edge" data-name="P_out_cdffa07a-a8b6-4077-978a-eda881b24570-&gt;P_in_14604b89-1acc-4ddd-bde3-132487b5fdfe">
+
+<path fill="none" stroke="black" d="M1284.02,-2522.39C1338.55,-2522.73 1420.56,-2523.24 1497.6,-2523.72" style=""/>
+<polygon fill="black" stroke="black" points="1497.39,-2527.22 1507.42,-2523.78 1497.44,-2520.22 1497.39,-2527.22" style=""/>
+</g>
+<!-- Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832&#45;&gt;P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="edge22" class="edge" data-name="Line_6c767123-f309-40da-af83-09b32ece5832-&gt;P_out_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<path fill="none" stroke="black" d="M1582.42,-2583.55C1491.33,-2565.2 1369.35,-2542.74 1292.98,-2530.46" style=""/>
+<polygon fill="black" stroke="black" points="1293.97,-2527.08 1283.54,-2528.96 1292.87,-2533.99 1293.97,-2527.08" style=""/>
+</g>
+<!-- Vec_in_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="node78" class="node" pointer-events="visible" data-name="Vec_in_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<ellipse fill="none" stroke="black" cx="2152.46" cy="-2639" rx="205.93" ry="18" style=""/>
+<text text-anchor="middle" x="2152.46" y="-2634.8" font-family="Times,serif" font-size="14.00" style="">Vec_in_be341bd1-f76a-45e9-a82c-b36bca905729</text>
+</g>
+<!-- Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832&#45;&gt;Vec_in_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="edge69" class="edge" data-name="Line_6c767123-f309-40da-af83-09b32ece5832-&gt;Vec_in_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<path fill="none" stroke="black" d="M1870.57,-2622.02C1903.02,-2623.98 1937.21,-2626.04 1970.13,-2628.04" style=""/>
+<polygon fill="black" stroke="black" points="1969.54,-2631.51 1979.73,-2628.62 1969.96,-2624.52 1969.54,-2631.51" style=""/>
+</g>
+<!-- C_in_b722fce8&#45;ba85&#45;4bce&#45;968f&#45;6814e52f095b -->
+<g id="node79" class="node" pointer-events="visible" data-name="C_in_b722fce8-ba85-4bce-968f-6814e52f095b">
+
+<ellipse fill="none" stroke="black" cx="2152.46" cy="-2585" rx="193.86" ry="18" style=""/>
+<text text-anchor="middle" x="2152.46" y="-2580.8" font-family="Times,serif" font-size="14.00" style="">C_in_b722fce8-ba85-4bce-968f-6814e52f095b</text>
+</g>
+<!-- Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832&#45;&gt;C_in_b722fce8&#45;ba85&#45;4bce&#45;968f&#45;6814e52f095b -->
+<g id="edge70" class="edge" data-name="Line_6c767123-f309-40da-af83-09b32ece5832-&gt;C_in_b722fce8-ba85-4bce-968f-6814e52f095b">
+
+<path fill="none" stroke="black" d="M1870.57,-2601.98C1905.29,-2599.89 1942,-2597.67 1977.02,-2595.55" style=""/>
+<polygon fill="black" stroke="black" points="1977.04,-2599.05 1986.81,-2594.96 1976.62,-2592.07 1977.04,-2599.05" style=""/>
+</g>
+<!-- Vec_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729&#45;&gt;P_out_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="edge24" class="edge" data-name="Vec_be341bd1-f76a-45e9-a82c-b36bca905729-&gt;P_out_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<path fill="none" stroke="black" d="M1594.11,-2416.38C1497.61,-2440.58 1360.18,-2477.73 1281.87,-2501.04" style=""/>
+<polygon fill="black" stroke="black" points="1281.25,-2497.58 1272.67,-2503.8 1283.26,-2504.28 1281.25,-2497.58" style=""/>
+</g>
+<!-- V_in_8f44156f&#45;3e61&#45;4fd8&#45;8fb5&#45;92d404bb3398 -->
+<g id="node81" class="node" pointer-events="visible" data-name="V_in_8f44156f-3e61-4fd8-8fb5-92d404bb3398">
+
+<ellipse fill="none" stroke="black" cx="2152.46" cy="-2393" rx="195.62" ry="18" style=""/>
+<text text-anchor="middle" x="2152.46" y="-2388.8" font-family="Times,serif" font-size="14.00" style="">V_in_8f44156f-3e61-4fd8-8fb5-92d404bb3398</text>
+</g>
+<!-- Vec_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729&#45;&gt;V_in_8f44156f&#45;3e61&#45;4fd8&#45;8fb5&#45;92d404bb3398 -->
+<g id="edge72" class="edge" data-name="Vec_be341bd1-f76a-45e9-a82c-b36bca905729-&gt;V_in_8f44156f-3e61-4fd8-8fb5-92d404bb3398">
+
+<path fill="none" stroke="black" d="M1824.31,-2393C1861.58,-2393 1903.82,-2393 1945.27,-2393" style=""/>
+<polygon fill="black" stroke="black" points="1945.14,-2396.5 1955.14,-2393 1945.14,-2389.5 1945.14,-2396.5" style=""/>
+</g>
+<!-- Move_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="node28" class="node" pointer-events="visible" data-name="Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-2753" rx="44.12" ry="22.76" style=""/>
+<text text-anchor="middle" x="827.47" y="-2747" font-family="Times,serif" font-size="20.00" style="">Move</text>
+</g>
+<!-- G_out_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="node31" class="node" pointer-events="visible" data-name="G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2715" rx="81.27" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2719.2" font-family="Times,serif" font-size="14.00" style="">G </text>
+<text text-anchor="middle" x="1220.01" y="-2702.4" font-family="Times,serif" font-size="14.00" style="">Param_Geometry</text>
+</g>
+<!-- Move_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c&#45;&gt;G_out_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge27" class="edge" data-name="Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c-&gt;G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M871.01,-2748.86C932.84,-2742.84 1049.01,-2731.54 1130.04,-2723.66" style=""/>
+<polygon fill="black" stroke="black" points="1130.11,-2727.17 1139.73,-2722.71 1129.44,-2720.2 1130.11,-2727.17" style=""/>
+</g>
+<!-- X_out_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="node32" class="node" pointer-events="visible" data-name="X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2792" rx="83.17" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2796.2" font-family="Times,serif" font-size="14.00" style="">X </text>
+<text text-anchor="middle" x="1220.01" y="-2779.4" font-family="Times,serif" font-size="14.00" style="">Param_Transform</text>
+</g>
+<!-- Move_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c&#45;&gt;X_out_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge28" class="edge" data-name="Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c-&gt;X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M871.01,-2757.25C932.47,-2763.39 1047.59,-2774.88 1128.55,-2782.97" style=""/>
+<polygon fill="black" stroke="black" points="1127.94,-2786.42 1138.24,-2783.93 1128.63,-2779.46 1127.94,-2786.42" style=""/>
+</g>
+<!-- G_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="node29" class="node" pointer-events="visible" data-name="G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2792" rx="81.27" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2796.2" font-family="Times,serif" font-size="14.00" style="">G </text>
+<text text-anchor="middle" x="576.78" y="-2779.4" font-family="Times,serif" font-size="14.00" style="">Param_Geometry</text>
+</g>
+<!-- G_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c&#45;&gt;Move_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge25" class="edge" data-name="G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c-&gt;Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M652.06,-2780.35C691.19,-2774.21 738.26,-2766.83 773.64,-2761.28" style=""/>
+<polygon fill="black" stroke="black" points="773.85,-2764.79 783.19,-2759.79 772.77,-2757.88 773.85,-2764.79" style=""/>
+</g>
+<!-- T_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="node30" class="node" pointer-events="visible" data-name="T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2715" rx="68.47" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2719.2" font-family="Times,serif" font-size="14.00" style="">T </text>
+<text text-anchor="middle" x="576.78" y="-2702.4" font-family="Times,serif" font-size="14.00" style="">Param_Vector</text>
+</g>
+<!-- T_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c&#45;&gt;Move_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge26" class="edge" data-name="T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c-&gt;Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M641.82,-2724.79C682.82,-2731.05 735.36,-2739.08 773.9,-2744.97" style=""/>
+<polygon fill="black" stroke="black" points="772.97,-2748.37 783.39,-2746.42 774.03,-2741.45 772.97,-2748.37" style=""/>
+</g>
+<!-- O_in_a04be74e&#45;9644&#45;49e2&#45;8fa4&#45;2b6e7bfa1fe0 -->
+<g id="node84" class="node" pointer-events="visible" data-name="O_in_a04be74e-9644-49e2-8fa4-2b6e7bfa1fe0">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-2715" rx="193.25" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2710.8" font-family="Times,serif" font-size="14.00" style="">O_in_a04be74e-9644-49e2-8fa4-2b6e7bfa1fe0</text>
+</g>
+<!-- G_out_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c&#45;&gt;O_in_a04be74e&#45;9644&#45;49e2&#45;8fa4&#45;2b6e7bfa1fe0 -->
+<g id="edge75" class="edge" data-name="G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c-&gt;O_in_a04be74e-9644-49e2-8fa4-2b6e7bfa1fe0">
+
+<path fill="none" stroke="black" d="M1301.68,-2715C1355.79,-2715 1429.64,-2715 1499.24,-2715" style=""/>
+<polygon fill="black" stroke="black" points="1498.86,-2718.5 1508.86,-2715 1498.86,-2711.5 1498.86,-2718.5" style=""/>
+</g>
+<!-- End_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="node33" class="node" pointer-events="visible" data-name="End_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<ellipse fill="pink" stroke="black" cx="2152.46" cy="-2231" rx="82.34" ry="39.7" style=""/>
+<text text-anchor="middle" x="2152.46" y="-2237" font-family="Times,serif" font-size="20.00" style="">End</text>
+<text text-anchor="middle" x="2152.46" y="-2213" font-family="Times,serif" font-size="20.00" style="">(End Points)</text>
+</g>
+<!-- S_out_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="node35" class="node" pointer-events="visible" data-name="S_out_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<ellipse fill="lightgrey" stroke="black" cx="2590.27" cy="-2164" rx="62.42" ry="29.33" style=""/>
+<text text-anchor="middle" x="2590.27" y="-2168.2" font-family="Times,serif" font-size="14.00" style="">S </text>
+<text text-anchor="middle" x="2590.27" y="-2151.4" font-family="Times,serif" font-size="14.00" style="">Param_Point</text>
+</g>
+<!-- End_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f&#45;&gt;S_out_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="edge30" class="edge" data-name="End_71ee981e-b545-4cb0-907c-8955b015922f-&gt;S_out_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<path fill="none" stroke="black" d="M2231.37,-2219.02C2313.17,-2206.45 2440.59,-2186.86 2519.28,-2174.76" style=""/>
+<polygon fill="black" stroke="black" points="2519.68,-2178.24 2529.03,-2173.26 2518.61,-2171.32 2519.68,-2178.24" style=""/>
+</g>
+<!-- E_out_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="node36" class="node" pointer-events="visible" data-name="E_out_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<ellipse fill="lightgrey" stroke="black" cx="2590.27" cy="-2241" rx="62.42" ry="29.33" style=""/>
+<text text-anchor="middle" x="2590.27" y="-2245.2" font-family="Times,serif" font-size="14.00" style="">E </text>
+<text text-anchor="middle" x="2590.27" y="-2228.4" font-family="Times,serif" font-size="14.00" style="">Param_Point</text>
+</g>
+<!-- End_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f&#45;&gt;E_out_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="edge31" class="edge" data-name="End_71ee981e-b545-4cb0-907c-8955b015922f-&gt;E_out_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<path fill="none" stroke="black" d="M2235.18,-2232.88C2316.11,-2234.73 2438.87,-2237.55 2516.52,-2239.33" style=""/>
+<polygon fill="black" stroke="black" points="2516.05,-2242.82 2526.13,-2239.55 2516.21,-2235.82 2516.05,-2242.82" style=""/>
+</g>
+<!-- C_in_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="node34" class="node" pointer-events="visible" data-name="C_in_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<ellipse fill="lightgrey" stroke="black" cx="1703.94" cy="-2236" rx="65.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2240.2" font-family="Times,serif" font-size="14.00" style="">C </text>
+<text text-anchor="middle" x="1703.94" y="-2223.4" font-family="Times,serif" font-size="14.00" style="">Param_Curve</text>
+</g>
+<!-- C_in_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f&#45;&gt;End_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="edge29" class="edge" data-name="C_in_71ee981e-b545-4cb0-907c-8955b015922f-&gt;End_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<path fill="none" stroke="black" d="M1770.35,-2235.27C1846.39,-2234.42 1972.44,-2233 2058.6,-2232.04" style=""/>
+<polygon fill="black" stroke="black" points="2058.48,-2235.54 2068.44,-2231.93 2058.41,-2228.54 2058.48,-2235.54" style=""/>
+</g>
+<!-- G_in_e9ac483a&#45;b072&#45;430c&#45;9ab2&#45;6176092b2b5e -->
+<g id="node85" class="node" pointer-events="visible" data-name="G_in_e9ac483a-b072-430c-9ab2-6176092b2b5e">
+
+<ellipse fill="none" stroke="black" cx="3029.69" cy="-2164" rx="198.52" ry="18" style=""/>
+<text text-anchor="middle" x="3029.69" y="-2159.8" font-family="Times,serif" font-size="14.00" style="">G_in_e9ac483a-b072-430c-9ab2-6176092b2b5e</text>
+</g>
+<!-- S_out_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f&#45;&gt;G_in_e9ac483a&#45;b072&#45;430c&#45;9ab2&#45;6176092b2b5e -->
+<g id="edge77" class="edge" data-name="S_out_71ee981e-b545-4cb0-907c-8955b015922f-&gt;G_in_e9ac483a-b072-430c-9ab2-6176092b2b5e">
+
+<path fill="none" stroke="black" d="M2653.02,-2164C2696.91,-2164 2758.64,-2164 2819.39,-2164" style=""/>
+<polygon fill="black" stroke="black" points="2819.21,-2167.5 2829.21,-2164 2819.21,-2160.5 2819.21,-2167.5" style=""/>
+</g>
+<!-- Amp_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="node37" class="node" pointer-events="visible" data-name="Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-1083" rx="81.45" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-1089" font-family="Times,serif" font-size="20.00" style="">Amp</text>
+<text text-anchor="middle" x="827.47" y="-1065" font-family="Times,serif" font-size="20.00" style="">(Amplitude)</text>
+</g>
+<!-- V_out_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="node40" class="node" pointer-events="visible" data-name="V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-1083" rx="68.47" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-1087.2" font-family="Times,serif" font-size="14.00" style="">V </text>
+<text text-anchor="middle" x="1220.01" y="-1070.4" font-family="Times,serif" font-size="14.00" style="">Param_Vector</text>
+</g>
+<!-- Amp_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8&#45;&gt;V_out_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="edge34" class="edge" data-name="Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8-&gt;V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<path fill="none" stroke="black" d="M909.39,-1083C976.97,-1083 1072.78,-1083 1139.86,-1083" style=""/>
+<polygon fill="black" stroke="black" points="1139.69,-1086.5 1149.69,-1083 1139.69,-1079.5 1139.69,-1086.5" style=""/>
+</g>
+<!-- V_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="node38" class="node" pointer-events="visible" data-name="V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-1044" rx="68.47" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-1048.2" font-family="Times,serif" font-size="14.00" style="">V </text>
+<text text-anchor="middle" x="576.78" y="-1031.4" font-family="Times,serif" font-size="14.00" style="">Param_Vector</text>
+</g>
+<!-- V_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8&#45;&gt;Amp_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="edge32" class="edge" data-name="V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8-&gt;Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<path fill="none" stroke="black" d="M641.5,-1053.99C670.98,-1058.62 706.48,-1064.18 738.46,-1069.2" style=""/>
+<polygon fill="black" stroke="black" points="737.69,-1072.62 748.12,-1070.71 738.78,-1065.71 737.69,-1072.62" style=""/>
+</g>
+<!-- A_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="node39" class="node" pointer-events="visible" data-name="A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-1121" rx="73.99" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-1125.2" font-family="Times,serif" font-size="14.00" style="">A </text>
+<text text-anchor="middle" x="576.78" y="-1108.4" font-family="Times,serif" font-size="14.00" style="">Param_Number</text>
+</g>
+<!-- A_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8&#45;&gt;Amp_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="edge33" class="edge" data-name="A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8-&gt;Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<path fill="none" stroke="black" d="M646.39,-1110.52C674.69,-1106.19 707.85,-1101.12 737.95,-1096.53" style=""/>
+<polygon fill="black" stroke="black" points="738.46,-1099.99 747.82,-1095.02 737.41,-1093.07 738.46,-1099.99" style=""/>
+</g>
+<!-- T_in_aec4e145&#45;4a90&#45;4969&#45;9f1d&#45;9a4b07eb534b -->
+<g id="node88" class="node" pointer-events="visible" data-name="T_in_aec4e145-4a90-4969-9f1d-9a4b07eb534b">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-1083" rx="196.14" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1078.8" font-family="Times,serif" font-size="14.00" style="">T_in_aec4e145-4a90-4969-9f1d-9a4b07eb534b</text>
+</g>
+<!-- V_out_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8&#45;&gt;T_in_aec4e145&#45;4a90&#45;4969&#45;9f1d&#45;9a4b07eb534b -->
+<g id="edge80" class="edge" data-name="V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8-&gt;T_in_aec4e145-4a90-4969-9f1d-9a4b07eb534b">
+
+<path fill="none" stroke="black" d="M1288.79,-1083C1342.85,-1083 1421.58,-1083 1495.92,-1083" style=""/>
+<polygon fill="black" stroke="black" points="1495.82,-1086.5 1505.82,-1083 1495.82,-1079.5 1495.82,-1086.5" style=""/>
+</g>
+<!-- b_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="node41" class="node" pointer-events="visible" data-name="b_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-882" rx="61.67" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-888" font-family="Times,serif" font-size="20.00" style="">b</text>
+<text text-anchor="middle" x="827.47" y="-864" font-family="Times,serif" font-size="20.00" style="">(Cluster)</text>
+</g>
+<!-- base_out_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="node44" class="node" pointer-events="visible" data-name="base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-882" rx="99.04" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-886.2" font-family="Times,serif" font-size="14.00" style="">base </text>
+<text text-anchor="middle" x="1220.01" y="-869.4" font-family="Times,serif" font-size="14.00" style="">Param_GenericObject</text>
+</g>
+<!-- b_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c&#45;&gt;base_out_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="edge37" class="edge" data-name="b_10f0c688-9b64-4a5b-97aa-419aa174c25c-&gt;base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<path fill="none" stroke="black" d="M889.49,-882C948.24,-882 1038.41,-882 1109.59,-882" style=""/>
+<polygon fill="black" stroke="black" points="1109.33,-885.5 1119.33,-882 1109.33,-878.5 1109.33,-885.5" style=""/>
+</g>
+<!-- height_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="node42" class="node" pointer-events="visible" data-name="height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-920" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-924.2" font-family="Times,serif" font-size="14.00" style="">height </text>
+<text text-anchor="middle" x="576.78" y="-907.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- height_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c&#45;&gt;b_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="edge35" class="edge" data-name="height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c-&gt;b_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<path fill="none" stroke="black" d="M665.46,-906.6C695.08,-902.08 727.75,-897.08 755.87,-892.79" style=""/>
+<polygon fill="black" stroke="black" points="756.37,-896.25 765.72,-891.28 755.31,-889.33 756.37,-896.25" style=""/>
+</g>
+<!-- angle_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="node43" class="node" pointer-events="visible" data-name="angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-843" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-847.2" font-family="Times,serif" font-size="14.00" style="">angle </text>
+<text text-anchor="middle" x="576.78" y="-830.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- angle_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c&#45;&gt;b_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="edge36" class="edge" data-name="angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c-&gt;b_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<path fill="none" stroke="black" d="M665.11,-856.7C694.75,-861.34 727.49,-866.48 755.68,-870.9" style=""/>
+<polygon fill="black" stroke="black" points="755.14,-874.36 765.56,-872.45 756.22,-867.44 755.14,-874.36" style=""/>
+</g>
+<!-- R2_in_cfdf18f2&#45;1f81&#45;4d69&#45;805f&#45;d7104398d78c -->
+<g id="node90" class="node" pointer-events="visible" data-name="R2_in_cfdf18f2-1f81-4d69-805f-d7104398d78c">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-882" rx="197.9" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-877.8" font-family="Times,serif" font-size="14.00" style="">R2_in_cfdf18f2-1f81-4d69-805f-d7104398d78c</text>
+</g>
+<!-- base_out_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c&#45;&gt;R2_in_cfdf18f2&#45;1f81&#45;4d69&#45;805f&#45;d7104398d78c -->
+<g id="edge83" class="edge" data-name="base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c-&gt;R2_in_cfdf18f2-1f81-4d69-805f-d7104398d78c">
+
+<path fill="none" stroke="black" d="M1319.41,-882C1369.95,-882 1433.55,-882 1494.35,-882" style=""/>
+<polygon fill="black" stroke="black" points="1494.16,-885.5 1504.16,-882 1494.16,-878.5 1494.16,-885.5" style=""/>
+</g>
+<!-- b_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="node45" class="node" pointer-events="visible" data-name="b_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-1356" rx="61.67" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-1362" font-family="Times,serif" font-size="20.00" style="">b</text>
+<text text-anchor="middle" x="827.47" y="-1338" font-family="Times,serif" font-size="20.00" style="">(Cluster)</text>
+</g>
+<!-- base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="node48" class="node" pointer-events="visible" data-name="base_out_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-1356" rx="99.04" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-1360.2" font-family="Times,serif" font-size="14.00" style="">base </text>
+<text text-anchor="middle" x="1220.01" y="-1343.4" font-family="Times,serif" font-size="14.00" style="">Param_GenericObject</text>
+</g>
+<!-- b_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="edge40" class="edge" data-name="b_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;base_out_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<path fill="none" stroke="black" d="M889.49,-1356C948.24,-1356 1038.41,-1356 1109.59,-1356" style=""/>
+<polygon fill="black" stroke="black" points="1109.33,-1359.5 1119.33,-1356 1109.33,-1352.5 1109.33,-1359.5" style=""/>
+</g>
+<!-- height_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="node46" class="node" pointer-events="visible" data-name="height_in_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-1289" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-1293.2" font-family="Times,serif" font-size="14.00" style="">height </text>
+<text text-anchor="middle" x="576.78" y="-1276.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- height_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;b_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="edge38" class="edge" data-name="height_in_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;b_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<path fill="none" stroke="black" d="M651.05,-1308.74C685.29,-1317.96 725.78,-1328.87 759.23,-1337.89" style=""/>
+<polygon fill="black" stroke="black" points="758.26,-1341.25 768.83,-1340.47 760.08,-1334.49 758.26,-1341.25" style=""/>
+</g>
+<!-- angle_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="node47" class="node" pointer-events="visible" data-name="angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-1366" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-1370.2" font-family="Times,serif" font-size="14.00" style="">angle </text>
+<text text-anchor="middle" x="576.78" y="-1353.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- angle_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;b_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="edge39" class="edge" data-name="angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;b_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<path fill="none" stroke="black" d="M675.35,-1362.08C701.67,-1361.02 729.66,-1359.89 754.31,-1358.9" style=""/>
+<polygon fill="black" stroke="black" points="754.39,-1362.4 764.24,-1358.5 754.11,-1355.41 754.39,-1362.4" style=""/>
+</g>
+<!-- _2f48438c&#45;75c3&#45;443c&#45;a1c8&#45;95eccd8670fc -->
+<g id="node49" class="node" pointer-events="visible" data-name="_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<ellipse fill="pink" stroke="black" cx="1703.94" cy="-1449" rx="73.52" ry="56.64" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1443" font-family="Times,serif" font-size="20.00" style="">(Panel)</text>
+<text text-anchor="middle" x="1703.94" y="-1419" font-family="Times,serif" font-size="20.00" style="">Value: 105</text>
+</g>
+<!-- base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;_2f48438c&#45;75c3&#45;443c&#45;a1c8&#45;95eccd8670fc -->
+<g id="edge41" class="edge" data-name="base_out_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<path fill="none" stroke="black" d="M1303.86,-1371.99C1392.64,-1389.12 1532.69,-1416.15 1621.09,-1433.2" style=""/>
+<polygon fill="black" stroke="black" points="1620.17,-1436.59 1630.65,-1435.05 1621.5,-1429.72 1620.17,-1436.59" style=""/>
+</g>
+<!-- _db3162a4&#45;9892&#45;487b&#45;b2fa&#45;a2d005e3726b -->
+<g id="node50" class="node" pointer-events="visible" data-name="_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<ellipse fill="pink" stroke="black" cx="1703.94" cy="-1772" rx="77.09" ry="56.64" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1766" font-family="Times,serif" font-size="20.00" style="">(Panel)</text>
+<text text-anchor="middle" x="1703.94" y="-1742" font-family="Times,serif" font-size="20.00" style="">Value: 85.4</text>
+</g>
+<!-- base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;_db3162a4&#45;9892&#45;487b&#45;b2fa&#45;a2d005e3726b -->
+<g id="edge42" class="edge" data-name="base_out_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<path fill="none" stroke="black" d="M1283.92,-1378.84C1339.57,-1402.42 1418.38,-1444.75 1461.15,-1508 1510.51,-1581.01 1439.37,-1636.45 1497.15,-1703 1526.91,-1737.29 1574.24,-1754.58 1616.01,-1763.29" style=""/>
+<polygon fill="black" stroke="black" points="1615.09,-1766.67 1625.58,-1765.13 1616.42,-1759.8 1615.09,-1766.67" style=""/>
+</g>
+<!-- _51209a31&#45;00e0&#45;4b05&#45;b172&#45;4c0230265a66 -->
+<g id="node51" class="node" pointer-events="visible" data-name="_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<ellipse fill="pink" stroke="black" cx="1703.94" cy="-1225" rx="140.81" ry="56.64" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1219" font-family="Times,serif" font-size="20.00" style="">(Panel)</text>
+<text text-anchor="middle" x="1703.94" y="-1195" font-family="Times,serif" font-size="20.00" style="">Value: empty structure</text>
+</g>
+<!-- base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;_51209a31&#45;00e0&#45;4b05&#45;b172&#45;4c0230265a66 -->
+<g id="edge43" class="edge" data-name="base_out_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<path fill="none" stroke="black" d="M1293.95,-1336.18C1368.46,-1315.92 1485.67,-1284.06 1575.55,-1259.63" style=""/>
+<polygon fill="black" stroke="black" points="1576.45,-1263.01 1585.19,-1257.01 1574.62,-1256.26 1576.45,-1263.01" style=""/>
+</g>
+<!-- R1_in_9a6edb67&#45;5232&#45;4f02&#45;817f&#45;72a19c5c4284 -->
+<g id="node92" class="node" pointer-events="visible" data-name="R1_in_9a6edb67-5232-4f02-817f-72a19c5c4284">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-1356" rx="200.82" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-1351.8" font-family="Times,serif" font-size="14.00" style="">R1_in_9a6edb67-5232-4f02-817f-72a19c5c4284</text>
+</g>
+<!-- base_out_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a&#45;&gt;R1_in_9a6edb67&#45;5232&#45;4f02&#45;817f&#45;72a19c5c4284 -->
+<g id="edge86" class="edge" data-name="base_out_a6456689-42ae-4206-a7a4-5324d1a4934a-&gt;R1_in_9a6edb67-5232-4f02-817f-72a19c5c4284">
+
+<path fill="none" stroke="black" d="M1319.41,-1356C1369.17,-1356 1431.6,-1356 1491.54,-1356" style=""/>
+<polygon fill="black" stroke="black" points="1491.19,-1359.5 1501.19,-1356 1491.19,-1352.5 1491.19,-1359.5" style=""/>
+</g>
+<!-- Python_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="node52" class="node" pointer-events="visible" data-name="Python_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<ellipse fill="pink" stroke="black" cx="827.47" cy="-2938" rx="115.32" ry="39.7" style=""/>
+<text text-anchor="middle" x="827.47" y="-2944" font-family="Times,serif" font-size="20.00" style="">Python</text>
+<text text-anchor="middle" x="827.47" y="-2920" font-family="Times,serif" font-size="20.00" style="">(GhPython Script)</text>
+</g>
+<!-- out_out_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="node55" class="node" pointer-events="visible" data-name="out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2899" rx="65.51" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2903.2" font-family="Times,serif" font-size="14.00" style="">out </text>
+<text text-anchor="middle" x="1220.01" y="-2886.4" font-family="Times,serif" font-size="14.00" style="">Param_String</text>
+</g>
+<!-- Python_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68&#45;&gt;out_out_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="edge46" class="edge" data-name="Python_6ff0ff7e-a539-4919-acff-d2ed22901e68-&gt;out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<path fill="none" stroke="black" d="M938.82,-2926.98C1004.48,-2920.42 1086.05,-2912.28 1144.21,-2906.47" style=""/>
+<polygon fill="black" stroke="black" points="1144.41,-2909.97 1154.01,-2905.49 1143.72,-2903 1144.41,-2909.97" style=""/>
+</g>
+<!-- graph_out_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="node56" class="node" pointer-events="visible" data-name="graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<ellipse fill="lightgrey" stroke="black" cx="1220.01" cy="-2976" rx="99.04" ry="29.33" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2980.2" font-family="Times,serif" font-size="14.00" style="">graph </text>
+<text text-anchor="middle" x="1220.01" y="-2963.4" font-family="Times,serif" font-size="14.00" style="">Param_GenericObject</text>
+</g>
+<!-- Python_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68&#45;&gt;graph_out_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="edge47" class="edge" data-name="Python_6ff0ff7e-a539-4919-acff-d2ed22901e68-&gt;graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<path fill="none" stroke="black" d="M938.82,-2948.74C993.78,-2954.08 1059.89,-2960.52 1114.09,-2965.79" style=""/>
+<polygon fill="black" stroke="black" points="1113.67,-2969.27 1123.96,-2966.75 1114.34,-2962.3 1113.67,-2969.27" style=""/>
+</g>
+<!-- x_in_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="node53" class="node" pointer-events="visible" data-name="x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2976" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2980.2" font-family="Times,serif" font-size="14.00" style="">x </text>
+<text text-anchor="middle" x="576.78" y="-2963.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- x_in_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68&#45;&gt;Python_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="edge44" class="edge" data-name="x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68-&gt;Python_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<path fill="none" stroke="black" d="M665.46,-2962.6C680.08,-2960.37 695.46,-2958.02 710.66,-2955.7" style=""/>
+<polygon fill="black" stroke="black" points="710.83,-2959.21 720.19,-2954.24 709.77,-2952.29 710.83,-2959.21" style=""/>
+</g>
+<!-- y_in_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="node54" class="node" pointer-events="visible" data-name="y_in_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<ellipse fill="lightgrey" stroke="black" cx="576.78" cy="-2899" rx="99.06" ry="29.33" style=""/>
+<text text-anchor="middle" x="576.78" y="-2903.2" font-family="Times,serif" font-size="14.00" style="">y </text>
+<text text-anchor="middle" x="576.78" y="-2886.4" font-family="Times,serif" font-size="14.00" style="">Param_ScriptVariable</text>
+</g>
+<!-- y_in_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68&#45;&gt;Python_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="edge45" class="edge" data-name="y_in_6ff0ff7e-a539-4919-acff-d2ed22901e68-&gt;Python_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<path fill="none" stroke="black" d="M665.11,-2912.7C679.86,-2915.01 695.38,-2917.44 710.72,-2919.85" style=""/>
+<polygon fill="black" stroke="black" points="709.93,-2923.27 720.35,-2921.36 711.02,-2916.35 709.93,-2923.27" style=""/>
+</g>
+<!-- _in_51209a31&#45;00e0&#45;4b05&#45;b172&#45;4c0230265a66 -->
+<g id="node95" class="node" pointer-events="visible" data-name="_in_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<ellipse fill="none" stroke="black" cx="1703.94" cy="-2976" rx="193.32" ry="18" style=""/>
+<text text-anchor="middle" x="1703.94" y="-2971.8" font-family="Times,serif" font-size="14.00" style="">_in_51209a31-00e0-4b05-b172-4c0230265a66</text>
+</g>
+<!-- graph_out_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68&#45;&gt;_in_51209a31&#45;00e0&#45;4b05&#45;b172&#45;4c0230265a66 -->
+<g id="edge91" class="edge" data-name="graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68-&gt;_in_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<path fill="none" stroke="black" d="M1319.41,-2976C1371.35,-2976 1437.09,-2976 1499.41,-2976" style=""/>
+<polygon fill="black" stroke="black" points="1499.08,-2979.5 1509.08,-2976 1499.08,-2972.5 1499.08,-2979.5" style=""/>
+</g>
+<!-- P_out_051a5905&#45;db7d&#45;4527&#45;bf6a&#45;71f8011ccbfb -->
+<g id="node57" class="node" pointer-events="visible" data-name="P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-403" rx="198.54" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-398.8" font-family="Times,serif" font-size="14.00" style="">P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb</text>
+</g>
+<!-- P_out_051a5905&#45;db7d&#45;4527&#45;bf6a&#45;71f8011ccbfb&#45;&gt;P_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge48" class="edge" data-name="P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb-&gt;P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M419.72,-403C448.81,-403 477.13,-403 501.49,-403" style=""/>
+<polygon fill="black" stroke="black" points="501.24,-406.5 511.24,-403 501.24,-399.5 501.24,-406.5" style=""/>
+</g>
+<!-- base_out_1b6a957c&#45;4f27&#45;4a22&#45;a8dc&#45;2a8d2414a7f4 -->
+<g id="node58" class="node" pointer-events="visible" data-name="base_out_1b6a957c-4f27-4a22-a8dc-2a8d2414a7f4">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-557" rx="210.59" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-552.8" font-family="Times,serif" font-size="14.00" style="">base_out_1b6a957c-4f27-4a22-a8dc-2a8d2414a7f4</text>
+</g>
+<!-- base_out_1b6a957c&#45;4f27&#45;4a22&#45;a8dc&#45;2a8d2414a7f4&#45;&gt;R1_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge49" class="edge" data-name="base_out_1b6a957c-4f27-4a22-a8dc-2a8d2414a7f4-&gt;R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M431.78,-557C452.52,-557 472.63,-557 490.93,-557" style=""/>
+<polygon fill="black" stroke="black" points="490.86,-560.5 500.86,-557 490.86,-553.5 490.86,-560.5" style=""/>
+</g>
+<!-- base_out_456f3f62&#45;e4af&#45;496e&#45;acc2&#45;5c099a9e905e -->
+<g id="node59" class="node" pointer-events="visible" data-name="base_out_456f3f62-e4af-496e-acc2-5c099a9e905e">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-480" rx="207.11" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-475.8" font-family="Times,serif" font-size="14.00" style="">base_out_456f3f62-e4af-496e-acc2-5c099a9e905e</text>
+</g>
+<!-- base_out_456f3f62&#45;e4af&#45;496e&#45;acc2&#45;5c099a9e905e&#45;&gt;R2_in_5ad19c48&#45;1e9f&#45;4067&#45;8bc7&#45;fa66cd4a694e -->
+<g id="edge50" class="edge" data-name="base_out_456f3f62-e4af-496e-acc2-5c099a9e905e-&gt;R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e">
+
+<path fill="none" stroke="black" d="M428.2,-480C450.29,-480 471.75,-480 491.16,-480" style=""/>
+<polygon fill="black" stroke="black" points="491.13,-483.5 501.13,-480 491.13,-476.5 491.13,-483.5" style=""/>
+</g>
+<!-- small_angle_out_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef -->
+<g id="node68" class="node" pointer-events="visible" data-name="small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-1849" rx="241.27" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-1844.8" font-family="Times,serif" font-size="14.00" style="">small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef</text>
+</g>
+<!-- small_angle_out_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef&#45;&gt;D_in_59cb3897&#45;f400&#45;43f3&#45;9461&#45;0701f2ceb61b -->
+<g id="edge59" class="edge" data-name="small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef-&gt;D_in_59cb3897-f400-43f3-9461-0701f2ceb61b">
+
+<path fill="none" stroke="black" d="M1324.1,-1865.69C1413.76,-1880.2 1541.8,-1900.92 1623.65,-1914.17" style=""/>
+<polygon fill="black" stroke="black" points="1622.96,-1917.6 1633.39,-1915.74 1624.07,-1910.69 1622.96,-1917.6" style=""/>
+</g>
+<!-- small_angle_out_d9728bb0&#45;9967&#45;449f&#45;b352&#45;182acd5a7aef&#45;&gt;_db3162a4&#45;9892&#45;487b&#45;b2fa&#45;a2d005e3726b -->
+<g id="edge88" class="edge" data-name="small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef-&gt;_db3162a4-9892-487b-b2fa-a2d005e3726b">
+
+<path fill="none" stroke="black" d="M1324.99,-1832.39C1412.2,-1818.45 1535.26,-1798.79 1616.99,-1785.73" style=""/>
+<polygon fill="black" stroke="black" points="1617.42,-1789.21 1626.74,-1784.17 1616.32,-1782.3 1617.42,-1789.21" style=""/>
+</g>
+<!-- big_angle_out_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5 -->
+<g id="node70" class="node" pointer-events="visible" data-name="big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-1535" rx="235.55" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-1530.8" font-family="Times,serif" font-size="14.00" style="">big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5</text>
+</g>
+<!-- big_angle_out_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5&#45;&gt;D_in_2a326121&#45;470f&#45;4022&#45;9477&#45;ef4b47e3853d -->
+<g id="edge61" class="edge" data-name="big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5-&gt;D_in_2a326121-470f-4022-9477-ef4b47e3853d">
+
+<path fill="none" stroke="black" d="M1334,-1551.18C1422.57,-1563.86 1543.63,-1581.19 1622.54,-1592.49" style=""/>
+<polygon fill="black" stroke="black" points="1621.97,-1595.94 1632.37,-1593.9 1622.97,-1589.01 1621.97,-1595.94" style=""/>
+</g>
+<!-- big_angle_out_14465b62&#45;ae35&#45;49a8&#45;bba2&#45;e50b935551b5&#45;&gt;_2f48438c&#45;75c3&#45;443c&#45;a1c8&#45;95eccd8670fc -->
+<g id="edge87" class="edge" data-name="big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5-&gt;_2f48438c-75c3-443c-a1c8-95eccd8670fc">
+
+<path fill="none" stroke="black" d="M1315.65,-1518.11C1404.59,-1502.24 1536.32,-1478.73 1620.9,-1463.64" style=""/>
+<polygon fill="black" stroke="black" points="1621.28,-1467.13 1630.51,-1461.93 1620.05,-1460.24 1621.28,-1467.13" style=""/>
+</g>
+<!-- Crv_out_a4599816&#45;cbc1&#45;40cb&#45;af2f&#45;95c15603b142 -->
+<g id="node73" class="node" pointer-events="visible" data-name="Crv_out_a4599816-cbc1-40cb-af2f-95c15603b142">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-2125" rx="208.33" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-2120.8" font-family="Times,serif" font-size="14.00" style="">Crv_out_a4599816-cbc1-40cb-af2f-95c15603b142</text>
+</g>
+<!-- Crv_out_a4599816&#45;cbc1&#45;40cb&#45;af2f&#45;95c15603b142&#45;&gt;C_in_41047c00&#45;e8c0&#45;42f0&#45;99aa&#45;d3177a8bd895 -->
+<g id="edge64" class="edge" data-name="Crv_out_a4599816-cbc1-40cb-af2f-95c15603b142-&gt;C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895">
+
+<path fill="none" stroke="black" d="M429.48,-2125C454.15,-2125 478,-2125 499.03,-2125" style=""/>
+<polygon fill="black" stroke="black" points="498.9,-2128.5 508.9,-2125 498.9,-2121.5 498.9,-2128.5" style=""/>
+</g>
+<!-- G_out_ceecc85e&#45;47eb&#45;4e3e&#45;9b72&#45;01d24c08389e -->
+<g id="node75" class="node" pointer-events="visible" data-name="G_out_ceecc85e-47eb-4e3e-9b72-01d24c08389e">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-2519" rx="201.33" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-2514.8" font-family="Times,serif" font-size="14.00" style="">G_out_ceecc85e-47eb-4e3e-9b72-01d24c08389e</text>
+</g>
+<!-- G_out_ceecc85e&#45;47eb&#45;4e3e&#45;9b72&#45;01d24c08389e&#45;&gt;O_in_cdffa07a&#45;a8b6&#45;4077&#45;978a&#45;eda881b24570 -->
+<g id="edge66" class="edge" data-name="G_out_ceecc85e-47eb-4e3e-9b72-01d24c08389e-&gt;O_in_cdffa07a-a8b6-4077-978a-eda881b24570">
+
+<path fill="none" stroke="black" d="M422.55,-2519C451.12,-2519 478.85,-2519 502.68,-2519" style=""/>
+<polygon fill="black" stroke="black" points="502.54,-2522.5 512.54,-2519 502.54,-2515.5 502.54,-2522.5" style=""/>
+</g>
+<!-- C_out_e2092871&#45;5e4f&#45;4313&#45;bf85&#45;ee54846ac0ee -->
+<g id="node77" class="node" pointer-events="visible" data-name="C_out_e2092871-5e4f-4313-bf85-ee54846ac0ee">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-2634" rx="199.07" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2629.8" font-family="Times,serif" font-size="14.00" style="">C_out_e2092871-5e4f-4313-bf85-ee54846ac0ee</text>
+</g>
+<!-- C_out_e2092871&#45;5e4f&#45;4313&#45;bf85&#45;ee54846ac0ee&#45;&gt;Line_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="edge68" class="edge" data-name="C_out_e2092871-5e4f-4313-bf85-ee54846ac0ee-&gt;Line_6c767123-f309-40da-af83-09b32ece5832">
+
+<path fill="none" stroke="black" d="M1399.1,-2625.87C1439.66,-2624.02 1482.78,-2622.05 1523.4,-2620.2" style=""/>
+<polygon fill="black" stroke="black" points="1523.45,-2623.7 1533.28,-2619.75 1523.13,-2616.71 1523.45,-2623.7" style=""/>
+</g>
+<!-- Line_out_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832 -->
+<g id="node80" class="node" pointer-events="visible" data-name="Line_out_6c767123-f309-40da-af83-09b32ece5832">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-2285" rx="211.75" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-2280.8" font-family="Times,serif" font-size="14.00" style="">Line_out_6c767123-f309-40da-af83-09b32ece5832</text>
+</g>
+<!-- Line_out_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832&#45;&gt;Vec_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="edge71" class="edge" data-name="Line_out_6c767123-f309-40da-af83-09b32ece5832-&gt;Vec_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<path fill="none" stroke="black" d="M1297.64,-2302.17C1374.64,-2319.43 1494.38,-2346.26 1583.78,-2366.3" style=""/>
+<polygon fill="black" stroke="black" points="1582.8,-2369.66 1593.33,-2368.44 1584.33,-2362.83 1582.8,-2369.66" style=""/>
+</g>
+<!-- Line_out_6c767123&#45;f309&#45;40da&#45;af83&#45;09b32ece5832&#45;&gt;C_in_71ee981e&#45;b545&#45;4cb0&#45;907c&#45;8955b015922f -->
+<g id="edge76" class="edge" data-name="Line_out_6c767123-f309-40da-af83-09b32ece5832-&gt;C_in_71ee981e-b545-4cb0-907c-8955b015922f">
+
+<path fill="none" stroke="black" d="M1358.47,-2271.02C1446.01,-2262.12 1556.06,-2250.93 1627.89,-2243.63" style=""/>
+<polygon fill="black" stroke="black" points="1627.98,-2247.14 1637.57,-2242.65 1627.27,-2240.18 1627.98,-2247.14" style=""/>
+</g>
+<!-- S_out_aa3fd1fd&#45;070c&#45;4722&#45;b535&#45;3d86999bba5c -->
+<g id="node82" class="node" pointer-events="visible" data-name="S_out_aa3fd1fd-070c-4722-b535-3d86999bba5c">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-2792" rx="199.68" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-2787.8" font-family="Times,serif" font-size="14.00" style="">S_out_aa3fd1fd-070c-4722-b535-3d86999bba5c</text>
+</g>
+<!-- S_out_aa3fd1fd&#45;070c&#45;4722&#45;b535&#45;3d86999bba5c&#45;&gt;G_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge73" class="edge" data-name="S_out_aa3fd1fd-070c-4722-b535-3d86999bba5c-&gt;G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M420.75,-2792C442.73,-2792 464.25,-2792 483.92,-2792" style=""/>
+<polygon fill="black" stroke="black" points="483.77,-2795.5 493.77,-2792 483.77,-2788.5 483.77,-2795.5" style=""/>
+</g>
+<!-- V_out_795c7acf&#45;6f85&#45;4382&#45;90d1&#45;d6a678cc3003 -->
+<g id="node83" class="node" pointer-events="visible" data-name="V_out_795c7acf-6f85-4382-90d1-d6a678cc3003">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-2715" rx="200.81" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-2710.8" font-family="Times,serif" font-size="14.00" style="">V_out_795c7acf-6f85-4382-90d1-d6a678cc3003</text>
+</g>
+<!-- V_out_795c7acf&#45;6f85&#45;4382&#45;90d1&#45;d6a678cc3003&#45;&gt;T_in_d8a179fc&#45;7fab&#45;4814&#45;b4b9&#45;20be26bfe82c -->
+<g id="edge74" class="edge" data-name="V_out_795c7acf-6f85-4382-90d1-d6a678cc3003-&gt;T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c">
+
+<path fill="none" stroke="black" d="M422.04,-2715C448.29,-2715 473.84,-2715 496.33,-2715" style=""/>
+<polygon fill="black" stroke="black" points="496.29,-2718.5 506.29,-2715 496.29,-2711.5 496.29,-2718.5" style=""/>
+</g>
+<!-- Vec_out_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729 -->
+<g id="node86" class="node" pointer-events="visible" data-name="Vec_out_be341bd1-f76a-45e9-a82c-b36bca905729">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-1044" rx="210.59" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-1039.8" font-family="Times,serif" font-size="14.00" style="">Vec_out_be341bd1-f76a-45e9-a82c-b36bca905729</text>
+</g>
+<!-- Vec_out_be341bd1&#45;f76a&#45;45e9&#45;a82c&#45;b36bca905729&#45;&gt;V_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="edge78" class="edge" data-name="Vec_out_be341bd1-f76a-45e9-a82c-b36bca905729-&gt;V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<path fill="none" stroke="black" d="M431.78,-1044C454.68,-1044 476.82,-1044 496.59,-1044" style=""/>
+<polygon fill="black" stroke="black" points="496.42,-1047.5 506.42,-1044 496.42,-1040.5 496.42,-1047.5" style=""/>
+</g>
+<!-- height_out_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815 -->
+<g id="node87" class="node" pointer-events="visible" data-name="height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-1121" rx="221" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-1116.8" font-family="Times,serif" font-size="14.00" style="">height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815</text>
+</g>
+<!-- height_out_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;A_in_296e8b38&#45;2af3&#45;4633&#45;aa6e&#45;20cd8f0bcac8 -->
+<g id="edge79" class="edge" data-name="height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8">
+
+<path fill="none" stroke="black" d="M442.19,-1121C459.31,-1121 475.85,-1121 491.11,-1121" style=""/>
+<polygon fill="black" stroke="black" points="491.02,-1124.5 501.02,-1121 491.02,-1117.5 491.02,-1124.5" style=""/>
+</g>
+<!-- height_out_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;height_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="edge81" class="edge" data-name="height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<path fill="none" stroke="black" d="M370.64,-1107.42C396.34,-1099.68 421.26,-1088.12 441.5,-1071 466.46,-1049.9 449.74,-1029.04 469.5,-1003 484.03,-983.86 503.99,-966.72 522.7,-953.06" style=""/>
+<polygon fill="black" stroke="black" points="524.67,-955.95 530.81,-947.31 520.63,-950.24 524.67,-955.95" style=""/>
+</g>
+<!-- height_out_87d28aaa&#45;18a9&#45;41a5&#45;86b7&#45;4c1685edb815&#45;&gt;height_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="edge84" class="edge" data-name="height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815-&gt;height_in_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<path fill="none" stroke="black" d="M259.97,-1139.14C320.68,-1167.95 439.75,-1224.45 513.08,-1259.25" style=""/>
+<polygon fill="black" stroke="black" points="511.21,-1262.23 521.75,-1263.36 514.21,-1255.91 511.21,-1262.23" style=""/>
+</g>
+<!-- R_out_e32a4c50&#45;c3a5&#45;4c52&#45;945c&#45;93b07ffa77f8 -->
+<g id="node89" class="node" pointer-events="visible" data-name="R_out_e32a4c50-c3a5-4c52-945c-93b07ffa77f8">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-843" rx="197.85" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-838.8" font-family="Times,serif" font-size="14.00" style="">R_out_e32a4c50-c3a5-4c52-945c-93b07ffa77f8</text>
+</g>
+<!-- R_out_e32a4c50&#45;c3a5&#45;4c52&#45;945c&#45;93b07ffa77f8&#45;&gt;angle_in_10f0c688&#45;9b64&#45;4a5b&#45;97aa&#45;419aa174c25c -->
+<g id="edge82" class="edge" data-name="R_out_e32a4c50-c3a5-4c52-945c-93b07ffa77f8-&gt;angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c">
+
+<path fill="none" stroke="black" d="M418.95,-843C435.02,-843 450.86,-843 465.94,-843" style=""/>
+<polygon fill="black" stroke="black" points="465.8,-846.5 475.8,-843 465.8,-839.5 465.8,-846.5" style=""/>
+</g>
+<!-- R_out_8defefb9&#45;cd6a&#45;40a1&#45;803d&#45;d061e82e37de -->
+<g id="node91" class="node" pointer-events="visible" data-name="R_out_8defefb9-cd6a-40a1-803d-d061e82e37de">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-1366" rx="199.07" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-1361.8" font-family="Times,serif" font-size="14.00" style="">R_out_8defefb9-cd6a-40a1-803d-d061e82e37de</text>
+</g>
+<!-- R_out_8defefb9&#45;cd6a&#45;40a1&#45;803d&#45;d061e82e37de&#45;&gt;angle_in_a6456689&#45;42ae&#45;4206&#45;a7a4&#45;5324d1a4934a -->
+<g id="edge85" class="edge" data-name="R_out_8defefb9-cd6a-40a1-803d-d061e82e37de-&gt;angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a">
+
+<path fill="none" stroke="black" d="M420.24,-1366C435.96,-1366 451.45,-1366 466.2,-1366" style=""/>
+<polygon fill="black" stroke="black" points="465.82,-1369.5 475.82,-1366 465.82,-1362.5 465.82,-1369.5" style=""/>
+</g>
+<!-- graph_out_540a6557&#45;5c01&#45;4694&#45;94b4&#45;69cfba6ae670 -->
+<g id="node93" class="node" pointer-events="visible" data-name="graph_out_540a6557-5c01-4694-94b4-69cfba6ae670">
+
+<ellipse fill="none" stroke="black" cx="1220.01" cy="-1226" rx="217.56" ry="18" style=""/>
+<text text-anchor="middle" x="1220.01" y="-1221.8" font-family="Times,serif" font-size="14.00" style="">graph_out_540a6557-5c01-4694-94b4-69cfba6ae670</text>
+</g>
+<!-- graph_out_540a6557&#45;5c01&#45;4694&#45;94b4&#45;69cfba6ae670&#45;&gt;_51209a31&#45;00e0&#45;4b05&#45;b172&#45;4c0230265a66 -->
+<g id="edge89" class="edge" data-name="graph_out_540a6557-5c01-4694-94b4-69cfba6ae670-&gt;_51209a31-00e0-4b05-b172-4c0230265a66">
+
+<path fill="none" stroke="black" d="M1437.66,-1225.55C1476.18,-1225.47 1515.54,-1225.39 1551.74,-1225.31" style=""/>
+<polygon fill="black" stroke="black" points="1551.37,-1228.81 1561.36,-1225.29 1551.35,-1221.81 1551.37,-1228.81" style=""/>
+</g>
+<!-- E_out_3bcd31ea&#45;fcd9&#45;4825&#45;a60a&#45;34789117b05d -->
+<g id="node94" class="node" pointer-events="visible" data-name="E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d">
+
+<ellipse fill="none" stroke="black" cx="220.75" cy="-2976" rx="201.38" ry="18" style=""/>
+<text text-anchor="middle" x="220.75" y="-2971.8" font-family="Times,serif" font-size="14.00" style="">E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d</text>
+</g>
+<!-- E_out_3bcd31ea&#45;fcd9&#45;4825&#45;a60a&#45;34789117b05d&#45;&gt;x_in_6ff0ff7e&#45;a539&#45;4919&#45;acff&#45;d2ed22901e68 -->
+<g id="edge90" class="edge" data-name="E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d-&gt;x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68">
+
+<path fill="none" stroke="black" d="M422.55,-2976C437.58,-2976 452.37,-2976 466.48,-2976" style=""/>
+<polygon fill="black" stroke="black" points="466.14,-2979.5 476.14,-2976 466.14,-2972.5 466.14,-2979.5" style=""/>
+</g>
+</g>
+</svg>

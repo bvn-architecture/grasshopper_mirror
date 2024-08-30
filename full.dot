@@ -1,0 +1,114 @@
+digraph G {
+    # manually making this graph, as an example file
+    
+    node [shape = record; fontsize = 10; fontname = Arial;];
+    rankdir = LR;
+    
+    "Python\ne77fdaee-d2b4-4f80-833d-ed08b2b3788c" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="Xin">x</td><td rowspan="3">Python</td><td port="OUTout">out</td></tr>
+        <tr><td port="y">y</td><td port="NODESout">nodes</td></tr>
+        <tr><td port=""></td><td port="EDGESout">edges</td></tr>
+        </table>>;];
+    
+    "Amp\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="Vin">V</td><td rowspan="2">Amp</td><td port="Vout">V</td></tr>
+        <tr><td port="Ain">A</td></tr>
+        </table>>;];
+    
+    "Amp\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8":Vout -> "Python\ne77fdaee-d2b4-4f80-833d-ed08b2b3788c":Xin;
+    
+    
+    
+    
+    "b\n10f0c688-9b64-4a5b-97aa-419aa174c25c" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="HEIGHTin">height</td><td>b</td><td >base</td></tr>
+        </table>>;];
+    "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Ellipse</td><td>→</td></tr>
+        </table>>;];
+    "crv" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Crv</td><td>→</td></tr>
+        </table>>;];
+    "Flip\n41047c00-e8c0-42f0-99aa-d3177a8bd895" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="Cin">C</td><td rowspan="2">Flip</td><td port="Cout">C</td></tr>
+        <tr><td port="Gin">G</td><td port="Fout">F</td></tr>
+        </table>>;];
+    "crv" -> "Flip\n41047c00-e8c0-42f0-99aa-d3177a8bd895":Cin;
+    "Rad\n59cb3897-f400-43f3-9461-0701f2ceb61b" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>D</td><td>Rad</td><td>R</td></tr>
+        </table>>;];
+    "Rad\n2a326121-470f-4022-9477-ef4b47e3853d" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>D</td><td>Rad</td><td>R</td></tr>
+        </table>>;];
+    "XY\ncdffa07a-a8b6-4077-978a-eda881b24570" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>XY</td><td>→</td></tr>
+        </table>>;];
+    "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Move</td><td>→</td></tr>
+        </table>>;];
+    "End\n71ee981e-b545-4cb0-907c-8955b015922f" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>End</td><td>→</td></tr>
+        </table>>;];
+    "b\na6456689-42ae-4206-a7a4-5324d1a4934a" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>b</td><td>→</td></tr>
+        </table>>;];
+    
+    "Cluster\na6456689-42ae-4206-a7a4-5324d1a4934a" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Cluster</td><td>→</td></tr>
+        </table>>;];
+    
+    "XY_Plane\ncdffa07a-a8b6-4077-978a-eda881b24570" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>XY_Plane</td><td>→</td></tr>
+        </table>>;];
+    
+    "Radians\n2a326121-470f-4022-9477-ef4b47e3853d" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Radians</td><td>→</td></tr>
+        </table>>;];
+    
+    "Amplitude\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Amplitude</td><td>→</td></tr>
+        </table>>;];
+    
+    "Cluster\n10f0c688-9b64-4a5b-97aa-419aa174c25c" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Cluster</td><td>→</td></tr>
+        </table>>;];
+    
+    "Radians\n59cb3897-f400-43f3-9461-0701f2ceb61b" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td>→</td><td>Radians</td><td>→</td></tr>
+        </table>>;];
+    
+    "Cluster\na6456689-42ae-4206-a7a4-5324d1a4934a":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in1;
+    "XY_Plane\ncdffa07a-a8b6-4077-978a-eda881b24570":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in0;
+    "Cluster\n10f0c688-9b64-4a5b-97aa-419aa174c25c":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in2;
+    "Rad\n2a326121-470f-4022-9477-ef4b47e3853d":out0 -> "Cluster\n10f0c688-9b64-4a5b-97aa-419aa174c25c":in0;
+    "Radians\n2a326121-470f-4022-9477-ef4b47e3853d":out0 -> "Cluster\na6456689-42ae-4206-a7a4-5324d1a4934a":in0;
+    "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":out0 -> "XY_Plane\ncdffa07a-a8b6-4077-978a-eda881b24570":in0;
+    "XY_Plane\ncdffa07a-a8b6-4077-978a-eda881b24570":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in0;
+    "End\n71ee981e-b545-4cb0-907c-8955b015922f":out0 -> "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":in0;
+    "Amplitude\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8":out0 -> "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":in1;
+    "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":out0 -> "XY_Plane\ncdffa07a-a8b6-4077-978a-eda881b24570":in0;
+    "End\n71ee981e-b545-4cb0-907c-8955b015922f":out0 -> "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":in0;
+    "Amplitude\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8":out0 -> "Move\nd8a179fc-7fab-4814-b4b9-20be26bfe82c":in1;
+    "Radians\n59cb3897-f400-43f3-9461-0701f2ceb61b":out0 -> "Cluster\n10f0c688-9b64-4a5b-97aa-419aa174c25c":in0;
+    "Cluster\n10f0c688-9b64-4a5b-97aa-419aa174c25c":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in2;
+    "Radians\n2a326121-470f-4022-9477-ef4b47e3853d":out0 -> "Cluster\na6456689-42ae-4206-a7a4-5324d1a4934a":in0;
+    "Cluster\na6456689-42ae-4206-a7a4-5324d1a4934a":out0 -> "Ellipse\n5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":in1;
+}

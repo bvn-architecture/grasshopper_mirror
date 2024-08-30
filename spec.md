@@ -91,7 +91,7 @@ This shows that graphviz can show a structured node that parallels a grasshopper
 
 ![](docs\structured_nodes.png)
 
-```
+``` dot
 graph mygraph {
   node [shape=record, fontsize=10, fontname=Arial];
   rankdir=LR;
@@ -122,13 +122,36 @@ graph mygraph {
 }
 ```
 
+``` dot
+digraph G {
+    node [shape = record; fontsize = 10; fontname = Arial;];
+    edge [arrowsize = 0.5;];
+    rankdir = LR;
+    
+    "Python\ne77fdaee-d2b4-4f80-833d-ed08b2b3788c" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="Xin">X</td><td rowspan="3">Python</td> <td port="OUTout">out</td></tr>
+        <tr><td port="Yin">Y</td>                            <td port="NODESout">nodes</td></tr>
+        <tr><td port=""></td>                                <td port="EDGESout">edges</td></tr>
+        </table>>;];
+    
+    "Amp\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [margin = 0;label = <
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+        <tr><td port="Vin">V</td> <td rowspan="2">Amp</td> <td port="Vout">V</td></tr>
+        <tr><td port="Ain">A</td>                                                </tr>
+        </table>>;];
+    
+    "Amp\n296e8b38-2af3-4633-aa6e-20cd8f0bcac8":Vout -> "Python\ne77fdaee-d2b4-4f80-833d-ed08b2b3788c":Xin;
+}
+```
+
 And this example shows that we're actually able to parse a grasshopper file for the topology.
 
 ![](docs\nodes_from_gh.png)
 
 ![](docs\GH_source_file.PNG)
 
-```
+``` dot
 digraph G {
     node [fontsize=10, fontname=Arial];
     rankdir=LR;
@@ -160,4 +183,4 @@ It leaves out a lot of nodes, and it could definitely be clearer (i.e. hiding th
 
 BUT IT'S A START
 
-Please, pick this up and hack some more
+Please, pick this up and hack some more.
