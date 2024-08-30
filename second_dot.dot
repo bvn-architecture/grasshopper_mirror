@@ -1,0 +1,314 @@
+digraph G {
+    rankdir = LR;
+    
+    
+subgraph "cluster_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Ellipse";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="Ellipse", fillcolor="pink", fontsize=20];
+    "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="P \nParam_Plane"];
+    "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="R1 \nParam_Number"];
+    "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="R2 \nParam_Number"];
+    "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="E \nParam_Curve"];
+    "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="F1 \nParam_Point"];
+    "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [label="F2 \nParam_Point"];
+    
+    
+    "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F1_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "Ellipse_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    
+  }
+subgraph "cluster_d9728bb0-9967-449f-b352-182acd5a7aef" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "small_angle\n(Number)";
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" [label="small_angle\n(Number)\nValue: 85.4", fillcolor="pink", fontsize=20];
+    
+    
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    
+  }
+subgraph "cluster_14465b62-ae35-49a8-bba2-e50b935551b5" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "big_angle\n(Number)";
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" [label="big_angle\n(Number)\nValue: 105", fillcolor="pink", fontsize=20];
+    
+    
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    
+  }
+subgraph "cluster_87d28aaa-18a9-41a5-86b7-4c1685edb815" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "height\n(Number Slider)";
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" [label="height\n(Number Slider)\nValue: 2250", fillcolor="pink", fontsize=20];
+    
+    
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "F2_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    
+  }
+subgraph "cluster_59cb3897-f400-43f3-9461-0701f2ceb61b" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Rad\n(Radians)";
+    "Rad_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="Rad\n(Radians)", fillcolor="pink", fontsize=20];
+    "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="D \nParam_Number"];
+    "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b" [label="R \nParam_Number"];
+    
+    
+    "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "Rad_59cb3897-f400-43f3-9461-0701f2ceb61b";
+    "Rad_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b";
+    
+  }
+subgraph "cluster_2a326121-470f-4022-9477-ef4b47e3853d" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Rad\n(Radians)";
+    "Rad_2a326121-470f-4022-9477-ef4b47e3853d" [label="Rad\n(Radians)", fillcolor="pink", fontsize=20];
+    "D_in_2a326121-470f-4022-9477-ef4b47e3853d" [label="D \nParam_Number"];
+    "R_out_2a326121-470f-4022-9477-ef4b47e3853d" [label="R \nParam_Number"];
+    
+    
+    "D_in_2a326121-470f-4022-9477-ef4b47e3853d" -> "Rad_2a326121-470f-4022-9477-ef4b47e3853d";
+    "Rad_2a326121-470f-4022-9477-ef4b47e3853d" -> "R_out_2a326121-470f-4022-9477-ef4b47e3853d";
+    
+  }
+subgraph "cluster_a4599816-cbc1-40cb-af2f-95c15603b142" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Crv\n(Curve)";
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" [label="Crv\n(Curve)\nValue: Line-like Curve", fillcolor="pink", fontsize=20];
+    
+    
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" -> "R_out_2a326121-470f-4022-9477-ef4b47e3853d";
+    
+  }
+subgraph "cluster_41047c00-e8c0-42f0-99aa-d3177a8bd895" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Flip\n(Flip Curve)";
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="Flip\n(Flip Curve)", fillcolor="pink", fontsize=20];
+    "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="C \nParam_Curve"];
+    "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="G \nParam_Curve"];
+    "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="C \nParam_Curve"];
+    "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" [label="F \nParam_Boolean"];
+    
+    
+    "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "G_in_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "Flip_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "F_out_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    
+  }
+subgraph "cluster_cdffa07a-a8b6-4077-978a-eda881b24570" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "XY\n(XY Plane)";
+    "XY_cdffa07a-a8b6-4077-978a-eda881b24570" [label="XY\n(XY Plane)", fillcolor="pink", fontsize=20];
+    "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" [label="O \nParam_Point"];
+    "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" [label="P \nParam_Plane"];
+    
+    
+    "O_in_cdffa07a-a8b6-4077-978a-eda881b24570" -> "XY_cdffa07a-a8b6-4077-978a-eda881b24570";
+    "XY_cdffa07a-a8b6-4077-978a-eda881b24570" -> "P_out_cdffa07a-a8b6-4077-978a-eda881b24570";
+    
+  }
+subgraph "cluster_6c767123-f309-40da-af83-09b32ece5832" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Line";
+    "Line_6c767123-f309-40da-af83-09b32ece5832" [label="Line\nValue: Line(L:3000.00 mm)", fillcolor="pink", fontsize=20];
+    
+    
+    "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" -> "Line_6c767123-f309-40da-af83-09b32ece5832";
+    "Line_6c767123-f309-40da-af83-09b32ece5832" -> "P_out_cdffa07a-a8b6-4077-978a-eda881b24570";
+    
+  }
+subgraph "cluster_be341bd1-f76a-45e9-a82c-b36bca905729" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Vec\n(Vector)";
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" [label="Vec\n(Vector)\nValue: {0,0,-3000}", fillcolor="pink", fontsize=20];
+    
+    
+    "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729";
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" -> "P_out_cdffa07a-a8b6-4077-978a-eda881b24570";
+    
+  }
+subgraph "cluster_d8a179fc-7fab-4814-b4b9-20be26bfe82c" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Move";
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="Move", fillcolor="pink", fontsize=20];
+    "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="G \nParam_Geometry"];
+    "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="T \nParam_Vector"];
+    "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="G \nParam_Geometry"];
+    "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" [label="X \nParam_Transform"];
+    
+    
+    "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "Move_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "X_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    
+  }
+subgraph "cluster_71ee981e-b545-4cb0-907c-8955b015922f" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "End\n(End Points)";
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" [label="End\n(End Points)", fillcolor="pink", fontsize=20];
+    "C_in_71ee981e-b545-4cb0-907c-8955b015922f" [label="C \nParam_Curve"];
+    "S_out_71ee981e-b545-4cb0-907c-8955b015922f" [label="S \nParam_Point"];
+    "E_out_71ee981e-b545-4cb0-907c-8955b015922f" [label="E \nParam_Point"];
+    
+    
+    "C_in_71ee981e-b545-4cb0-907c-8955b015922f" -> "End_71ee981e-b545-4cb0-907c-8955b015922f";
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "S_out_71ee981e-b545-4cb0-907c-8955b015922f";
+    "End_71ee981e-b545-4cb0-907c-8955b015922f" -> "E_out_71ee981e-b545-4cb0-907c-8955b015922f";
+    
+  }
+subgraph "cluster_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Amp\n(Amplitude)";
+    "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="Amp\n(Amplitude)", fillcolor="pink", fontsize=20];
+    "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="V \nParam_Vector"];
+    "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="A \nParam_Number"];
+    "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [label="V \nParam_Vector"];
+    
+    
+    "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "Amp_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    
+  }
+subgraph "cluster_10f0c688-9b64-4a5b-97aa-419aa174c25c" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "b\n(Cluster)";
+    "b_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="b\n(Cluster)", fillcolor="pink", fontsize=20];
+    "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="height \nParam_ScriptVariable"];
+    "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="angle \nParam_ScriptVariable"];
+    "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c" [label="base \nParam_GenericObject"];
+    
+    
+    "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "b_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "b_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    
+  }
+subgraph "cluster_a6456689-42ae-4206-a7a4-5324d1a4934a" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "b\n(Cluster)";
+    "b_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="b\n(Cluster)", fillcolor="pink", fontsize=20];
+    "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="height \nParam_ScriptVariable"];
+    "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="angle \nParam_ScriptVariable"];
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" [label="base \nParam_GenericObject"];
+    
+    
+    "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "b_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "b_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    
+  }
+subgraph "cluster_2f48438c-75c3-443c-a1c8-95eccd8670fc" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "\n(Panel)";
+    "_2f48438c-75c3-443c-a1c8-95eccd8670fc" [label="\n(Panel)\nValue: 105", fillcolor="pink", fontsize=20];
+    
+    
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "_2f48438c-75c3-443c-a1c8-95eccd8670fc";
+    
+  }
+subgraph "cluster_db3162a4-9892-487b-b2fa-a2d005e3726b" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "\n(Panel)";
+    "_db3162a4-9892-487b-b2fa-a2d005e3726b" [label="\n(Panel)\nValue: 85.4", fillcolor="pink", fontsize=20];
+    
+    
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b";
+    
+  }
+subgraph "cluster_51209a31-00e0-4b05-b172-4c0230265a66" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "\n(Panel)";
+    "_51209a31-00e0-4b05-b172-4c0230265a66" [label="\n(Panel)\nValue: empty structure", fillcolor="pink", fontsize=20];
+    
+    
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "_51209a31-00e0-4b05-b172-4c0230265a66";
+    
+  }
+subgraph "cluster_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
+    node [style=filled];
+    nodesep="0.05"
+    label = "Python\n(GhPython Script)";
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="Python\n(GhPython Script)", fillcolor="pink", fontsize=20];
+    "x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="x \nParam_ScriptVariable"];
+    "y_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="y \nParam_ScriptVariable"];
+    "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="out \nParam_String"];
+    "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="graph \nParam_GenericObject"];
+    
+    
+    "x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "y_in_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "out_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    
+  }
+    
+    "P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb" -> "P_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "base_out_1b6a957c-4f27-4a22-a8dc-2a8d2414a7f4" -> "R1_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "base_out_456f3f62-e4af-496e-acc2-5c099a9e905e" -> "R2_in_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e";
+    "E_out_5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" -> "x_in_e133d724-991a-4449-bd31-a7a71fdea039";
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" -> "D_in_cec57bff-6764-4e74-a961-db162d033ea3";
+    "small_angle_d9728bb0-9967-449f-b352-182acd5a7aef" -> "_in_db3162a4-9892-487b-b2fa-a2d005e3726b";
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" -> "D_in_d499d6c4-1932-46e4-a22e-573fab3bc7a2";
+    "big_angle_14465b62-ae35-49a8-bba2-e50b935551b5" -> "_in_2f48438c-75c3-443c-a1c8-95eccd8670fc";
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "A_in_8cc4c648-6b50-440b-a69d-06b04e9a4a89";
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_in_bf6d16cc-8fc4-4e7f-83e7-a2299a619f95";
+    "height_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_in_ce12d76a-1a80-4e70-820e-8fc1a3287fd7";
+    "small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef" -> "D_in_59cb3897-f400-43f3-9461-0701f2ceb61b";
+    "R_out_59cb3897-f400-43f3-9461-0701f2ceb61b" -> "angle_in_f56f9b56-c31d-41c4-92f4-443aa9f0d1f1";
+    "big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5" -> "D_in_2a326121-470f-4022-9477-ef4b47e3853d";
+    "R_out_2a326121-470f-4022-9477-ef4b47e3853d" -> "angle_in_faefa20b-47cb-47ef-a098-7bde9623171e";
+    "Crv_a4599816-cbc1-40cb-af2f-95c15603b142" -> "C_in_203c4544-9158-4df0-8773-2a0f2bd3bf50";
+    "Crv_out_a4599816-cbc1-40cb-af2f-95c15603b142" -> "C_in_41047c00-e8c0-42f0-99aa-d3177a8bd895";
+    "C_out_41047c00-e8c0-42f0-99aa-d3177a8bd895" -> "Line_in_6c767123-f309-40da-af83-09b32ece5832";
+    "G_out_ceecc85e-47eb-4e3e-9b72-01d24c08389e" -> "O_in_cdffa07a-a8b6-4077-978a-eda881b24570";
+    "P_out_cdffa07a-a8b6-4077-978a-eda881b24570" -> "P_in_14604b89-1acc-4ddd-bde3-132487b5fdfe";
+    "C_out_e2092871-5e4f-4313-bf85-ee54846ac0ee" -> "Line_6c767123-f309-40da-af83-09b32ece5832";
+    "Line_6c767123-f309-40da-af83-09b32ece5832" -> "Vec_in_be341bd1-f76a-45e9-a82c-b36bca905729";
+    "Line_6c767123-f309-40da-af83-09b32ece5832" -> "C_in_b722fce8-ba85-4bce-968f-6814e52f095b";
+    "Line_out_6c767123-f309-40da-af83-09b32ece5832" -> "Vec_be341bd1-f76a-45e9-a82c-b36bca905729";
+    "Vec_be341bd1-f76a-45e9-a82c-b36bca905729" -> "V_in_8f44156f-3e61-4fd8-8fb5-92d404bb3398";
+    "S_out_aa3fd1fd-070c-4722-b535-3d86999bba5c" -> "G_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "V_out_795c7acf-6f85-4382-90d1-d6a678cc3003" -> "T_in_d8a179fc-7fab-4814-b4b9-20be26bfe82c";
+    "G_out_d8a179fc-7fab-4814-b4b9-20be26bfe82c" -> "O_in_a04be74e-9644-49e2-8fa4-2b6e7bfa1fe0";
+    "Line_out_6c767123-f309-40da-af83-09b32ece5832" -> "C_in_71ee981e-b545-4cb0-907c-8955b015922f";
+    "S_out_71ee981e-b545-4cb0-907c-8955b015922f" -> "G_in_e9ac483a-b072-430c-9ab2-6176092b2b5e";
+    "Vec_out_be341bd1-f76a-45e9-a82c-b36bca905729" -> "V_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "A_in_296e8b38-2af3-4633-aa6e-20cd8f0bcac8";
+    "V_out_296e8b38-2af3-4633-aa6e-20cd8f0bcac8" -> "T_in_aec4e145-4a90-4969-9f1d-9a4b07eb534b";
+    "height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_in_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "R_out_e32a4c50-c3a5-4c52-945c-93b07ffa77f8" -> "angle_in_10f0c688-9b64-4a5b-97aa-419aa174c25c";
+    "base_out_10f0c688-9b64-4a5b-97aa-419aa174c25c" -> "R2_in_cfdf18f2-1f81-4d69-805f-d7104398d78c";
+    "height_out_87d28aaa-18a9-41a5-86b7-4c1685edb815" -> "height_in_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "R_out_8defefb9-cd6a-40a1-803d-d061e82e37de" -> "angle_in_a6456689-42ae-4206-a7a4-5324d1a4934a";
+    "base_out_a6456689-42ae-4206-a7a4-5324d1a4934a" -> "R1_in_9a6edb67-5232-4f02-817f-72a19c5c4284";
+    "big_angle_out_14465b62-ae35-49a8-bba2-e50b935551b5" -> "_2f48438c-75c3-443c-a1c8-95eccd8670fc";
+    "small_angle_out_d9728bb0-9967-449f-b352-182acd5a7aef" -> "_db3162a4-9892-487b-b2fa-a2d005e3726b";
+    "graph_out_540a6557-5c01-4694-94b4-69cfba6ae670" -> "_51209a31-00e0-4b05-b172-4c0230265a66";
+    "E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d" -> "x_in_6ff0ff7e-a539-4919-acff-d2ed22901e68";
+    "graph_out_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "_in_51209a31-00e0-4b05-b172-4c0230265a66";
+    
+}
