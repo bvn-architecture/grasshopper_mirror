@@ -42,6 +42,7 @@ def make_centre_node(index, nick_name, fq_name, fontsize=20):
 
 def make_node_subgraph(index, node_id, nick_name, internal_connections_dot, params_dot):
     g = """
+#{4}
 subgraph "cluster_subgraph_{0}" {{
     node [style=filled];
     nodesep="0.05";
@@ -51,8 +52,7 @@ subgraph "cluster_subgraph_{0}" {{
     {2}
     # Edges
     {3}
-    #{4}
-  }}
+}}
 """.format(
         node_id, nick_name, params_dot, internal_connections_dot, index
     )
