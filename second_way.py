@@ -60,16 +60,22 @@ subgraph "cluster_subgraph_{0}" {{
 
 
 def simple_edge(from_node="in", to_node="out", num_spaces=4, edge_label=""):
-    if edge_label:
-        edge_label = ' [label="{}"]'.format(edge_label)
+    if LABEL_EDGES and edge_label:
+        label = ' [label="{}"]'.format(edge_label)
+    else:
+        label = ""
     edge = '"{f}" -> "{t}" {el};\n{num_spaces}'.format(
-        f=from_node, t=to_node, num_spaces=" " * num_spaces, el=edge_label
+        f=from_node,
+        t=to_node,
+        num_spaces=" " * num_spaces,
+        el=label,
     )
-    return edge.replace('""', '"')
+    edge = edge.replace('""', '"')
+    print(edge)
+    return edge
 
 
 def generate_internal_connections(index, obj):
-    node_id = obj.InstanceGuid.ToString()
     fq_name = make_fully_qualified_name(obj)
     centre_label = make_centre_node(index, make_nick_name(obj), fq_name)
     params_dot = "" + centre_label
@@ -77,6 +83,7 @@ def generate_internal_connections(index, obj):
 
     # Enumerate inputs
     for input_param in obj.Params.Input:
+        node_id = input_param.InstanceGuid.ToString()
         node_name = '"{nick}_in_{id}"'.format(nick=input_param.NickName, id=node_id)
         params_dot += make_node_def(input_param, node_name)
         internal_connections_dot += simple_edge(
@@ -85,6 +92,7 @@ def generate_internal_connections(index, obj):
 
     # Enumerate outputs
     for output_param in obj.Params.Output:
+        node_id = output_param.InstanceGuid.ToString()
         node_name = '"{nick}_out_{id}"'.format(nick=output_param.NickName, id=node_id)
         params_dot += make_node_def(output_param, node_name)
         internal_connections_dot += simple_edge(
@@ -105,11 +113,15 @@ def generate_internal_connections_sources(index, obj, value):
         )
     )
     if obj.Sources:
-        node_name = '"{nick}_in_{id}"'.format(nick=obj.NickName, id=node_id)
+        node_name = '"{nick}_in_{id}"'.format(
+            nick=obj.NickName,
+            id=obj.Sources[0].InstanceGuid.ToString(),
+        )
         params_dot += '{} [label="in →•"];\n    '.format(node_name)
         internal_connections_dot += simple_edge(
             from_node=node_name, to_node=fq_name, edge_label="leaf i in"
         )
+
     if obj.Recipients:
         node_name = '"{nick}_out_{id}"'.format(nick=obj.NickName, id=node_id)
         params_dot += '{} [label="•→ out"];\n    '.format(node_name)
@@ -128,49 +140,59 @@ def make_node_def(input_param, node_name):
     )
 
 
-def generate_connections_dot(connections_dot, obj, node_id):
-    connections_dot += "# Connections for {}\n".format(obj.NickName)
+def generate_connections_dot(edges_string, obj, node_id):
+    edges_string += "# Connections for {}\n".format(obj.NickName)
     # Enumerate inputs
     for input_param in obj.Params.Input:
-        node_name = '"{nick}_in_{id}"'.format(nick=input_param.NickName, id=node_id)
+        node_name = '"{nick}_in_{id}"'.format(
+            nick=input_param.NickName, id=input_param.InstanceGuid.ToString()
+        )
         for source in input_param.Sources:
             source_node_name = '"{nick}_out_{id}"'.format(
                 nick=source.NickName, id=source.InstanceGuid.ToString()
             )
-            connections_dot += simple_edge(source_node_name, node_name)
+            edges_string += simple_edge(
+                source_node_name, node_name, edge_label=obj.NickName + " dot input"
+            )
 
     # Enumerate outputs
-    for output_param in obj.Params.Output:
-        node_name = '"{nick}_out_{id}"'.format(nick=input_param.NickName, id=node_id)
-        for recipient in output_param.Recipients:
-            recipient_node_name = '"{}_in_{}"'.format(
-                recipient.NickName, recipient.InstanceGuid.ToString()
-            )
-            connections_dot += simple_edge(node_name, recipient_node_name)
+    # I don't think we need to do this, as the outputs are already connected to the
+    # recipients. Every connection has an input on one end
+    # for output_param in obj.Params.Output:
+    #     node_name = '"{nick}_out_{id}"'.format(
+    #         nick=output_param.NickName, id=output_param.InstanceGuid.ToString()
+    #     )
+    #     for recipient in output_param.Recipients:
+    #         recipient_node_name = '"{}_in_{}"'.format(
+    #             recipient.NickName, recipient.InstanceGuid.ToString()
+    #         )
+    #         edges_string += simple_edge(
+    #             node_name, recipient_node_name, edge_label=obj.NickName + " dot output"
+    #         )
 
-    return connections_dot
+    return edges_string
 
 
-def generate_connections_dot_sources(connections_dot, obj):
-    # TODO: I don't think this does anything, remove it
-    fq_name = make_fully_qualified_name(obj)
-    for source in obj.Sources:
-        source_node_name = '"{}_out_{}"'.format(
-            source.NickName, source.InstanceGuid.ToString()
-        )
-        # connections_dot += simple_edge(
-        #     source_node_name, fq_name, edge_label="between Source"
-        # )
+# def generate_connections_dot_sources(connections_dot, obj):
+#     # TODO: I don't think this does anything, remove it
+#     fq_name = make_fully_qualified_name(obj)
+#     for source in obj.Sources:
+#         source_node_name = '"{}_out_{}"'.format(
+#             source.NickName, source.InstanceGuid.ToString()
+#         )
+#         connections_dot += simple_edge(
+#             source_node_name, fq_name, edge_label="between Source"
+#         )
 
-    for recipient in obj.Recipients:
-        recipient_node_name = '"{}_in_{}"'.format(
-            recipient.NickName, recipient.InstanceGuid.ToString()
-        )
-        # connections_dot += simple_edge(
-        #     fq_name, recipient_node_name, edge_label="between Recipients"
-        # )
+#     for recipient in obj.Recipients:
+#         recipient_node_name = '"{}_in_{}"'.format(
+#             recipient.NickName, recipient.InstanceGuid.ToString()
+#         )
+#         connections_dot += simple_edge(
+#             fq_name, recipient_node_name, edge_label="between Recipients"
+#         )
 
-    return connections_dot
+#     return connections_dot
 
 
 def get_value(obj):
@@ -192,7 +214,6 @@ def main():
     for index, obj in enumerate(gh_doc.Objects):
         node_id = obj.InstanceGuid.ToString()
         nick_name = make_nick_name(obj)
-        fq_name = make_fully_qualified_name(obj)
         print(
             "{} | Object: {}, Type: {} GUID: {}".format(
                 index, nick_name, type(obj).__name__, node_id
@@ -214,7 +235,7 @@ def main():
             internal_connections_dot, params_dot = (
                 generate_internal_connections_sources(index, obj, value)
             )
-            connections_dot = generate_connections_dot_sources(connections_dot, obj)
+            # connections_dot = generate_connections_dot_sources(connections_dot, obj)
             g = make_node_subgraph(
                 index, node_id, nick_name, internal_connections_dot, params_dot
             )
@@ -241,4 +262,5 @@ def main():
     return graph
 
 
+LABEL_EDGES = True  # Set to True to label the edges, very handy for debugging
 graph = main()
