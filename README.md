@@ -6,9 +6,14 @@ It's a toss up between Revit and Grasshopper, as the piece of software that's ha
 
 This is an attempt to make a workflow that starts to be a bit more version controllable. It's not going to be as good as we have it with text diffs on code, but it's going in the right direction.
 
-|The graphviz rendering of the DOT file that Mirror produces| The Grasshopper canvas that is being mirrored|
-|--|--|
-|![](docs/dot_graph_demo.png)|![](docs\GH_graph_demo.png)|
+| The graphviz rendering of the DOT file that Mirror produces | The Grasshopper canvas that it mirrors |
+| ----------------------------------------------------------- | -------------------------------------- |
+| ![](docs/dot_graph_demo.png)                                | ![](docs\GH_graph_demo.png)            |
 
 Mirror recreates the Grasshopper graph topology in [DOT Language](https://graphviz.org/doc/info/lang.html). It's automagically laid out with [Graphviz](https://graphviz.org/).
 
+The DOT file is text, so it can be diffed with standard tools. Here's _this_ file being diffed in VS Code.
+
+![](docs/diff.png)
+
+You can see where things have been added, taken away and changed. So you can get a sense of what has changed between different versions.
