@@ -354,6 +354,42 @@ subgraph "cluster_subgraph_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
     
 }
 
+#22
+subgraph "cluster_subgraph_2114268e-15ce-4034-9c0f-2909887ed546" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Python\n(GhPython Script)";
+    # Nodes
+    "Python_2114268e-15ce-4034-9c0f-2909887ed546" [label="Python\n(GhPython Script)", fillcolor="crimson", fontsize=20];
+    "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" [label="guard\nParam_ScriptVariable"];
+    "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" [label="trigger\nParam_ScriptVariable"];
+    "out_out_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" [label="out\nParam_String"];
+    "a_out_af6ad784-afcd-422f-b956-bce6c0fd436d" [label="a\nParam_GenericObject"];
+    
+    # Edges
+    "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" -> "Python_2114268e-15ce-4034-9c0f-2909887ed546" ;
+    "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" -> "Python_2114268e-15ce-4034-9c0f-2909887ed546" ;
+    "Python_2114268e-15ce-4034-9c0f-2909887ed546" -> "out_out_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" ;
+    "Python_2114268e-15ce-4034-9c0f-2909887ed546" -> "a_out_af6ad784-afcd-422f-b956-bce6c0fd436d" ;
+    
+}
+
+#23
+subgraph "cluster_subgraph_6b492f1a-716e-4f31-8247-16b28a652c2c" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Toggle\n(Boolean Toggle)";
+    # Nodes
+    "Toggle_6b492f1a-716e-4f31-8247-16b28a652c2c" [label="Toggle\n(Boolean Toggle)\nValue: empty structure", fillcolor="cyan", fontsize=20];
+    "Toggle_out_6b492f1a-716e-4f31-8247-16b28a652c2c" [label="•→ out"];
+    
+    # Edges
+    "Toggle_6b492f1a-716e-4f31-8247-16b28a652c2c" -> "Toggle_out_6b492f1a-716e-4f31-8247-16b28a652c2c" ;
+    
+}
+
     # Generated Connections
     # Connections for Ellipse
 "P_out_051a5905-db7d-4527-bf6a-71f8011ccbfb" -> "P_in_14604b89-1acc-4ddd-bde3-132487b5fdfe" ;
@@ -383,6 +419,9 @@ subgraph "cluster_subgraph_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
     "R_out_8defefb9-cd6a-40a1-803d-d061e82e37de" -> "angle_in_faefa20b-47cb-47ef-a098-7bde9623171e" ;
     # Connections for Python
 "E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d" -> "trigger_in_e133d724-991a-4449-bd31-a7a71fdea039" ;
+    # Connections for Python
+"Toggle_out_6b492f1a-716e-4f31-8247-16b28a652c2c" -> "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" ;
+    "E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d" -> "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" ;
     
     # Manually Connected Connections
     # These are the connections that I've manually created that actually connect the graph the way it ought to be connected.
