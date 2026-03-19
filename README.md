@@ -10,9 +10,9 @@ This is an attempt to make a workflow that starts to be a bit more version contr
 
 | The graphviz rendering of the DOT file that Mirror produces                            | The Grasshopper canvas that it mirrors                                                |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| ![A graphviz graph. Structured nodes joined with spline edges](docs/dot_graph.png)     | ![A grasshopper graph, the two graphs have the same topology](docs/GH_graph_demo.png) |
+| ![A graphviz graph. Structured nodes joined with spline edges](docs/dot_graph.png)     | ![A grasshopper graph, the two graphs have the same topology](example_folder/canvas_image.png) |
 
-Mirror recreates the Grasshopper graph topology in [DOT Language](https://graphviz.org/doc/info/lang.html). It's automagically laid out with [Graphviz](https://graphviz.org/).
+Mirror recreates the Grasshopper graph topology in [DOT Language](https://graphviz.org/doc/info/lang.html). It's automagically laid out with [Graphviz](https://graphviz.org/). You can play with graphviz [here](https://dreampuf.github.io/GraphvizOnline) and you can also use this to look at the dot files that this system produces.
 
 The DOT file is text, so it can be diffed with standard tools. Here's _this_ file being diffed in VS Code.
 
