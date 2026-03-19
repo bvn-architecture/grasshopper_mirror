@@ -182,9 +182,10 @@ def _collect(gh_doc):
 
         # -- Group / annotation / other ------------------------------------
         else:
+            clr_type = obj.GetType().Name if hasattr(obj, "GetType") else "unknown"
             nodes.append({
                 "guid": guid, "nick": nick, "name": name,
-                "kind": "other", "obj": obj,
+                "kind": "other", "clr_type": clr_type, "obj": obj,
             })
 
     return nodes, param_map
@@ -258,7 +259,7 @@ def _dot(nodes, edges):
             lines.append("")
 
         elif n["kind"] == "other":
-            obj_type = type(n["obj"]).__name__
+            obj_type = n.get("clr_type", "unknown")
             comment_name = n["nick"] or n["name"]
             lines.append(
                 f'    // [skipped] {comment_name}'
