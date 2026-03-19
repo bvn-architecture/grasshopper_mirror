@@ -117,16 +117,19 @@ def _html_label(nick, name, inputs, outputs, indent=8):
 # ---------------------------------------------------------------------------
 
 def _collect(gh_doc):
-    """Walk the GH document and return ``(nodes, param_map)``.
+    """Walk the GH document and return ``(nodes, param_map, groups)``.
 
     * ``nodes`` — list of node dicts, sorted by GUID.
     * ``param_map`` — ``{param_guid_str: (parent_node_guid_str, port_id)}``
       Used to resolve the source end of every connection.
+    * ``groups`` — list of group dicts, sorted by GUID.  Each has
+      ``guid``, ``nick``, ``member_guids`` (set of str).
     """
     objects = sorted(gh_doc.Objects, key=lambda o: str(o.InstanceGuid))
 
     nodes = []
     param_map = {}
+    groups = []
 
     for obj in objects:
         guid = str(obj.InstanceGuid)
@@ -180,7 +183,21 @@ def _collect(gh_doc):
                 "inputs": inputs, "outputs": outputs, "obj": obj,
             })
 
-        # -- Group / annotation / other ------------------------------------
+        # -- Group ---------------------------------------------------------
+        elif hasattr(obj, "Objects") and callable(obj.Objects):
+            member_guids = set()
+            try:
+                for member in obj.Objects():
+                    member_guids.add(str(member.InstanceGuid))
+            except Exception:
+                pass
+            groups.append({
+                "guid": guid,
+                "nick": nick or name or "unnamed_group",
+                "member_guids": member_guids,
+            })
+
+        # -- Scribble / annotation / other ---------------------------------
         else:
             clr_type = obj.GetType().Name if hasattr(obj, "GetType") else "unknown"
             nodes.append({
@@ -188,7 +205,7 @@ def _collect(gh_doc):
                 "kind": "other", "clr_type": clr_type, "obj": obj,
             })
 
-    return nodes, param_map
+    return nodes, param_map, groups
 
 
 # ---------------------------------------------------------------------------
@@ -237,34 +254,89 @@ def _edges(nodes, param_map):
 # DOT generation
 # ---------------------------------------------------------------------------
 
-def _dot(nodes, edges):
-    """Assemble the final DOT string from collected nodes and edges."""
+def _dot(nodes, edges, groups):
+    """Assemble the final DOT string from collected nodes and edges.
+
+    Nodes that belong to a group are emitted inside a
+    ``subgraph cluster_<guid>`` block.  Ungrouped nodes are emitted
+    at the top level.  Nested groups are flattened — a node is placed
+    in its *most specific* (innermost) group.
+    """
+    # Build node GUID → node dict lookup
+    node_by_guid = {n["guid"]: n for n in nodes}
+
+    # Determine which group each node belongs to.
+    # If a node is claimed by multiple groups (nested), assign it to the
+    # *smallest* group (fewest members) — that's the innermost one.
+    node_group = {}  # node_guid → group_guid
+    groups_sorted = sorted(groups, key=lambda g: g["guid"])
+    for grp in sorted(groups_sorted, key=lambda g: len(g["member_guids"])):
+        for mg in grp["member_guids"]:
+            if mg in node_by_guid:
+                node_group[mg] = grp["guid"]
+
+    # Group lookup for emission
+    group_by_guid = {g["guid"]: g for g in groups_sorted}
+
+    # Collect node GUIDs per group (only renderable nodes)
+    grouped_nodes = {}  # group_guid → [node_guid, ...]
+    for ng, gg in node_group.items():
+        grouped_nodes.setdefault(gg, []).append(ng)
+    for k in grouped_nodes:
+        grouped_nodes[k].sort()
+
+    ungrouped = [n for n in nodes if n["guid"] not in node_group]
+
+    def _emit_node(n, indent=4):
+        """Return DOT lines for a single node."""
+        pad = " " * indent
+        out = []
+        if n["kind"] in ("component", "leaf"):
+            label = _html_label(
+                n["nick"], n["name"],
+                n.get("inputs", []), n.get("outputs", []),
+                indent=indent + 4,
+            )
+            comment_name = n["nick"] or n["name"]
+            out.append(f'{pad}// {comment_name} (guid: {n["guid"]})')
+            out.append(f'{pad}"{n["guid"]}" [margin=0, label={label}];')
+            out.append("")
+        elif n["kind"] == "other":
+            obj_type = n.get("clr_type", "unknown")
+            comment_name = n["nick"] or n["name"]
+            out.append(
+                f'{pad}// [skipped] {comment_name}'
+                f' (type: {obj_type}, guid: {n["guid"]})'
+            )
+        return out
+
+    # --- Build output ---
     lines = [
         "digraph G {",
         "    rankdir=LR;",
         "    node [shape=plaintext];",
         "",
-        "    // --- Nodes ---",
     ]
 
-    for n in nodes:
-        if n["kind"] in ("component", "leaf"):
-            label = _html_label(
-                n["nick"], n["name"],
-                n.get("inputs", []), n.get("outputs", []),
-            )
-            comment_name = n["nick"] or n["name"]
-            lines.append(f'    // {comment_name} (guid: {n["guid"]})')
-            lines.append(f'    "{n["guid"]}" [margin=0, label={label}];')
+    # Emit groups as subgraph clusters
+    if groups_sorted:
+        lines.append("    // --- Groups ---")
+        for grp in groups_sorted:
+            member_node_guids = grouped_nodes.get(grp["guid"], [])
+            lines.append(f'    // group: {grp["nick"]} (guid: {grp["guid"]})')
+            lines.append(f'    subgraph "cluster_{grp["guid"]}" {{')
+            lines.append(f'        label="{_esc(grp["nick"])}";')
+            for mg in member_node_guids:
+                n = node_by_guid[mg]
+                lines.extend(_emit_node(n, indent=8))
+            lines.append("    }")
             lines.append("")
 
-        elif n["kind"] == "other":
-            obj_type = n.get("clr_type", "unknown")
-            comment_name = n["nick"] or n["name"]
-            lines.append(
-                f'    // [skipped] {comment_name}'
-                f' (type: {obj_type}, guid: {n["guid"]})'
-            )
+    # Emit ungrouped nodes
+    if ungrouped:
+        lines.append("    // --- Nodes (ungrouped) ---")
+        for n in ungrouped:
+            lines.extend(_emit_node(n))
 
     lines.append("")
     lines.append("    // --- Edges ---")
@@ -281,9 +353,9 @@ def _dot(nodes, edges):
 
 def main():
     gh_doc = gh.Instances.ActiveCanvas.Document
-    nodes, param_map = _collect(gh_doc)
+    nodes, param_map, groups = _collect(gh_doc)
     edges = _edges(nodes, param_map)
-    return _dot(nodes, edges)
+    return _dot(nodes, edges, groups)
 
 
 graph = main()
