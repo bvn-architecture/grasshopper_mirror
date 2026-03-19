@@ -365,13 +365,11 @@ subgraph "cluster_subgraph_2114268e-15ce-4034-9c0f-2909887ed546" {
     "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" [label="guard\nParam_ScriptVariable"];
     "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" [label="trigger\nParam_ScriptVariable"];
     "out_out_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" [label="out\nParam_String"];
-    "a_out_af6ad784-afcd-422f-b956-bce6c0fd436d" [label="a\nParam_GenericObject"];
     
     # Edges
     "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" -> "Python_2114268e-15ce-4034-9c0f-2909887ed546" ;
     "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" -> "Python_2114268e-15ce-4034-9c0f-2909887ed546" ;
     "Python_2114268e-15ce-4034-9c0f-2909887ed546" -> "out_out_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" ;
-    "Python_2114268e-15ce-4034-9c0f-2909887ed546" -> "a_out_af6ad784-afcd-422f-b956-bce6c0fd436d" ;
     
 }
 
@@ -387,6 +385,187 @@ subgraph "cluster_subgraph_6b492f1a-716e-4f31-8247-16b28a652c2c" {
     
     # Edges
     "Toggle_6b492f1a-716e-4f31-8247-16b28a652c2c" -> "Toggle_out_6b492f1a-716e-4f31-8247-16b28a652c2c" ;
+    
+}
+
+#25
+subgraph "cluster_subgraph_7f4ed65a-5b40-4cf0-b888-c7b5e5504995" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_7f4ed65a-5b40-4cf0-b888-c7b5e5504995" [label="\n(Panel)\nValue: empty structure", fillcolor="orchid", fontsize=20];
+    "_in_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" [label="in →•"];
+    
+    # Edges
+    "_in_d486f17e-6e99-4f2a-b53f-a7a5b0fd0958" -> "_7f4ed65a-5b40-4cf0-b888-c7b5e5504995" ;
+    
+}
+
+#26
+subgraph "cluster_subgraph_460938a8-e116-46c5-ace2-2df07b0a5985" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Python\n(GhPython Script)";
+    # Nodes
+    "Python_460938a8-e116-46c5-ace2-2df07b0a5985" [label="Python\n(GhPython Script)", fillcolor="blueviolet", fontsize=20];
+    "headline_in_1926b1b2-087b-4a4c-a059-d24bc8b15b00" [label="headline\nParam_ScriptVariable"];
+    "tiny_description_in_471b1275-f6d9-41b7-b4f5-8353d8bc858e" [label="tiny_description\nParam_ScriptVariable"];
+    "tags_in_d1bad335-8d3c-4084-aefc-2ed0d4765d70" [label="tags\nParam_ScriptVariable"];
+    "authors_in_65624d49-e4ba-428f-93c6-03a3abbbad26" [label="authors\nParam_ScriptVariable"];
+    "headline_image_url_in_c7260b99-02fc-4d60-b77f-9d028efbbe12" [label="headline_image_url\nParam_ScriptVariable"];
+    "summary_in_f34ebfe3-7c72-4099-bee1-1a0f541ed504" [label="summary\nParam_ScriptVariable"];
+    "origin_story_in_7d325d96-81dd-4163-9a93-6c75ad2b34c0" [label="origin_story\nParam_ScriptVariable"];
+    "detailed_description_in_766fc064-3ea4-4b47-9a54-d527b11dce1b" [label="detailed_description\nParam_ScriptVariable"];
+    "repo_url_in_8d1b0ca5-9fcf-4943-8126-b4e366e13a6b" [label="repo_url\nParam_ScriptVariable"];
+    "out_out_02860fa0-a919-48fe-b52d-1048ee4f5a2f" [label="out\nParam_String"];
+    
+    # Edges
+    "headline_in_1926b1b2-087b-4a4c-a059-d24bc8b15b00" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "tiny_description_in_471b1275-f6d9-41b7-b4f5-8353d8bc858e" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "tags_in_d1bad335-8d3c-4084-aefc-2ed0d4765d70" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "authors_in_65624d49-e4ba-428f-93c6-03a3abbbad26" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "headline_image_url_in_c7260b99-02fc-4d60-b77f-9d028efbbe12" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "summary_in_f34ebfe3-7c72-4099-bee1-1a0f541ed504" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "origin_story_in_7d325d96-81dd-4163-9a93-6c75ad2b34c0" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "detailed_description_in_766fc064-3ea4-4b47-9a54-d527b11dce1b" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "repo_url_in_8d1b0ca5-9fcf-4943-8126-b4e366e13a6b" -> "Python_460938a8-e116-46c5-ace2-2df07b0a5985" ;
+    "Python_460938a8-e116-46c5-ace2-2df07b0a5985" -> "out_out_02860fa0-a919-48fe-b52d-1048ee4f5a2f" ;
+    
+}
+
+#27
+subgraph "cluster_subgraph_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" [label="\n(Panel)\nValue: empty structure", fillcolor="brown", fontsize=20];
+    "_out_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" [label="•→ out"];
+    
+    # Edges
+    "_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" -> "_out_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" ;
+    
+}
+
+#28
+subgraph "cluster_subgraph_2cc27ea4-785b-449e-a0af-4d39e2d030a6" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_2cc27ea4-785b-449e-a0af-4d39e2d030a6" [label="\n(Panel)\nValue: empty structure", fillcolor="burlywood", fontsize=20];
+    "_in_02860fa0-a919-48fe-b52d-1048ee4f5a2f" [label="in →•"];
+    
+    # Edges
+    "_in_02860fa0-a919-48fe-b52d-1048ee4f5a2f" -> "_2cc27ea4-785b-449e-a0af-4d39e2d030a6" ;
+    
+}
+
+#29
+subgraph "cluster_subgraph_0e61572b-aa9e-4013-bc74-2235ad271dc5" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_0e61572b-aa9e-4013-bc74-2235ad271dc5" [label="\n(Panel)\nValue: empty structure", fillcolor="cadetblue", fontsize=20];
+    "_out_0e61572b-aa9e-4013-bc74-2235ad271dc5" [label="•→ out"];
+    
+    # Edges
+    "_0e61572b-aa9e-4013-bc74-2235ad271dc5" -> "_out_0e61572b-aa9e-4013-bc74-2235ad271dc5" ;
+    
+}
+
+#30
+subgraph "cluster_subgraph_0503685c-ca9b-4624-8fdc-4fd1300d18b3" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_0503685c-ca9b-4624-8fdc-4fd1300d18b3" [label="\n(Panel)\nValue: empty structure", fillcolor="chartreuse", fontsize=20];
+    "_out_0503685c-ca9b-4624-8fdc-4fd1300d18b3" [label="•→ out"];
+    
+    # Edges
+    "_0503685c-ca9b-4624-8fdc-4fd1300d18b3" -> "_out_0503685c-ca9b-4624-8fdc-4fd1300d18b3" ;
+    
+}
+
+#31
+subgraph "cluster_subgraph_a548b899-dc73-4738-93a5-6ff0e2c1a8de" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_a548b899-dc73-4738-93a5-6ff0e2c1a8de" [label="\n(Panel)\nValue: empty structure", fillcolor="chocolate", fontsize=20];
+    "_out_a548b899-dc73-4738-93a5-6ff0e2c1a8de" [label="•→ out"];
+    
+    # Edges
+    "_a548b899-dc73-4738-93a5-6ff0e2c1a8de" -> "_out_a548b899-dc73-4738-93a5-6ff0e2c1a8de" ;
+    
+}
+
+#32
+subgraph "cluster_subgraph_32eb75a4-9742-47ad-a957-d4ba6fb7211c" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Summary\n(Panel)";
+    # Nodes
+    "Summary_32eb75a4-9742-47ad-a957-d4ba6fb7211c" [label="Summary\n(Panel)\nValue: empty structure", fillcolor="coral", fontsize=20];
+    "Summary_out_32eb75a4-9742-47ad-a957-d4ba6fb7211c" [label="•→ out"];
+    
+    # Edges
+    "Summary_32eb75a4-9742-47ad-a957-d4ba6fb7211c" -> "Summary_out_32eb75a4-9742-47ad-a957-d4ba6fb7211c" ;
+    
+}
+
+#33
+subgraph "cluster_subgraph_11ab1da8-3333-4b9b-92a0-b6f95e0290db" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Origin Story\n(Panel)";
+    # Nodes
+    "Origin Story_11ab1da8-3333-4b9b-92a0-b6f95e0290db" [label="Origin Story\n(Panel)\nValue: empty structure", fillcolor="cornflowerblue", fontsize=20];
+    "Origin Story_out_11ab1da8-3333-4b9b-92a0-b6f95e0290db" [label="•→ out"];
+    
+    # Edges
+    "Origin Story_11ab1da8-3333-4b9b-92a0-b6f95e0290db" -> "Origin Story_out_11ab1da8-3333-4b9b-92a0-b6f95e0290db" ;
+    
+}
+
+#34
+subgraph "cluster_subgraph_66069d6c-1e63-49a5-bb56-d3c1beac472a" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Detailed description\n(Panel)";
+    # Nodes
+    "Detailed description_66069d6c-1e63-49a5-bb56-d3c1beac472a" [label="Detailed description\n(Panel)\nValue: empty structure", fillcolor="cornsilk", fontsize=20];
+    "Detailed description_out_66069d6c-1e63-49a5-bb56-d3c1beac472a" [label="•→ out"];
+    
+    # Edges
+    "Detailed description_66069d6c-1e63-49a5-bb56-d3c1beac472a" -> "Detailed description_out_66069d6c-1e63-49a5-bb56-d3c1beac472a" ;
+    
+}
+
+#35
+subgraph "cluster_subgraph_594fe024-8994-4d48-8f35-c2b50f9c20c5" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_594fe024-8994-4d48-8f35-c2b50f9c20c5" [label="\n(Panel)\nValue: empty structure", fillcolor="crimson", fontsize=20];
+    
+    # Edges
     
 }
 
@@ -422,6 +601,15 @@ subgraph "cluster_subgraph_6b492f1a-716e-4f31-8247-16b28a652c2c" {
     # Connections for Python
 "Toggle_out_6b492f1a-716e-4f31-8247-16b28a652c2c" -> "guard_in_5abf837a-8509-4d9a-bc67-b0a7466adb75" ;
     "E_out_3bcd31ea-fcd9-4825-a60a-34789117b05d" -> "trigger_in_d1af5355-54a0-49b9-90c1-a89d5e61c782" ;
+    # Connections for Python
+"_out_a548b899-dc73-4738-93a5-6ff0e2c1a8de" -> "headline_in_1926b1b2-087b-4a4c-a059-d24bc8b15b00" ;
+    "_out_a548b899-dc73-4738-93a5-6ff0e2c1a8de" -> "tiny_description_in_471b1275-f6d9-41b7-b4f5-8353d8bc858e" ;
+    "_out_a5d2bb92-5f85-45f2-ae8c-c83d216eba36" -> "tags_in_d1bad335-8d3c-4084-aefc-2ed0d4765d70" ;
+    "_out_0e61572b-aa9e-4013-bc74-2235ad271dc5" -> "authors_in_65624d49-e4ba-428f-93c6-03a3abbbad26" ;
+    "_out_0503685c-ca9b-4624-8fdc-4fd1300d18b3" -> "headline_image_url_in_c7260b99-02fc-4d60-b77f-9d028efbbe12" ;
+    "Summary_out_32eb75a4-9742-47ad-a957-d4ba6fb7211c" -> "summary_in_f34ebfe3-7c72-4099-bee1-1a0f541ed504" ;
+    "Origin Story_out_11ab1da8-3333-4b9b-92a0-b6f95e0290db" -> "origin_story_in_7d325d96-81dd-4163-9a93-6c75ad2b34c0" ;
+    "Detailed description_out_66069d6c-1e63-49a5-bb56-d3c1beac472a" -> "detailed_description_in_766fc064-3ea4-4b47-9a54-d527b11dce1b" ;
     
     # Manually Connected Connections
     # These are the connections that I've manually created that actually connect the graph the way it ought to be connected.

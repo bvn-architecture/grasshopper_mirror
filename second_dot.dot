@@ -1,0 +1,624 @@
+digraph G {
+    rankdir = LR;
+    # Subgraphs
+    
+#0
+subgraph "cluster_subgraph_51209a31-00e0-4b05-b172-4c0230265a66" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "dot panel\n(Panel)";
+    # Nodes
+    "dot panel_51209a31-00e0-4b05-b172-4c0230265a66" [label="dot panel\n(Panel)\nValue: empty structure", fillcolor="blueviolet", fontsize=20];
+    "dot panel_in_540a6557-5c01-4694-94b4-69cfba6ae670" [label="in →•"];
+    
+    # Edges
+    "dot panel_in_540a6557-5c01-4694-94b4-69cfba6ae670" -> "dot panel_51209a31-00e0-4b05-b172-4c0230265a66" ;
+    
+}
+
+#1
+subgraph "cluster_subgraph_6ff0ff7e-a539-4919-acff-d2ed22901e68" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Python\n(GhPython Script)";
+    # Nodes
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" [label="Python\n(GhPython Script)", fillcolor="brown", fontsize=20];
+    "trigger_in_e133d724-991a-4449-bd31-a7a71fdea039" [label="trigger\nParam_ScriptVariable"];
+    "out_out_94372795-e005-40cd-9c8c-fd132a976766" [label="out\nParam_String"];
+    "graph_out_540a6557-5c01-4694-94b4-69cfba6ae670" [label="graph\nParam_GenericObject"];
+    
+    # Edges
+    "trigger_in_e133d724-991a-4449-bd31-a7a71fdea039" -> "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" ;
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "out_out_94372795-e005-40cd-9c8c-fd132a976766" ;
+    "Python_6ff0ff7e-a539-4919-acff-d2ed22901e68" -> "graph_out_540a6557-5c01-4694-94b4-69cfba6ae670" ;
+    
+}
+
+#3
+subgraph "cluster_subgraph_370f0431-b8a7-4a15-99b5-52a7917541e4" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Pt\n(Point)";
+    # Nodes
+    "Pt_370f0431-b8a7-4a15-99b5-52a7917541e4" [label="Pt\n(Point)\nValue: {0, 0, 0}", fillcolor="cadetblue", fontsize=20];
+    "Pt_in_79152432-f8f7-4a95-8441-8ab71ce450ec" [label="in →•"];
+    "Pt_out_370f0431-b8a7-4a15-99b5-52a7917541e4" [label="•→ out"];
+    
+    # Edges
+    "Pt_in_79152432-f8f7-4a95-8441-8ab71ce450ec" -> "Pt_370f0431-b8a7-4a15-99b5-52a7917541e4" ;
+    "Pt_370f0431-b8a7-4a15-99b5-52a7917541e4" -> "Pt_out_370f0431-b8a7-4a15-99b5-52a7917541e4" ;
+    
+}
+
+#4
+subgraph "cluster_subgraph_dde848f5-2ec1-4219-8626-2c1dc7aabf2c" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "XY\n(XY Plane)";
+    # Nodes
+    "XY_dde848f5-2ec1-4219-8626-2c1dc7aabf2c" [label="XY\n(XY Plane)", fillcolor="chartreuse", fontsize=20];
+    "O_in_e1e71c2e-393a-4458-8a7b-dbb5540d23e4" [label="O\nParam_Point"];
+    "P_out_79152432-f8f7-4a95-8441-8ab71ce450ec" [label="P\nParam_Plane"];
+    
+    # Edges
+    "O_in_e1e71c2e-393a-4458-8a7b-dbb5540d23e4" -> "XY_dde848f5-2ec1-4219-8626-2c1dc7aabf2c" ;
+    "XY_dde848f5-2ec1-4219-8626-2c1dc7aabf2c" -> "P_out_79152432-f8f7-4a95-8441-8ab71ce450ec" ;
+    
+}
+
+#5
+subgraph "cluster_subgraph_cc91853e-a7fe-403a-9d97-a95e6b1033a9" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Move";
+    # Nodes
+    "Move_cc91853e-a7fe-403a-9d97-a95e6b1033a9" [label="Move", fillcolor="chocolate", fontsize=20];
+    "G_in_45e648d7-3822-4fef-b820-56535c2f690e" [label="G\nParam_Geometry"];
+    "T_in_fc49e726-033e-4ac3-9597-ed23b0f8493d" [label="T\nParam_Vector"];
+    "G_out_4fb8bff5-728a-4ca3-837a-85cb8f7168a2" [label="G\nParam_Geometry"];
+    "X_out_fad231f7-e30a-4d46-8b9f-0fb994f446e0" [label="X\nParam_Transform"];
+    
+    # Edges
+    "G_in_45e648d7-3822-4fef-b820-56535c2f690e" -> "Move_cc91853e-a7fe-403a-9d97-a95e6b1033a9" ;
+    "T_in_fc49e726-033e-4ac3-9597-ed23b0f8493d" -> "Move_cc91853e-a7fe-403a-9d97-a95e6b1033a9" ;
+    "Move_cc91853e-a7fe-403a-9d97-a95e6b1033a9" -> "G_out_4fb8bff5-728a-4ca3-837a-85cb8f7168a2" ;
+    "Move_cc91853e-a7fe-403a-9d97-a95e6b1033a9" -> "X_out_fad231f7-e30a-4d46-8b9f-0fb994f446e0" ;
+    
+}
+
+#6
+subgraph "cluster_subgraph_27e7f154-7635-40dd-af1e-6ccdb7153683" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Z\n(Unit Z)";
+    # Nodes
+    "Z_27e7f154-7635-40dd-af1e-6ccdb7153683" [label="Z\n(Unit Z)", fillcolor="coral", fontsize=20];
+    "F_in_8dd5b40c-a418-416d-911a-c09be84f55ec" [label="F\nParam_Number"];
+    "V_out_5cb237fd-8e3c-4c98-a346-07ac294f3a5f" [label="V\nParam_Vector"];
+    
+    # Edges
+    "F_in_8dd5b40c-a418-416d-911a-c09be84f55ec" -> "Z_27e7f154-7635-40dd-af1e-6ccdb7153683" ;
+    "Z_27e7f154-7635-40dd-af1e-6ccdb7153683" -> "V_out_5cb237fd-8e3c-4c98-a346-07ac294f3a5f" ;
+    
+}
+
+#7
+subgraph "cluster_subgraph_7aae9bf7-561e-4ee5-8e86-a0466524f8ef" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Z\n(Unit Z)";
+    # Nodes
+    "Z_7aae9bf7-561e-4ee5-8e86-a0466524f8ef" [label="Z\n(Unit Z)", fillcolor="cornflowerblue", fontsize=20];
+    "F_in_5b22ebec-4b72-4638-a85c-fa2310253b16" [label="F\nParam_Number"];
+    "V_out_7f8d4f3b-22f1-4b10-a4e7-523586dcb9d9" [label="V\nParam_Vector"];
+    
+    # Edges
+    "F_in_5b22ebec-4b72-4638-a85c-fa2310253b16" -> "Z_7aae9bf7-561e-4ee5-8e86-a0466524f8ef" ;
+    "Z_7aae9bf7-561e-4ee5-8e86-a0466524f8ef" -> "V_out_7f8d4f3b-22f1-4b10-a4e7-523586dcb9d9" ;
+    
+}
+
+#8
+subgraph "cluster_subgraph_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Move";
+    # Nodes
+    "Move_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" [label="Move", fillcolor="cornsilk", fontsize=20];
+    "G_in_42839203-2171-4d73-b5dc-eb76b962f555" [label="G\nParam_Geometry"];
+    "T_in_f85fd904-08a7-4a7a-ae57-811648fc536a" [label="T\nParam_Vector"];
+    "G_out_95d0cee9-b020-4b37-a6b5-bd10b2f7357a" [label="G\nParam_Geometry"];
+    "X_out_6d041cf5-6ccc-4b0a-bf6d-e2c0c5a8ab8b" [label="X\nParam_Transform"];
+    
+    # Edges
+    "G_in_42839203-2171-4d73-b5dc-eb76b962f555" -> "Move_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" ;
+    "T_in_f85fd904-08a7-4a7a-ae57-811648fc536a" -> "Move_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" ;
+    "Move_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" -> "G_out_95d0cee9-b020-4b37-a6b5-bd10b2f7357a" ;
+    "Move_95f6f371-e0e3-4fdb-ae5c-d0a06251ab36" -> "X_out_6d041cf5-6ccc-4b0a-bf6d-e2c0c5a8ab8b" ;
+    
+}
+
+#9
+subgraph "cluster_subgraph_cd2174fa-8028-4855-b79b-827d7d8ac2f0" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "mount height\n(Number Slider)";
+    # Nodes
+    "mount height_cd2174fa-8028-4855-b79b-827d7d8ac2f0" [label="mount height\n(Number Slider)\nValue: 2709", fillcolor="crimson", fontsize=20];
+    "mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" [label="•→ out"];
+    
+    # Edges
+    "mount height_cd2174fa-8028-4855-b79b-827d7d8ac2f0" -> "mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" ;
+    
+}
+
+#10
+subgraph "cluster_subgraph_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "working plane height\n(Number Slider)";
+    # Nodes
+    "working plane height_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" [label="working plane height\n(Number Slider)\nValue: 900", fillcolor="cyan", fontsize=20];
+    "working plane height_out_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" [label="•→ out"];
+    
+    # Edges
+    "working plane height_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" -> "working plane height_out_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" ;
+    
+}
+
+#11
+subgraph "cluster_subgraph_ee93e148-6530-454f-b0de-1fc0dd44348a" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Ellipse";
+    # Nodes
+    "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" [label="Ellipse", fillcolor="orangered", fontsize=20];
+    "P_in_51c0f92e-987b-45df-9354-8f703b33fdef" [label="P\nParam_Plane"];
+    "R1_in_c18faece-1cdc-49ef-b4f5-38dacdee3487" [label="R1\nParam_Number"];
+    "R2_in_a5b74798-529b-43a6-9f69-e4dccdef35d2" [label="R2\nParam_Number"];
+    "E_out_474980a4-3205-4ca8-8cc8-3af06a166f4c" [label="E\nParam_Curve"];
+    "F1_out_6a22b184-fb3b-4d4b-a8b0-0d8e7a2710dd" [label="F1\nParam_Point"];
+    "F2_out_74dd6134-ea6d-4c99-9d5b-aab277d00f92" [label="F2\nParam_Point"];
+    
+    # Edges
+    "P_in_51c0f92e-987b-45df-9354-8f703b33fdef" -> "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" ;
+    "R1_in_c18faece-1cdc-49ef-b4f5-38dacdee3487" -> "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" ;
+    "R2_in_a5b74798-529b-43a6-9f69-e4dccdef35d2" -> "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" ;
+    "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" -> "E_out_474980a4-3205-4ca8-8cc8-3af06a166f4c" ;
+    "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" -> "F1_out_6a22b184-fb3b-4d4b-a8b0-0d8e7a2710dd" ;
+    "Ellipse_ee93e148-6530-454f-b0de-1fc0dd44348a" -> "F2_out_74dd6134-ea6d-4c99-9d5b-aab277d00f92" ;
+    
+}
+
+#12
+subgraph "cluster_subgraph_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "small_angle\n(Number)";
+    # Nodes
+    "small_angle_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" [label="small_angle\n(Number)\nValue: 85.4", fillcolor="orchid", fontsize=20];
+    "small_angle_out_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" [label="•→ out"];
+    
+    # Edges
+    "small_angle_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" -> "small_angle_out_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" ;
+    
+}
+
+#13
+subgraph "cluster_subgraph_897c2ac6-5acc-42a6-a05b-3d2211fe628e" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "big_angle\n(Number)";
+    # Nodes
+    "big_angle_897c2ac6-5acc-42a6-a05b-3d2211fe628e" [label="big_angle\n(Number)\nValue: 105", fillcolor="blueviolet", fontsize=20];
+    "big_angle_out_897c2ac6-5acc-42a6-a05b-3d2211fe628e" [label="•→ out"];
+    
+    # Edges
+    "big_angle_897c2ac6-5acc-42a6-a05b-3d2211fe628e" -> "big_angle_out_897c2ac6-5acc-42a6-a05b-3d2211fe628e" ;
+    
+}
+
+#14
+subgraph "cluster_subgraph_d1dcc120-57cb-451c-b7d1-f36986a07684" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Rad2\n(Radians)";
+    # Nodes
+    "Rad2_d1dcc120-57cb-451c-b7d1-f36986a07684" [label="Rad2\n(Radians)", fillcolor="brown", fontsize=20];
+    "D_in_1a8659f6-cb3c-4590-be53-5c7b87f236ae" [label="D\nParam_Number"];
+    "R_out_6420e2fc-cda4-4b04-94bb-c27d851a30c0" [label="R\nParam_Number"];
+    
+    # Edges
+    "D_in_1a8659f6-cb3c-4590-be53-5c7b87f236ae" -> "Rad2_d1dcc120-57cb-451c-b7d1-f36986a07684" ;
+    "Rad2_d1dcc120-57cb-451c-b7d1-f36986a07684" -> "R_out_6420e2fc-cda4-4b04-94bb-c27d851a30c0" ;
+    
+}
+
+#15
+subgraph "cluster_subgraph_17ee30d1-3eaf-4f24-a90d-178dd4ef5e68" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Rad1\n(Radians)";
+    # Nodes
+    "Rad1_17ee30d1-3eaf-4f24-a90d-178dd4ef5e68" [label="Rad1\n(Radians)", fillcolor="burlywood", fontsize=20];
+    "D_in_e6cc6c2d-344e-4923-b873-a87d192e892a" [label="D\nParam_Number"];
+    "R_out_35dbcc5c-38b2-4115-a3bb-ac221f37853c" [label="R\nParam_Number"];
+    
+    # Edges
+    "D_in_e6cc6c2d-344e-4923-b873-a87d192e892a" -> "Rad1_17ee30d1-3eaf-4f24-a90d-178dd4ef5e68" ;
+    "Rad1_17ee30d1-3eaf-4f24-a90d-178dd4ef5e68" -> "R_out_35dbcc5c-38b2-4115-a3bb-ac221f37853c" ;
+    
+}
+
+#16
+subgraph "cluster_subgraph_9e0ededc-f599-48e2-8769-3f80c660b531" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "XY\n(XY Plane)";
+    # Nodes
+    "XY_9e0ededc-f599-48e2-8769-3f80c660b531" [label="XY\n(XY Plane)", fillcolor="cadetblue", fontsize=20];
+    "O_in_f3a3bad6-9816-4dfe-a670-30d9281d7952" [label="O\nParam_Point"];
+    "P_out_b1d03391-e5c6-44e7-ae25-31a0b4b018fb" [label="P\nParam_Plane"];
+    
+    # Edges
+    "O_in_f3a3bad6-9816-4dfe-a670-30d9281d7952" -> "XY_9e0ededc-f599-48e2-8769-3f80c660b531" ;
+    "XY_9e0ededc-f599-48e2-8769-3f80c660b531" -> "P_out_b1d03391-e5c6-44e7-ae25-31a0b4b018fb" ;
+    
+}
+
+#17
+subgraph "cluster_subgraph_d6e4872b-58cd-42c1-9938-2d877d080b5f" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b2\n(Cluster)";
+    # Nodes
+    "b2_d6e4872b-58cd-42c1-9938-2d877d080b5f" [label="b2\n(Cluster)", fillcolor="chartreuse", fontsize=20];
+    "height_in_9c876d34-ce97-46b1-b915-8fdd392f5418" [label="height\nParam_ScriptVariable"];
+    "angle_in_d3529004-cdad-41b6-8327-3b2e26356472" [label="angle\nParam_ScriptVariable"];
+    "base_out_5dc39e2f-891b-4581-a867-07daad33ddc6" [label="base\nParam_GenericObject"];
+    
+    # Edges
+    "height_in_9c876d34-ce97-46b1-b915-8fdd392f5418" -> "b2_d6e4872b-58cd-42c1-9938-2d877d080b5f" ;
+    "angle_in_d3529004-cdad-41b6-8327-3b2e26356472" -> "b2_d6e4872b-58cd-42c1-9938-2d877d080b5f" ;
+    "b2_d6e4872b-58cd-42c1-9938-2d877d080b5f" -> "base_out_5dc39e2f-891b-4581-a867-07daad33ddc6" ;
+    
+}
+
+#18
+subgraph "cluster_subgraph_0ce59889-dfeb-4f29-a816-03e3a66bdfd4" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b1\n(Cluster)";
+    # Nodes
+    "b1_0ce59889-dfeb-4f29-a816-03e3a66bdfd4" [label="b1\n(Cluster)", fillcolor="chocolate", fontsize=20];
+    "height_in_34a3c877-fb24-4168-b799-99b7186b8d36" [label="height\nParam_ScriptVariable"];
+    "angle_in_b3abfddb-1b12-42ae-8e2f-b2f14c4f1ae4" [label="angle\nParam_ScriptVariable"];
+    "base_out_5d4ca501-9b66-458b-9aaa-92d3472b2aca" [label="base\nParam_GenericObject"];
+    
+    # Edges
+    "height_in_34a3c877-fb24-4168-b799-99b7186b8d36" -> "b1_0ce59889-dfeb-4f29-a816-03e3a66bdfd4" ;
+    "angle_in_b3abfddb-1b12-42ae-8e2f-b2f14c4f1ae4" -> "b1_0ce59889-dfeb-4f29-a816-03e3a66bdfd4" ;
+    "b1_0ce59889-dfeb-4f29-a816-03e3a66bdfd4" -> "base_out_5d4ca501-9b66-458b-9aaa-92d3472b2aca" ;
+    
+}
+
+#19
+subgraph "cluster_subgraph_bd319eb5-9d02-43c6-bf4e-c7ad594eb08f" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_bd319eb5-9d02-43c6-bf4e-c7ad594eb08f" [label="\n(Panel)\nValue: empty structure", fillcolor="coral", fontsize=20];
+    "_in_897c2ac6-5acc-42a6-a05b-3d2211fe628e" [label="in →•"];
+    
+    # Edges
+    "_in_897c2ac6-5acc-42a6-a05b-3d2211fe628e" -> "_bd319eb5-9d02-43c6-bf4e-c7ad594eb08f" ;
+    
+}
+
+#20
+subgraph "cluster_subgraph_da5b79b0-3ff6-430d-b204-afe0d593c11d" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Panel)";
+    # Nodes
+    "_da5b79b0-3ff6-430d-b204-afe0d593c11d" [label="\n(Panel)\nValue: empty structure", fillcolor="cornflowerblue", fontsize=20];
+    "_in_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" [label="in →•"];
+    
+    # Edges
+    "_in_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" -> "_da5b79b0-3ff6-430d-b204-afe0d593c11d" ;
+    
+}
+
+#21
+subgraph "cluster_subgraph_68b2abba-a9c2-4854-bd4d-88158437dd1a" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "YZ\n(YZ Plane)";
+    # Nodes
+    "YZ_68b2abba-a9c2-4854-bd4d-88158437dd1a" [label="YZ\n(YZ Plane)", fillcolor="cornsilk", fontsize=20];
+    "O_in_5755977b-c47b-4e8e-9b5b-edbba0e0c716" [label="O\nParam_Point"];
+    "P_out_f7c4d196-9938-4db9-b899-51d44d211d5e" [label="P\nParam_Plane"];
+    
+    # Edges
+    "O_in_5755977b-c47b-4e8e-9b5b-edbba0e0c716" -> "YZ_68b2abba-a9c2-4854-bd4d-88158437dd1a" ;
+    "YZ_68b2abba-a9c2-4854-bd4d-88158437dd1a" -> "P_out_f7c4d196-9938-4db9-b899-51d44d211d5e" ;
+    
+}
+
+#22
+subgraph "cluster_subgraph_b1705b2c-b192-42ab-b59b-95f67939cd4f" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "XZ\n(XZ Plane)";
+    # Nodes
+    "XZ_b1705b2c-b192-42ab-b59b-95f67939cd4f" [label="XZ\n(XZ Plane)", fillcolor="crimson", fontsize=20];
+    "O_in_d7f2804d-ce9c-428d-b288-846d5a936865" [label="O\nParam_Point"];
+    "P_out_67dbcd1b-e1c1-42cd-8d37-d053fcfd0b03" [label="P\nParam_Plane"];
+    
+    # Edges
+    "O_in_d7f2804d-ce9c-428d-b288-846d5a936865" -> "XZ_b1705b2c-b192-42ab-b59b-95f67939cd4f" ;
+    "XZ_b1705b2c-b192-42ab-b59b-95f67939cd4f" -> "P_out_67dbcd1b-e1c1-42cd-8d37-d053fcfd0b03" ;
+    
+}
+
+#23
+subgraph "cluster_subgraph_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Cluster";
+    # Nodes
+    "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" [label="Cluster", fillcolor="cyan", fontsize=20];
+    "plane_of_angle_in_99310ffa-73c3-4e2d-bb8a-13b64a53cc7a" [label="plane_of_angle\nParam_Plane"];
+    "fov_angle_in_9e676951-0ed7-4fc6-b831-a335f6dac0d1" [label="fov_angle\nParam_Number"];
+    "Line Length_in_57332d83-b592-48ef-8c24-8195477e35e6" [label="Line Length\nParam_Number"];
+    "Line_out_54f765ca-4df1-444c-9fe7-3fc99208b415" [label="Line\nParam_Line"];
+    "Line_out_fdda01c6-1ad7-470c-be69-fc8119d78305" [label="Line\nParam_Line"];
+    
+    # Edges
+    "plane_of_angle_in_99310ffa-73c3-4e2d-bb8a-13b64a53cc7a" -> "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" ;
+    "fov_angle_in_9e676951-0ed7-4fc6-b831-a335f6dac0d1" -> "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" ;
+    "Line Length_in_57332d83-b592-48ef-8c24-8195477e35e6" -> "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" ;
+    "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" -> "Line_out_54f765ca-4df1-444c-9fe7-3fc99208b415" ;
+    "Cluster_6447d0e8-278c-49ed-a6d4-2d565cc63b3f" -> "Line_out_fdda01c6-1ad7-470c-be69-fc8119d78305" ;
+    
+}
+
+#24
+subgraph "cluster_subgraph_9af9b088-3dbb-45cd-983d-e76709bbe528" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Cluster";
+    # Nodes
+    "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" [label="Cluster", fillcolor="orangered", fontsize=20];
+    "plane_of_angle_in_f8d059de-f1ac-4669-bd4e-f8c9ae53569e" [label="plane_of_angle\nParam_Plane"];
+    "fov_angle_in_28be26a7-4b8c-40d1-b9dc-294d93f54484" [label="fov_angle\nParam_Number"];
+    "Line Length_in_3d4490c8-30df-4363-b285-36cdb7ea266a" [label="Line Length\nParam_Number"];
+    "Line_out_da27797a-5dd5-486b-b19e-f79137f1f8ab" [label="Line\nParam_Line"];
+    "Line_out_f5154ccc-30aa-4164-a96e-4b6ae4ada15a" [label="Line\nParam_Line"];
+    
+    # Edges
+    "plane_of_angle_in_f8d059de-f1ac-4669-bd4e-f8c9ae53569e" -> "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" ;
+    "fov_angle_in_28be26a7-4b8c-40d1-b9dc-294d93f54484" -> "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" ;
+    "Line Length_in_3d4490c8-30df-4363-b285-36cdb7ea266a" -> "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" ;
+    "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" -> "Line_out_da27797a-5dd5-486b-b19e-f79137f1f8ab" ;
+    "Cluster_9af9b088-3dbb-45cd-983d-e76709bbe528" -> "Line_out_f5154ccc-30aa-4164-a96e-4b6ae4ada15a" ;
+    
+}
+
+#25
+subgraph "cluster_subgraph_72828937-4838-4b27-8829-d65df4e7a1dd" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Number Slider)";
+    # Nodes
+    "_72828937-4838-4b27-8829-d65df4e7a1dd" [label="\n(Number Slider)\nValue: empty structure", fillcolor="orchid", fontsize=20];
+    "_out_72828937-4838-4b27-8829-d65df4e7a1dd" [label="•→ out"];
+    
+    # Edges
+    "_72828937-4838-4b27-8829-d65df4e7a1dd" -> "_out_72828937-4838-4b27-8829-d65df4e7a1dd" ;
+    
+}
+
+#26
+subgraph "cluster_subgraph_9a5154df-a0b6-4489-88e3-98a93b73a3bd" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "\n(Number Slider)";
+    # Nodes
+    "_9a5154df-a0b6-4489-88e3-98a93b73a3bd" [label="\n(Number Slider)\nValue: empty structure", fillcolor="blueviolet", fontsize=20];
+    "_out_9a5154df-a0b6-4489-88e3-98a93b73a3bd" [label="•→ out"];
+    
+    # Edges
+    "_9a5154df-a0b6-4489-88e3-98a93b73a3bd" -> "_out_9a5154df-a0b6-4489-88e3-98a93b73a3bd" ;
+    
+}
+
+#27
+subgraph "cluster_subgraph_bb33597a-720b-46da-a22d-9b2ffffa98fb" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "Ellipse";
+    # Nodes
+    "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" [label="Ellipse", fillcolor="brown", fontsize=20];
+    "P_in_2c8a48e9-4876-405f-96b6-b213b20e045a" [label="P\nParam_Plane"];
+    "R1_in_50ae372d-91ef-4a9f-af13-df05f5fbaca5" [label="R1\nParam_Number"];
+    "R2_in_13922572-1a03-4124-a2e1-314653aae1ca" [label="R2\nParam_Number"];
+    "E_out_fa30db93-419b-4666-a4ae-6a57e1bee51f" [label="E\nParam_Curve"];
+    "F1_out_87c5a8e3-a8e1-483d-9b45-ca5af35df24b" [label="F1\nParam_Point"];
+    "F2_out_135b7f1b-c5c8-4146-9177-52a596e1d666" [label="F2\nParam_Point"];
+    
+    # Edges
+    "P_in_2c8a48e9-4876-405f-96b6-b213b20e045a" -> "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" ;
+    "R1_in_50ae372d-91ef-4a9f-af13-df05f5fbaca5" -> "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" ;
+    "R2_in_13922572-1a03-4124-a2e1-314653aae1ca" -> "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" ;
+    "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" -> "E_out_fa30db93-419b-4666-a4ae-6a57e1bee51f" ;
+    "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" -> "F1_out_87c5a8e3-a8e1-483d-9b45-ca5af35df24b" ;
+    "Ellipse_bb33597a-720b-46da-a22d-9b2ffffa98fb" -> "F2_out_135b7f1b-c5c8-4146-9177-52a596e1d666" ;
+    
+}
+
+#28
+subgraph "cluster_subgraph_d5ad7370-bda1-4ed1-9897-6f91e4e50dcf" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b2\n(Cluster)";
+    # Nodes
+    "b2_d5ad7370-bda1-4ed1-9897-6f91e4e50dcf" [label="b2\n(Cluster)", fillcolor="burlywood", fontsize=20];
+    "height_in_6c7a6b29-a20c-42de-bf79-fd7e5d04a2c9" [label="height\nParam_ScriptVariable"];
+    "angle_in_4e84fec7-2f04-4902-a12c-c840b5124331" [label="angle\nParam_ScriptVariable"];
+    "base_out_6d70ae21-4881-487a-b1e4-6a623a032e0b" [label="base\nParam_GenericObject"];
+    
+    # Edges
+    "height_in_6c7a6b29-a20c-42de-bf79-fd7e5d04a2c9" -> "b2_d5ad7370-bda1-4ed1-9897-6f91e4e50dcf" ;
+    "angle_in_4e84fec7-2f04-4902-a12c-c840b5124331" -> "b2_d5ad7370-bda1-4ed1-9897-6f91e4e50dcf" ;
+    "b2_d5ad7370-bda1-4ed1-9897-6f91e4e50dcf" -> "base_out_6d70ae21-4881-487a-b1e4-6a623a032e0b" ;
+    
+}
+
+#29
+subgraph "cluster_subgraph_38e1acbe-4f61-4abd-9c21-b7d5058131fe" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "b1\n(Cluster)";
+    # Nodes
+    "b1_38e1acbe-4f61-4abd-9c21-b7d5058131fe" [label="b1\n(Cluster)", fillcolor="cadetblue", fontsize=20];
+    "height_in_97b6597c-2340-4c1c-84d9-cad815ac3a32" [label="height\nParam_ScriptVariable"];
+    "angle_in_6937265c-1d4f-4744-877e-898c6ebf4e83" [label="angle\nParam_ScriptVariable"];
+    "base_out_c9178943-44d0-4723-b1cc-1bd86795b101" [label="base\nParam_GenericObject"];
+    
+    # Edges
+    "height_in_97b6597c-2340-4c1c-84d9-cad815ac3a32" -> "b1_38e1acbe-4f61-4abd-9c21-b7d5058131fe" ;
+    "angle_in_6937265c-1d4f-4744-877e-898c6ebf4e83" -> "b1_38e1acbe-4f61-4abd-9c21-b7d5058131fe" ;
+    "b1_38e1acbe-4f61-4abd-9c21-b7d5058131fe" -> "base_out_c9178943-44d0-4723-b1cc-1bd86795b101" ;
+    
+}
+
+#30
+subgraph "cluster_subgraph_43906a43-8684-4870-aefe-b6066208953a" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "A-B\n(Subtraction)";
+    # Nodes
+    "A-B_43906a43-8684-4870-aefe-b6066208953a" [label="A-B\n(Subtraction)", fillcolor="chartreuse", fontsize=20];
+    "A_in_7f20ac55-b015-41c6-96df-8d037e3ecae7" [label="A\nParam_GenericObject"];
+    "B_in_fe3067c4-55d8-4eb6-b7ba-306b0bb97701" [label="B\nParam_GenericObject"];
+    "R_out_f2f69176-0bfe-46f0-8776-0c66f1752010" [label="R\nParam_GenericObject"];
+    
+    # Edges
+    "A_in_7f20ac55-b015-41c6-96df-8d037e3ecae7" -> "A-B_43906a43-8684-4870-aefe-b6066208953a" ;
+    "B_in_fe3067c4-55d8-4eb6-b7ba-306b0bb97701" -> "A-B_43906a43-8684-4870-aefe-b6066208953a" ;
+    "A-B_43906a43-8684-4870-aefe-b6066208953a" -> "R_out_f2f69176-0bfe-46f0-8776-0c66f1752010" ;
+    
+}
+
+#31
+subgraph "cluster_subgraph_8eef5420-8a45-40de-aa82-0cffc8bedba1" {
+    node [style=filled];
+    nodesep="0.05";
+    style="rounded";
+    label = "XY\n(XY Plane)";
+    # Nodes
+    "XY_8eef5420-8a45-40de-aa82-0cffc8bedba1" [label="XY\n(XY Plane)", fillcolor="chocolate", fontsize=20];
+    "O_in_cf21880c-b381-4594-b1ac-7dbbdcec02a6" [label="O\nParam_Point"];
+    "P_out_e12992f0-4bf2-4e32-958b-0e813d021292" [label="P\nParam_Plane"];
+    
+    # Edges
+    "O_in_cf21880c-b381-4594-b1ac-7dbbdcec02a6" -> "XY_8eef5420-8a45-40de-aa82-0cffc8bedba1" ;
+    "XY_8eef5420-8a45-40de-aa82-0cffc8bedba1" -> "P_out_e12992f0-4bf2-4e32-958b-0e813d021292" ;
+    
+}
+
+    # Generated Connections
+    # Connections for Python
+"E_out_fa30db93-419b-4666-a4ae-6a57e1bee51f" -> "trigger_in_e133d724-991a-4449-bd31-a7a71fdea039" ;
+    # Connections for XY
+# Connections for Move
+"Pt_out_370f0431-b8a7-4a15-99b5-52a7917541e4" -> "G_in_45e648d7-3822-4fef-b820-56535c2f690e" ;
+    "V_out_5cb237fd-8e3c-4c98-a346-07ac294f3a5f" -> "T_in_fc49e726-033e-4ac3-9597-ed23b0f8493d" ;
+    # Connections for Z
+"working plane height_out_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" -> "F_in_8dd5b40c-a418-416d-911a-c09be84f55ec" ;
+    # Connections for Z
+"mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" -> "F_in_5b22ebec-4b72-4638-a85c-fa2310253b16" ;
+    # Connections for Move
+"Pt_out_370f0431-b8a7-4a15-99b5-52a7917541e4" -> "G_in_42839203-2171-4d73-b5dc-eb76b962f555" ;
+    "V_out_7f8d4f3b-22f1-4b10-a4e7-523586dcb9d9" -> "T_in_f85fd904-08a7-4a7a-ae57-811648fc536a" ;
+    # Connections for Ellipse
+"P_out_b1d03391-e5c6-44e7-ae25-31a0b4b018fb" -> "P_in_51c0f92e-987b-45df-9354-8f703b33fdef" ;
+    "base_out_5d4ca501-9b66-458b-9aaa-92d3472b2aca" -> "R1_in_c18faece-1cdc-49ef-b4f5-38dacdee3487" ;
+    "base_out_5dc39e2f-891b-4581-a867-07daad33ddc6" -> "R2_in_a5b74798-529b-43a6-9f69-e4dccdef35d2" ;
+    # Connections for Rad2
+"small_angle_out_3381fb4e-9ff2-4284-9ee6-79855f2bd6b1" -> "D_in_1a8659f6-cb3c-4590-be53-5c7b87f236ae" ;
+    # Connections for Rad1
+"big_angle_out_897c2ac6-5acc-42a6-a05b-3d2211fe628e" -> "D_in_e6cc6c2d-344e-4923-b873-a87d192e892a" ;
+    # Connections for XY
+"P_out_79152432-f8f7-4a95-8441-8ab71ce450ec" -> "O_in_f3a3bad6-9816-4dfe-a670-30d9281d7952" ;
+    # Connections for b2
+"mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" -> "height_in_9c876d34-ce97-46b1-b915-8fdd392f5418" ;
+    "R_out_6420e2fc-cda4-4b04-94bb-c27d851a30c0" -> "angle_in_d3529004-cdad-41b6-8327-3b2e26356472" ;
+    # Connections for b1
+"mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" -> "height_in_34a3c877-fb24-4168-b799-99b7186b8d36" ;
+    "R_out_35dbcc5c-38b2-4115-a3bb-ac221f37853c" -> "angle_in_b3abfddb-1b12-42ae-8e2f-b2f14c4f1ae4" ;
+    # Connections for YZ
+"G_out_95d0cee9-b020-4b37-a6b5-bd10b2f7357a" -> "O_in_5755977b-c47b-4e8e-9b5b-edbba0e0c716" ;
+    # Connections for XZ
+"G_out_95d0cee9-b020-4b37-a6b5-bd10b2f7357a" -> "O_in_d7f2804d-ce9c-428d-b288-846d5a936865" ;
+    # Connections for Cluster
+"P_out_67dbcd1b-e1c1-42cd-8d37-d053fcfd0b03" -> "plane_of_angle_in_99310ffa-73c3-4e2d-bb8a-13b64a53cc7a" ;
+    "R_out_35dbcc5c-38b2-4115-a3bb-ac221f37853c" -> "fov_angle_in_9e676951-0ed7-4fc6-b831-a335f6dac0d1" ;
+    "_out_72828937-4838-4b27-8829-d65df4e7a1dd" -> "Line Length_in_57332d83-b592-48ef-8c24-8195477e35e6" ;
+    # Connections for Cluster
+"P_out_f7c4d196-9938-4db9-b899-51d44d211d5e" -> "plane_of_angle_in_f8d059de-f1ac-4669-bd4e-f8c9ae53569e" ;
+    "R_out_6420e2fc-cda4-4b04-94bb-c27d851a30c0" -> "fov_angle_in_28be26a7-4b8c-40d1-b9dc-294d93f54484" ;
+    "_out_9a5154df-a0b6-4489-88e3-98a93b73a3bd" -> "Line Length_in_3d4490c8-30df-4363-b285-36cdb7ea266a" ;
+    # Connections for Ellipse
+"P_out_e12992f0-4bf2-4e32-958b-0e813d021292" -> "P_in_2c8a48e9-4876-405f-96b6-b213b20e045a" ;
+    "base_out_c9178943-44d0-4723-b1cc-1bd86795b101" -> "R1_in_50ae372d-91ef-4a9f-af13-df05f5fbaca5" ;
+    "base_out_6d70ae21-4881-487a-b1e4-6a623a032e0b" -> "R2_in_13922572-1a03-4124-a2e1-314653aae1ca" ;
+    # Connections for b2
+"R_out_f2f69176-0bfe-46f0-8776-0c66f1752010" -> "height_in_6c7a6b29-a20c-42de-bf79-fd7e5d04a2c9" ;
+    "R_out_6420e2fc-cda4-4b04-94bb-c27d851a30c0" -> "angle_in_4e84fec7-2f04-4902-a12c-c840b5124331" ;
+    # Connections for b1
+"R_out_f2f69176-0bfe-46f0-8776-0c66f1752010" -> "height_in_97b6597c-2340-4c1c-84d9-cad815ac3a32" ;
+    "R_out_35dbcc5c-38b2-4115-a3bb-ac221f37853c" -> "angle_in_6937265c-1d4f-4744-877e-898c6ebf4e83" ;
+    # Connections for A-B
+"mount height_out_cd2174fa-8028-4855-b79b-827d7d8ac2f0" -> "A_in_7f20ac55-b015-41c6-96df-8d037e3ecae7" ;
+    "working plane height_out_87b4ac80-1eaf-47bc-9ef4-8fcf45e8a303" -> "B_in_fe3067c4-55d8-4eb6-b7ba-306b0bb97701" ;
+    # Connections for XY
+"G_out_4fb8bff5-728a-4ca3-837a-85cb8f7168a2" -> "O_in_cf21880c-b381-4594-b1ac-7dbbdcec02a6" ;
+    
+    # Manually Connected Connections
+    # These are the connections that I've manually created that actually connect the graph the way it ought to be connected.
+    # These should be automatically generated, but I can't work out why they're not yet.
+    #
+}
