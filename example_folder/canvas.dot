@@ -23,7 +23,7 @@ digraph G {
             </table>>];
 
         // Crv (guid: a4599816-cbc1-40cb-af2f-95c15603b142)
-        "a4599816-cbc1-40cb-af2f-95c15603b142" [margin=0, style=filled, fillcolor=white, label=<
+        "a4599816-cbc1-40cb-af2f-95c15603b142" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
             <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
                 <tr><td></td><td rowspan="1">Crv<br/><font point-size="10">(Curve)</font></td><td port="out">out</td></tr>
             </table>>];
@@ -215,7 +215,7 @@ digraph G {
         </table>>];
 
     // Flip (guid: 41047c00-e8c0-42f0-99aa-d3177a8bd895)
-    "41047c00-e8c0-42f0-99aa-d3177a8bd895" [margin=0, style=filled, fillcolor=white, label=<
+    "41047c00-e8c0-42f0-99aa-d3177a8bd895" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="C_in">C</td><td rowspan="2">Flip<br/><font point-size="10">(Flip Curve)</font></td><td port="C_out">C</td></tr>
             <tr><td port="G_in">G</td><td port="F_out">F</td></tr>
@@ -238,20 +238,20 @@ digraph G {
     // [skipped] Scribble (type: GH_Scribble, guid: 67b4bcd1-d184-477d-9a4c-5d3bdc987b08)
     //   Normal model stuff
     // Line (guid: 6c767123-f309-40da-af83-09b32ece5832)
-    "6c767123-f309-40da-af83-09b32ece5832" [margin=0, style=filled, fillcolor=white, label=<
+    "6c767123-f309-40da-af83-09b32ece5832" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1">Line</td><td port="out">out</td></tr>
         </table>>];
 
     // End (guid: 71ee981e-b545-4cb0-907c-8955b015922f)
-    "71ee981e-b545-4cb0-907c-8955b015922f" [margin=0, style=filled, fillcolor=white, label=<
+    "71ee981e-b545-4cb0-907c-8955b015922f" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="C_in">C</td><td rowspan="2">End<br/><font point-size="10">(End Points)</font></td><td port="S_out">S</td></tr>
             <tr><td></td><td port="E_out">E</td></tr>
         </table>>];
 
     // Dam (guid: 97f34864-804f-4c54-b9a3-e3352233461d)
-    "97f34864-804f-4c54-b9a3-e3352233461d" [margin=0, style=filled, fillcolor=white, label=<
+    "97f34864-804f-4c54-b9a3-e3352233461d" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="A_in">A</td><td rowspan="1">Dam<br/><font point-size="10">(Data Dam)</font></td><td port="A_out">A</td></tr>
         </table>>];
@@ -271,8 +271,15 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1">Vec<br/><font point-size="10">(Vector)</font></td><td port="out">out</td></tr>
         </table>>];
 
+    // Py3 (guid: c0b933ba-833d-4c89-8091-f6bfff2c69a7)
+    "c0b933ba-833d-4c89-8091-f6bfff2c69a7" [margin=0, style=filled, fillcolor=white, label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td port="trigger_in">trigger</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+            <tr><td></td><td port="data_json_out">data_json</td></tr>
+        </table>>];
+
     // XY (guid: cdffa07a-a8b6-4077-978a-eda881b24570)
-    "cdffa07a-a8b6-4077-978a-eda881b24570" [margin=0, style=filled, fillcolor=white, label=<
+    "cdffa07a-a8b6-4077-978a-eda881b24570" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="O_in">O</td><td rowspan="1">XY<br/><font point-size="10">(XY Plane)</font></td><td port="P_out">P</td></tr>
         </table>>];
@@ -290,6 +297,12 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
+    // Dot panel (guid: e729aa05-1744-4493-aeda-a661b4dd96eb)
+    "e729aa05-1744-4493-aeda-a661b4dd96eb" [margin=0, style=filled, fillcolor=white, label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td port="in">in</td><td rowspan="1">Dot panel<br/><font point-size="10">(Panel)</font></td><td></td></tr>
+        </table>>];
+
 
     // --- Edges ---
     "0503685c-ca9b-4624-8fdc-4fd1300d18b3":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":headline_image_url_in;
@@ -302,6 +315,7 @@ digraph G {
     "2a326121-470f-4022-9477-ef4b47e3853d":R_out -> "a6456689-42ae-4206-a7a4-5324d1a4934a":angle_in;
     "32eb75a4-9742-47ad-a957-d4ba6fb7211c":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":summary_in;
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "781f8f54-e6bf-4a21-9fd7-ef26e0b129df":trigger_in;
+    "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "c0b933ba-833d-4c89-8091-f6bfff2c69a7":trigger_in;
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "ca91fab9-226e-48e1-a131-43b3e11c0971":trigger_in;
     "41047c00-e8c0-42f0-99aa-d3177a8bd895":C_out -> "6c767123-f309-40da-af83-09b32ece5832":in;
     "594fe024-8994-4d48-8f35-c2b50f9c20c5":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":repo_url_in;
@@ -323,6 +337,7 @@ digraph G {
     "a5d2bb92-5f85-45f2-ae8c-c83d216eba36":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":tags_in;
     "a6456689-42ae-4206-a7a4-5324d1a4934a":base_out -> "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":R1_in;
     "be341bd1-f76a-45e9-a82c-b36bca905729":out -> "296e8b38-2af3-4633-aa6e-20cd8f0bcac8":V_in;
+    "c0b933ba-833d-4c89-8091-f6bfff2c69a7":out_out -> "e729aa05-1744-4493-aeda-a661b4dd96eb":in;
     "ca91fab9-226e-48e1-a131-43b3e11c0971":a_out -> "248a6660-9702-4d62-9527-becad29c7b6e":in;
     "cdffa07a-a8b6-4077-978a-eda881b24570":P_out -> "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":P_in;
     "d891e00a-55e2-46e5-8a40-46f87317161c":a_out -> "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9":in;
