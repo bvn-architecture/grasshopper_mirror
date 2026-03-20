@@ -1,0 +1,100 @@
+{
+  "0503685c-ca9b-4624-8fdc-4fd1300d18b3": {
+    "name": "Headline Image",
+    "type": "GH_Panel",
+    "values": [
+      "https://placebear.com/300/300"
+    ]
+  },
+  "0e61572b-aa9e-4013-bc74-2235ad271dc5": {
+    "name": "Authors",
+    "type": "GH_Panel",
+    "values": [
+      "Ben Doherty @notionparallax",
+      "wobble @stonk",
+      "A. N. Other"
+    ]
+  },
+  "11ab1da8-3333-4b9b-92a0-b6f95e0290db": {
+    "name": "Origin Story",
+    "type": "GH_Panel",
+    "values": [
+      "For a very long time I've wanted a better way to version control grasshopper files, and to document them, and to share them. Might as well kill three birds with one stone! I first started thinking about this [13 years ago](https://www.grasshopper3d.com/forum/topics/version-control?id=2985220%3ATopic%3A831264) and now"
+    ]
+  },
+  "14465b62-ae35-49a8-bba2-e50b935551b5": {
+    "name": "big_angle",
+    "type": "Param_Number",
+    "values": [
+      105.0
+    ]
+  },
+  "32eb75a4-9742-47ad-a957-d4ba6fb7211c": {
+    "name": "Summary",
+    "type": "GH_Panel",
+    "values": [
+      "Makes a backpack for grasshopper binaries so that the backpack can be git version controlled alongside the gh binary. Also defines a pattern for documentation that goes along with it."
+    ]
+  },
+  "594fe024-8994-4d48-8f35-c2b50f9c20c5": {
+    "name": "Repo URL",
+    "type": "GH_Panel",
+    "values": [
+      "https://github.com/bvn-architecture/grasshopper_mirror"
+    ]
+  },
+  "66069d6c-1e63-49a5-bb56-d3c1beac472a": {
+    "name": "Detailed description",
+    "type": "GH_Panel",
+    "values": [
+      "This file does one pretty simple thing, it puts an elipse on a line. There's a a lot of boilerplate, relatively, as the model itself is pretty simple.\r\n\r\nThis will change in the long run though, as this process is refined. The idea is that thse panels will become a different UI, and the python nodes that do the traversal and canvas screenshot will be less imposing."
+    ]
+  },
+  "6b492f1a-716e-4f31-8247-16b28a652c2c": {
+    "name": "Toggle",
+    "type": "GH_BooleanToggle",
+    "values": [
+      false
+    ]
+  },
+  "87d28aaa-18a9-41a5-86b7-4c1685edb815": {
+    "name": "height",
+    "type": "GH_NumberSlider",
+    "values": [
+      2221.0
+    ]
+  },
+  "a4599816-cbc1-40cb-af2f-95c15603b142": {
+    "name": "Crv",
+    "type": "Param_Curve",
+    "values": [
+      "<Grasshopper.Kernel.Types.GH_Curve object at 0x0000017DA4080080>"
+    ]
+  },
+  "a548b899-dc73-4738-93a5-6ff0e2c1a8de": {
+    "name": "Headline",
+    "type": "GH_Panel",
+    "values": [
+      "A grasshopper version control and sharing tool"
+    ]
+  },
+  "a5d2bb92-5f85-45f2-ae8c-c83d216eba36": {
+    "name": "Tags",
+    "type": "GH_Panel",
+    "values": [
+      "weebles",
+      "wobble",
+      "but",
+      "don't",
+      "fall",
+      "down"
+    ]
+  },
+  "d9728bb0-9967-449f-b352-182acd5a7aef": {
+    "name": "small_angle",
+    "type": "Param_Number",
+    "values": [
+      85.4
+    ]
+  }
+}

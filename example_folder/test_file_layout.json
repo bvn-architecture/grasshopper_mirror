@@ -1,0 +1,716 @@
+{
+  "0503685c-ca9b-4624-8fdc-4fd1300d18b3": {
+    "name": "Headline Image",
+    "pivot": {
+      "x": 1345.2,
+      "y": 898.93
+    },
+    "bounds": {
+      "x": 1345.0,
+      "y": 898.0,
+      "w": 276.0,
+      "h": 38.0
+    },
+    "type": "GH_Panel"
+  },
+  "0e61572b-aa9e-4013-bc74-2235ad271dc5": {
+    "name": "Authors",
+    "pivot": {
+      "x": 1348.19,
+      "y": 820.88
+    },
+    "bounds": {
+      "x": 1348.0,
+      "y": 820.0,
+      "w": 273.0,
+      "h": 66.0
+    },
+    "type": "GH_Panel"
+  },
+  "0f3fe139-4de0-4a8a-8e4e-d6a5244d9ac7": {
+    "name": "Dot panel",
+    "pivot": {
+      "x": 1500.55,
+      "y": 265.44
+    },
+    "bounds": {
+      "x": 1500.0,
+      "y": 265.0,
+      "w": 246.0,
+      "h": 100.0
+    },
+    "type": "GH_Panel"
+  },
+  "10f0c688-9b64-4a5b-97aa-419aa174c25c": {
+    "name": "b2",
+    "pivot": {
+      "x": 601.0,
+      "y": 443.0
+    },
+    "bounds": {
+      "x": 546.0,
+      "y": 421.0,
+      "w": 105.0,
+      "h": 44.0
+    },
+    "type": "GH_Cluster"
+  },
+  "11ab1da8-3333-4b9b-92a0-b6f95e0290db": {
+    "name": "Origin Story",
+    "pivot": {
+      "x": 1344.82,
+      "y": 1047.81
+    },
+    "bounds": {
+      "x": 1344.0,
+      "y": 1047.0,
+      "w": 276.0,
+      "h": 152.0
+    },
+    "type": "GH_Panel"
+  },
+  "14465b62-ae35-49a8-bba2-e50b935551b5": {
+    "name": "big_angle",
+    "pivot": {
+      "x": 247.52,
+      "y": 453.21
+    },
+    "bounds": {
+      "x": 217.0,
+      "y": 443.0,
+      "w": 60.0,
+      "h": 20.0
+    },
+    "type": "Param_Number"
+  },
+  "1b0cf89b-d554-4e63-8afd-740010804eda": {
+    "name": "Topology Capture",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1319.0,
+      "y": 255.0,
+      "w": 437.0,
+      "h": 120.0
+    },
+    "type": "GH_Group"
+  },
+  "229ef839-bb38-49e6-bf74-aa20e27863ef": {
+    "name": "Panel",
+    "pivot": {
+      "x": 1508.02,
+      "y": 537.09
+    },
+    "bounds": {
+      "x": 1508.0,
+      "y": 537.0,
+      "w": 246.0,
+      "h": 62.0
+    },
+    "type": "GH_Panel"
+  },
+  "248a6660-9702-4d62-9527-becad29c7b6e": {
+    "name": "Panel",
+    "pivot": {
+      "x": 1587.02,
+      "y": 157.11
+    },
+    "bounds": {
+      "x": 1587.0,
+      "y": 157.0,
+      "w": 296.0,
+      "h": 65.0
+    },
+    "type": "GH_Panel"
+  },
+  "296e8b38-2af3-4633-aa6e-20cd8f0bcac8": {
+    "name": "Amp",
+    "pivot": {
+      "x": 597.0,
+      "y": 294.0
+    },
+    "bounds": {
+      "x": 566.0,
+      "y": 271.0,
+      "w": 65.0,
+      "h": 45.0
+    },
+    "type": "Component_VectorAmplitude"
+  },
+  "2a326121-470f-4022-9477-ef4b47e3853d": {
+    "name": "Rad1",
+    "pivot": {
+      "x": 402.0,
+      "y": 444.0
+    },
+    "bounds": {
+      "x": 370.0,
+      "y": 420.0,
+      "w": 66.0,
+      "h": 47.0
+    },
+    "type": "FuncToRadians"
+  },
+  "2f48438c-75c3-443c-a1c8-95eccd8670fc": {
+    "name": "Panel",
+    "pivot": {
+      "x": 298.89,
+      "y": 454.94
+    },
+    "bounds": {
+      "x": 298.0,
+      "y": 454.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "GH_Panel"
+  },
+  "30e9dbe9-07fa-4e07-80a3-cdf74174e857": {
+    "name": "inputs",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 106.0,
+      "y": 203.0,
+      "w": 184.0,
+      "h": 324.0
+    },
+    "type": "GH_Group"
+  },
+  "32eb75a4-9742-47ad-a957-d4ba6fb7211c": {
+    "name": "Summary",
+    "pivot": {
+      "x": 1345.05,
+      "y": 949.0
+    },
+    "bounds": {
+      "x": 1345.0,
+      "y": 948.0,
+      "w": 276.0,
+      "h": 86.0
+    },
+    "type": "GH_Panel"
+  },
+  "3390e1b0-22d2-4152-8c5d-3a43828afe6c": {
+    "name": "Data",
+    "pivot": {
+      "x": 1134.54,
+      "y": 300.73
+    },
+    "bounds": {
+      "x": 1109.0,
+      "y": 290.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "Param_GenericObject"
+  },
+  "41047c00-e8c0-42f0-99aa-d3177a8bd895": {
+    "name": "Flip",
+    "pivot": {
+      "x": 344.0,
+      "y": 232.0
+    },
+    "bounds": {
+      "x": 312.0,
+      "y": 210.0,
+      "w": 66.0,
+      "h": 44.0
+    },
+    "type": "Component_FlipCurve"
+  },
+  "538a82a5-5a45-413d-b477-acc1e022367b": {
+    "name": "Py3",
+    "pivot": {
+      "x": 1393.0,
+      "y": 561.0
+    },
+    "bounds": {
+      "x": 1336.0,
+      "y": 539.0,
+      "w": 130.0,
+      "h": 44.0
+    },
+    "type": "Python3Component"
+  },
+  "56e64cfd-71cb-4d51-b779-a71edcb1529a": {
+    "name": "Layout capture",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1326.0,
+      "y": 527.0,
+      "w": 438.0,
+      "h": 82.0
+    },
+    "type": "GH_Group"
+  },
+  "594fe024-8994-4d48-8f35-c2b50f9c20c5": {
+    "name": "Repo URL",
+    "pivot": {
+      "x": 1344.59,
+      "y": 1375.72
+    },
+    "bounds": {
+      "x": 1344.0,
+      "y": 1375.0,
+      "w": 276.0,
+      "h": 38.0
+    },
+    "type": "GH_Panel"
+  },
+  "59cb3897-f400-43f3-9461-0701f2ceb61b": {
+    "name": "Rad2",
+    "pivot": {
+      "x": 400.0,
+      "y": 513.0
+    },
+    "bounds": {
+      "x": 368.0,
+      "y": 489.0,
+      "w": 66.0,
+      "h": 47.0
+    },
+    "type": "FuncToRadians"
+  },
+  "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e": {
+    "name": "Ellipse",
+    "pivot": {
+      "x": 926.0,
+      "y": 317.0
+    },
+    "bounds": {
+      "x": 889.0,
+      "y": 285.0,
+      "w": 75.0,
+      "h": 64.0
+    },
+    "type": "Component_Ellipse"
+  },
+  "66069d6c-1e63-49a5-bb56-d3c1beac472a": {
+    "name": "Detailed description",
+    "pivot": {
+      "x": 1345.48,
+      "y": 1211.42
+    },
+    "bounds": {
+      "x": 1345.0,
+      "y": 1211.0,
+      "w": 276.0,
+      "h": 152.0
+    },
+    "type": "GH_Panel"
+  },
+  "67b4bcd1-d184-477d-9a4c-5d3bdc987b08": {
+    "name": "Scribble",
+    "pivot": {
+      "x": 43.4,
+      "y": 65.16
+    },
+    "bounds": {
+      "x": 38.4,
+      "y": 60.16,
+      "w": 685.58,
+      "h": 67.74
+    },
+    "type": "GH_Scribble"
+  },
+  "68377fed-ab48-43c3-b8c1-60ca21a6a5b5": {
+    "name": "Disabled Sphere",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 816.0,
+      "y": 464.0,
+      "w": 84.0,
+      "h": 64.0
+    },
+    "type": "GH_Group"
+  },
+  "6b492f1a-716e-4f31-8247-16b28a652c2c": {
+    "name": "Toggle",
+    "pivot": {
+      "x": 1326.0,
+      "y": 156.0
+    },
+    "bounds": {
+      "x": 1326.0,
+      "y": 156.0,
+      "w": 104.0,
+      "h": 22.0
+    },
+    "type": "GH_BooleanToggle"
+  },
+  "6c767123-f309-40da-af83-09b32ece5832": {
+    "name": "Line",
+    "pivot": {
+      "x": 438.75,
+      "y": 226.17
+    },
+    "bounds": {
+      "x": 413.0,
+      "y": 216.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "Param_Line"
+  },
+  "71ee981e-b545-4cb0-907c-8955b015922f": {
+    "name": "End",
+    "pivot": {
+      "x": 598.0,
+      "y": 221.0
+    },
+    "bounds": {
+      "x": 567.0,
+      "y": 199.0,
+      "w": 64.0,
+      "h": 44.0
+    },
+    "type": "Component_EndPoints"
+  },
+  "781f8f54-e6bf-4a21-9fd7-ef26e0b129df": {
+    "name": "Py3",
+    "pivot": {
+      "x": 1386.0,
+      "y": 310.0
+    },
+    "bounds": {
+      "x": 1329.0,
+      "y": 288.0,
+      "w": 113.0,
+      "h": 44.0
+    },
+    "type": "Python3Component"
+  },
+  "7e95964d-e8a6-4fa8-a7a3-ee58a899ccaf": {
+    "name": "Data capture",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1326.0,
+      "y": 412.0,
+      "w": 437.0,
+      "h": 82.0
+    },
+    "type": "GH_Group"
+  },
+  "87d28aaa-18a9-41a5-86b7-4c1685edb815": {
+    "name": "height",
+    "pivot": {
+      "x": 116.53,
+      "y": 295.88
+    },
+    "bounds": {
+      "x": 116.0,
+      "y": 295.0,
+      "w": 164.0,
+      "h": 20.0
+    },
+    "type": "GH_NumberSlider"
+  },
+  "8bf0809e-94e0-49fa-a747-b240f51306a3": {
+    "name": "Group",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1306.0,
+      "y": 135.0,
+      "w": 863.0,
+      "h": 1298.0
+    },
+    "type": "GH_Group"
+  },
+  "8d2a7382-056e-4ad9-8fd9-a6c23ca1934d": {
+    "name": "Sph",
+    "pivot": {
+      "x": 857.0,
+      "y": 496.0
+    },
+    "bounds": {
+      "x": 826.0,
+      "y": 474.0,
+      "w": 64.0,
+      "h": 44.0
+    },
+    "type": "Component_Sphere"
+  },
+  "97f34864-804f-4c54-b9a3-e3352233461d": {
+    "name": "Dam",
+    "pivot": {
+      "x": 1037.0,
+      "y": 282.0
+    },
+    "bounds": {
+      "x": 1018.0,
+      "y": 280.0,
+      "w": 73.0,
+      "h": 36.0
+    },
+    "type": "GH_DataDamComponent"
+  },
+  "a4599816-cbc1-40cb-af2f-95c15603b142": {
+    "name": "Crv",
+    "pivot": {
+      "x": 234.59,
+      "y": 223.93
+    },
+    "bounds": {
+      "x": 209.0,
+      "y": 213.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "Param_Curve"
+  },
+  "a548b899-dc73-4738-93a5-6ff0e2c1a8de": {
+    "name": "Headline",
+    "pivot": {
+      "x": 1345.16,
+      "y": 648.03
+    },
+    "bounds": {
+      "x": 1345.0,
+      "y": 648.0,
+      "w": 276.0,
+      "h": 49.0
+    },
+    "type": "GH_Panel"
+  },
+  "a5d2bb92-5f85-45f2-ae8c-c83d216eba36": {
+    "name": "Tags",
+    "pivot": {
+      "x": 1538.84,
+      "y": 709.29
+    },
+    "bounds": {
+      "x": 1538.0,
+      "y": 709.0,
+      "w": 82.0,
+      "h": 100.0
+    },
+    "type": "GH_Panel"
+  },
+  "a6456689-42ae-4206-a7a4-5324d1a4934a": {
+    "name": "b1",
+    "pivot": {
+      "x": 601.0,
+      "y": 376.0
+    },
+    "bounds": {
+      "x": 546.0,
+      "y": 354.0,
+      "w": 105.0,
+      "h": 44.0
+    },
+    "type": "GH_Cluster"
+  },
+  "ad517db8-cfed-4c3b-953c-33918527a2fb": {
+    "name": "Scribble",
+    "pivot": {
+      "x": 1312.0,
+      "y": 21.05
+    },
+    "bounds": {
+      "x": 1307.0,
+      "y": 16.05,
+      "w": 888.45,
+      "h": 81.96
+    },
+    "type": "GH_Scribble"
+  },
+  "ae96d992-5951-4171-9867-c5a4d948e755": {
+    "name": "Dot output",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 0.0,
+      "y": 0.0,
+      "w": 0.0,
+      "h": 0.0
+    },
+    "type": "GH_Group"
+  },
+  "be341bd1-f76a-45e9-a82c-b36bca905729": {
+    "name": "Vec",
+    "pivot": {
+      "x": 519.18,
+      "y": 259.01
+    },
+    "bounds": {
+      "x": 494.0,
+      "y": 249.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "Param_Vector"
+  },
+  "c0b933ba-833d-4c89-8091-f6bfff2c69a7": {
+    "name": "Py3",
+    "pivot": {
+      "x": 1393.0,
+      "y": 447.0
+    },
+    "bounds": {
+      "x": 1336.0,
+      "y": 425.0,
+      "w": 130.0,
+      "h": 44.0
+    },
+    "type": "Python3Component"
+  },
+  "ca91fab9-226e-48e1-a131-43b3e11c0971": {
+    "name": "Py3",
+    "pivot": {
+      "x": 1507.0,
+      "y": 177.0
+    },
+    "bounds": {
+      "x": 1450.0,
+      "y": 155.0,
+      "w": 100.0,
+      "h": 44.0
+    },
+    "type": "Python3Component"
+  },
+  "cdffa07a-a8b6-4077-978a-eda881b24570": {
+    "name": "XY",
+    "pivot": {
+      "x": 793.0,
+      "y": 213.0
+    },
+    "bounds": {
+      "x": 761.0,
+      "y": 197.0,
+      "w": 65.0,
+      "h": 31.0
+    },
+    "type": "Component_XYPlane"
+  },
+  "d891e00a-55e2-46e5-8a40-46f87317161c": {
+    "name": "Py3",
+    "pivot": {
+      "x": 1908.0,
+      "y": 948.0
+    },
+    "bounds": {
+      "x": 1786.0,
+      "y": 856.0,
+      "w": 165.0,
+      "h": 184.0
+    },
+    "type": "Python3Component"
+  },
+  "d8a179fc-7fab-4814-b4b9-20be26bfe82c": {
+    "name": "Move",
+    "pivot": {
+      "x": 696.0,
+      "y": 224.0
+    },
+    "bounds": {
+      "x": 664.0,
+      "y": 199.0,
+      "w": 67.0,
+      "h": 50.0
+    },
+    "type": "Component_Move"
+  },
+  "d9728bb0-9967-449f-b352-182acd5a7aef": {
+    "name": "small_angle",
+    "pivot": {
+      "x": 242.85,
+      "y": 507.49
+    },
+    "bounds": {
+      "x": 208.0,
+      "y": 497.0,
+      "w": 69.0,
+      "h": 20.0
+    },
+    "type": "Param_Number"
+  },
+  "db3162a4-9892-487b-b2fa-a2d005e3726b": {
+    "name": "Panel",
+    "pivot": {
+      "x": 301.58,
+      "y": 509.84
+    },
+    "bounds": {
+      "x": 301.0,
+      "y": 509.0,
+      "w": 50.0,
+      "h": 20.0
+    },
+    "type": "GH_Panel"
+  },
+  "e729aa05-1744-4493-aeda-a661b4dd96eb": {
+    "name": "Panel",
+    "pivot": {
+      "x": 1507.09,
+      "y": 422.82
+    },
+    "bounds": {
+      "x": 1507.0,
+      "y": 422.0,
+      "w": 246.0,
+      "h": 62.0
+    },
+    "type": "GH_Panel"
+  },
+  "fabdc4c6-61f5-48a9-8d08-572ff3037aa1": {
+    "name": "Canvas capture",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1316.0,
+      "y": 145.0,
+      "w": 577.0,
+      "h": 87.0
+    },
+    "type": "GH_Group"
+  },
+  "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9": {
+    "name": "Panel",
+    "pivot": {
+      "x": 2001.15,
+      "y": 890.01
+    },
+    "bounds": {
+      "x": 2001.0,
+      "y": 890.0,
+      "w": 158.0,
+      "h": 216.0
+    },
+    "type": "GH_Panel"
+  },
+  "feaa96f3-45e9-4713-9a51-0ff68815b284": {
+    "name": "README generation",
+    "pivot": {
+      "x": 0.0,
+      "y": 0.0
+    },
+    "bounds": {
+      "x": 1334.0,
+      "y": 638.0,
+      "w": 297.0,
+      "h": 785.0
+    },
+    "type": "GH_Group"
+  }
+}
