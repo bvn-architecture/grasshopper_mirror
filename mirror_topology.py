@@ -347,6 +347,9 @@ def _dot(nodes, edges, groups):
         out.append(f'{pad}// group: {grp["nick"]} (guid: {grp["guid"]})')
         out.append(f'{pad}subgraph "cluster_{grp["guid"]}" {{')
         out.append(f'{pad}    label="{_esc(grp["nick"])}";')
+        out.append(f'{pad}    style=filled;')
+        out.append(f'{pad}    fillcolor="#FF00001A";')
+        out.append(f'{pad}    color="#FF000040";')
 
         # Emit child groups (nested subgraphs)
         for cg in group_children.get(grp["guid"], []):
