@@ -1,25 +1,15 @@
 """Grasshopper Mirror — Data JSON Generator
 
-Paste this into a GhPython Script node on the Grasshopper canvas.
+Captures leaf-node values and script source code from a live
+Grasshopper document.
 
-    Node setup
-    ----------
-    Input:  trigger  — connect a button or any wire to trigger generation
-    Output: out      — status message / JSON string
-
-Target: Rhino 8+ / CPython 3.9
-
-Captures leaf-node values and script source code.
-Output is deterministically sorted by GUID so the file is byte-identical
-when nothing changes.
-
-Kept separate from _topology.dot so value changes don't pollute
-structural diffs.  Component state (locked/hidden) lives in the DOT file.
+Public API
+----------
+    write_data(gh_doc) → str   (status message)
+    collect_data(gh_doc) → dict
 """
 
-import json
-import os
-import Grasshopper as gh
+from mirror_common import output_path, write_json
 
 
 MAX_REPR_LEN = 100
@@ -48,11 +38,7 @@ def _extract_value(val):
 
 
 def _get_volatile_values(obj):
-    """Extract runtime values from a parameter's VolatileData tree.
-
-    Returns a list of string representations, one per item across
-    all branches.  Truncated to MAX_REPR_LEN per item.
-    """
+    """Extract runtime values from a parameter's VolatileData tree."""
     values = []
     try:
         vd = obj.VolatileData
@@ -71,7 +57,6 @@ def _get_script_source(obj):
 
     Returns the source string, or None if not a script component.
     """
-    # Python 3 Script (ScriptInstance) — try .Code first, then .ScriptSource
     for attr_name in ("Code", "ScriptSource"):
         if hasattr(obj, attr_name):
             try:
@@ -83,7 +68,7 @@ def _get_script_source(obj):
     return None
 
 
-def _collect_data(gh_doc):
+def collect_data(gh_doc):
     """Return a dict of data keyed by GUID string."""
     data = {}
 
@@ -132,28 +117,15 @@ def _collect_data(gh_doc):
         if has_content:
             data[guid] = entry
 
-    # Sort by GUID for deterministic output
     return dict(sorted(data.items()))
 
 
-def _write_data(gh_doc):
+def write_data(gh_doc):
     """Generate data JSON and write to disk."""
-    file_path = gh_doc.FilePath
-    if not file_path:
+    path = output_path(gh_doc, "data.json")
+    if path is None:
         return "Cannot save: document has no file path (save the .gh first)"
 
-    data = _collect_data(gh_doc)
-    json_str = json.dumps(data, indent=2, ensure_ascii=False)
-
-    base = os.path.splitext(os.path.basename(file_path))[0]
-    out_path = os.path.join(os.path.dirname(file_path), f"{base}_data.json")
-
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(json_str)
-        f.write("\n")
-
-    return f"Saved {len(data)} entries to {out_path}"
-
-
-gh_doc = gh.Instances.ActiveCanvas.Document
-print(_write_data(gh_doc))
+    data = collect_data(gh_doc)
+    write_json(path, data)
+    return f"Saved {len(data)} entries to {path}"

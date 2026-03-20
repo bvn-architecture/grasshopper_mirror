@@ -1,44 +1,32 @@
 """Grasshopper Mirror — README Generator
 
-Paste this into a GhPython Script node on the Grasshopper canvas.
+Generates a README.md with YAML frontmatter next to the .gh file.
 
-    Node setup
-    ----------
-    Inputs (all string, from panels):
-        headline, tiny_description, tags, authors,
-        headline_image_url, summary, origin_story,
-        detailed_description, repo_url
-    Output: out — status message
-
-Target: Rhino 8+ / CPython 3.9
-
-Generates a README.md with YAML frontmatter in the same directory
-as the .gh file.
+Public API
+----------
+    generate_readme(gh_doc, headline, tiny_description, tags, authors,
+                    headline_image_url, summary, origin_story,
+                    detailed_description, repo_url) → str
 """
 
 import os
 
-
-def get_filename():
-    ghdoc = ghenv.Component.OnPingDocument()
-    return os.path.basename(ghdoc.FilePath) if ghdoc.FilePath else "unknown.gh"
+from mirror_common import doc_dir, write_text
 
 
-def get_directory():
-    ghdoc = ghenv.Component.OnPingDocument()
-    if not ghdoc.FilePath:
-        return None
-    return os.path.dirname(ghdoc.FilePath)
+def _get_filename(gh_doc):
+    fp = gh_doc.FilePath
+    return os.path.basename(fp) if fp else "unknown.gh"
 
 
-def build_tag_string(tags_input):
+def _build_tag_string(tags_input):
     lines = []
     for t in tags_input:
         lines.append(f"    - {t.strip()}")
     return "\n".join(lines)
 
 
-def build_author_string(authors_input):
+def _build_author_string(authors_input):
     lines = []
     for a in authors_input:
         parts = a.split("@")
@@ -50,14 +38,17 @@ def build_author_string(authors_input):
     return "\n".join(lines)
 
 
-def generate_readme():
-    directory = get_directory()
+def generate_readme(gh_doc, headline, tiny_description, tags, authors,
+                    headline_image_url, summary, origin_story,
+                    detailed_description, repo_url):
+    """Generate README.md and write to disk next to the .gh file."""
+    directory = doc_dir(gh_doc)
     if directory is None:
         return "Cannot save: document has no file path (save the .gh first)"
 
-    filename = get_filename()
-    tag_yaml = build_tag_string(tags)
-    author_yaml = build_author_string(authors)
+    filename = _get_filename(gh_doc)
+    tag_yaml = _build_tag_string(tags)
+    author_yaml = _build_author_string(authors)
 
     doc = f"""---
 tiny_description: {tiny_description}
@@ -97,10 +88,5 @@ _A much longer explanation of what this does._
 """
 
     path = os.path.join(directory, "README.md")
-    with open(path, "w", encoding="utf-8") as f:
-        f.write(doc)
-
+    write_text(path, doc)
     return f"Saved README to {path}"
-
-
-a = generate_readme()

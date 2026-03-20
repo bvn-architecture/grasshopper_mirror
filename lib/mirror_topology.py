@@ -1,27 +1,12 @@
-"""Grasshopper Mirror — Topology DOT Generator (Iteration 1)
+"""Grasshopper Mirror — Topology DOT Generator
 
-Paste this into a GhPython Script node on the Grasshopper canvas.
+Generates a DOT digraph with HTML-table record nodes from a live
+Grasshopper document.
 
-    Node setup
-    ----------
-    Input:  trigger  — connect a button or any wire to trigger generation
-    Output: graph    — the topology DOT string
-
-Target: Rhino 8+ / CPython 3.9
-
-Output format
--------------
-DOT digraph with HTML-table record nodes:
-  - Input ports on the left, component name in the centre, output ports
-    on the right — mirroring the visual layout of a Grasshopper node.
-  - Nodes and edges are sorted by GUID so the output is byte-identical
-    when nothing on the canvas has changed.
-  - GUIDs serve as DOT node identifiers (invisible in rendered graphs)
-    and appear in comment lines for easy grepping in text diffs.
-  - No values, no positions — topology only (per the Mirror spec).
+Public API
+----------
+    generate_topology(gh_doc) → str
 """
-
-import Grasshopper as gh
 
 
 # ---------------------------------------------------------------------------
@@ -414,14 +399,11 @@ def _dot(nodes, edges, groups):
 
 
 # ---------------------------------------------------------------------------
-# Entry point
+# Public API
 # ---------------------------------------------------------------------------
 
-def main():
-    gh_doc = gh.Instances.ActiveCanvas.Document
+def generate_topology(gh_doc):
+    """Generate the topology DOT string for a Grasshopper document."""
     nodes, param_map, groups = _collect(gh_doc)
     edges = _edges(nodes, param_map)
     return _dot(nodes, edges, groups)
-
-
-graph = main()
