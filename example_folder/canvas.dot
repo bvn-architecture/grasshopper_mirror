@@ -40,7 +40,7 @@ digraph G {
             <tr><td></td><td rowspan="1">big_angle<br/><font point-size="10">(Number)</font></td><td port="out">out</td></tr>
         </table>>];
 
-    // [skipped] Group (type: IGH_DocumentObject, guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
+    // [skipped] Topology (type: GH_Group, guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
     // Panel (guid: 248a6660-9702-4d62-9527-becad29c7b6e)
     "248a6660-9702-4d62-9527-becad29c7b6e" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -66,7 +66,7 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] inputs (type: IGH_DocumentObject, guid: 30e9dbe9-07fa-4e07-80a3-cdf74174e857)
+    // [skipped] inputs (type: GH_Group, guid: 30e9dbe9-07fa-4e07-80a3-cdf74174e857)
     // Summary (guid: 32eb75a4-9742-47ad-a957-d4ba6fb7211c)
     "32eb75a4-9742-47ad-a957-d4ba6fb7211c" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -112,7 +112,7 @@ digraph G {
             <tr><td></td><td rowspan="1">Detailed description<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
         </table>>];
 
-    // [skipped] Scribble (type: IGH_DocumentObject, guid: 67b4bcd1-d184-477d-9a4c-5d3bdc987b08)
+    // [skipped] Scribble (type: GH_Scribble, guid: 67b4bcd1-d184-477d-9a4c-5d3bdc987b08)
     // Toggle (guid: 6b492f1a-716e-4f31-8247-16b28a652c2c)
     "6b492f1a-716e-4f31-8247-16b28a652c2c" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -145,7 +145,7 @@ digraph G {
             <tr><td></td><td rowspan="1">height<br/><font point-size="10">(Number Slider)</font></td><td port="out">out</td></tr>
         </table>>];
 
-    // [skipped] Group (type: IGH_DocumentObject, guid: 8bf0809e-94e0-49fa-a747-b240f51306a3)
+    // [skipped] Group (type: GH_Group, guid: 8bf0809e-94e0-49fa-a747-b240f51306a3)
     // Dam (guid: 97f34864-804f-4c54-b9a3-e3352233461d)
     "97f34864-804f-4c54-b9a3-e3352233461d" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -177,8 +177,8 @@ digraph G {
             <tr><td port="angle_in">angle</td><td></td></tr>
         </table>>];
 
-    // [skipped] Scribble (type: IGH_DocumentObject, guid: ad517db8-cfed-4c3b-953c-33918527a2fb)
-    // [skipped] Dot output (type: IGH_DocumentObject, guid: ae96d992-5951-4171-9867-c5a4d948e755)
+    // [skipped] Scribble (type: GH_Scribble, guid: ad517db8-cfed-4c3b-953c-33918527a2fb)
+    // [skipped] Dot output (type: GH_Group, guid: ae96d992-5951-4171-9867-c5a4d948e755)
     // Vec (guid: be341bd1-f76a-45e9-a82c-b36bca905729)
     "be341bd1-f76a-45e9-a82c-b36bca905729" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -231,14 +231,14 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] Canvas capture (type: IGH_DocumentObject, guid: fabdc4c6-61f5-48a9-8d08-572ff3037aa1)
+    // [skipped] Canvas capture (type: GH_Group, guid: fabdc4c6-61f5-48a9-8d08-572ff3037aa1)
     // Panel (guid: fc27ac10-ee12-4d9e-8ddc-3bc94be044a9)
     "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9" [margin=0, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] README generation (type: IGH_DocumentObject, guid: feaa96f3-45e9-4713-9a51-0ff68815b284)
+    // [skipped] README generation (type: GH_Group, guid: feaa96f3-45e9-4713-9a51-0ff68815b284)
 
     // --- Edges ---
     "0503685c-ca9b-4624-8fdc-4fd1300d18b3":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":headline_image_url_in;
