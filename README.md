@@ -10,9 +10,9 @@ This is an attempt to make a workflow that starts to be a bit more version contr
 
 | The graphviz rendering of the DOT file that Mirror produces                            | The Grasshopper canvas that it mirrors                                                |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| ![A graphviz graph. Eliptical nodes joined with spline edges](docs/dot_graph_demo.png) | ![A grasshopper graph, the two graphs have the same topology](docs/GH_graph_demo.png) |
+| ![A graphviz graph. Structured nodes joined with spline edges](docs/dot_graph.png)     | ![A grasshopper graph, the two graphs have the same topology](example_folder/canvas_image.png) |
 
-Mirror recreates the Grasshopper graph topology in [DOT Language](https://graphviz.org/doc/info/lang.html). It's automagically laid out with [Graphviz](https://graphviz.org/).
+Mirror recreates the Grasshopper graph topology in [DOT Language](https://graphviz.org/doc/info/lang.html). It's automagically laid out with [Graphviz](https://graphviz.org/). You can play with graphviz [here](https://dreampuf.github.io/GraphvizOnline) and you can also use this to look at the dot files that this system produces.
 
 The DOT file is text, so it can be diffed with standard tools. Here's _this_ file being diffed in VS Code.
 
@@ -20,10 +20,11 @@ The DOT file is text, so it can be diffed with standard tools. Here's _this_ fil
 
 You can see where things have been added, taken away and changed. So you can get a sense of what has changed between different versions.
 
-## How to try it out:
+## How to try it out
 
-Copy the code from [`mirror_traverse.py`](mirror_traverse.py) into a python node. It's written for 2.7 ironPython (boo) but should work fine in 3.x pythons.
+The easy way to try this is to open `example_folder\test_file.gh` and replace the ellipse drawing with your own work. The rest is fairly self explanatory.
 
+However, if you want to do things from scratch, then copy the code from [`mirror_traverse.py`](mirror_traverse.py) into a python node.
 Rename the output port to "graph" and connect it to a panel. To make things really easy, you can then copy the output and paste it into the [_graphviz online_ editor](https://dreampuf.github.io/GraphvizOnline/).
 
 If you want to get fancier, you can stream the panel to a file, and then set up your VS Code to render the DOT file. (If you want to do that, put up an issue for it and I'll write about it.)
@@ -37,7 +38,6 @@ This has a bunch of limitations:
 - It's a manual python node so far, so it's not very user friendly
 - It needs a trigger, so it probably needs to be wired into the last item in the graph, but there might be a trigger that python can fire?
 - The python itself is quite fast (70ms) but streaming to file from a panel can get slow if there's a lot of nodes, or if there's other FS activity
-- This is the big one for now, but _is_ surmountable. If a node is purely an output, it's not yet captured. It's drawn on the canvas, but it's not connected. This is because it is only looking at inputs for the moment. Everything has an input, or is an input, except output leaf nodes.
 
 ## Where to next?
 
