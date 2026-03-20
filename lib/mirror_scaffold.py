@@ -39,7 +39,7 @@ def _wrapper_code(module_name, func_name, output_var, lib_path,
                   extra_imports="", extra_args="", guard=False):
     """Generate the wrapper code for a Py3 Script node."""
     lines = [
-        "import sys, os",
+        "import sys, os, importlib",
     ]
     if extra_imports:
         lines.append(extra_imports)
@@ -49,6 +49,8 @@ def _wrapper_code(module_name, func_name, output_var, lib_path,
     lines.append("_here = os.path.dirname(ghenv.Component.OnPingDocument().FilePath)")
     lines.append("sys.path.insert(0, os.path.join(_here, LIB_PATH))")
     lines.append("")
+    lines.append(f"import {module_name}")
+    lines.append(f"importlib.reload({module_name})")
     lines.append(f"from {module_name} import {func_name}")
     lines.append("")
 
@@ -195,7 +197,8 @@ def _set_code(script, code):
         script.ScriptSource = code
 
 
-def _configure_script_params(script, input_names, output_names):
+def _configure_script_params(script, input_names, output_names,
+                             input_access=None):
     """Add / rename input and output parameters on a script component.
 
     Works with the Rhino 8 Python 3 Script node created via the
@@ -203,29 +206,39 @@ def _configure_script_params(script, input_names, output_names):
     one default input (``x``) and one default output (``a``).  We
     reconcile to the desired names by renaming existing params and
     registering extras as needed.
+
+    Parameters
+    ----------
+    input_access : dict or None
+        Mapping of input name → GH_ParamAccess int (0=item, 1=list, 2=tree).
+        Defaults to item (0) for all inputs.
     """
     from Grasshopper.Kernel.Parameters import Param_ScriptVariable
+    from Grasshopper.Kernel import GH_ParamAccess
+
+    input_access = input_access or {}
 
     # --- Inputs ---
     existing_in = list(script.Params.Input)
     for i, name in enumerate(input_names):
+        access_val = input_access.get(name, 0)
+        access_enum = (GH_ParamAccess.list if access_val == 1
+                       else GH_ParamAccess.tree if access_val == 2
+                       else GH_ParamAccess.item)
         if i < len(existing_in):
             # Rename existing
             existing_in[i].Name = name
             existing_in[i].NickName = name
             existing_in[i].Optional = True
+            existing_in[i].Access = access_enum
         else:
             # Add new
             p = Param_ScriptVariable()
             p.Name = name
             p.NickName = name
             p.Optional = True
+            p.Access = access_enum
             script.Params.RegisterInputParam(p)
-
-    # Remove surplus inputs (iterate in reverse)
-    for i in range(len(existing_in) - 1, len(input_names) - 1, -1):
-        if i >= len(input_names):
-            script.Params.UnregisterInputParam(existing_in[i])
 
     # --- Outputs ---
     existing_out = list(script.Params.Output)
@@ -239,22 +252,17 @@ def _configure_script_params(script, input_names, output_names):
             p.NickName = name
             script.Params.RegisterOutputParam(p)
 
-    for i in range(len(existing_out) - 1, len(output_names) - 1, -1):
-        if i >= len(output_names):
-            script.Params.UnregisterOutputParam(existing_out[i])
-
-    script.Params.Output[0].NickName = output_names[0] if output_names else "out"
-
 
 def _add_or_update_py3(gh_doc, nickname, code, x, y,
-                       input_names=None, output_names=None):
+                       input_names=None, output_names=None,
+                       input_access=None):
     """Find or create a Python 3 Script node and set its code.
 
     Uses the ComponentServer to create a genuine "Python 3 Script"
     node (CPython 3.x, not IronPython 2.7).
     """
     input_names = input_names or ["trigger"]
-    output_names = output_names or ["out"]
+    output_names = output_names or ["result"]
 
     # Try to find existing by nickname
     existing = _find_by_nickname_exact(gh_doc, nickname)
@@ -273,7 +281,7 @@ def _add_or_update_py3(gh_doc, nickname, code, x, y,
     script.Name = nickname
 
     _set_code(script, code)
-    _configure_script_params(script, input_names, output_names)
+    _configure_script_params(script, input_names, output_names, input_access)
     _place(script, x, y)
     gh_doc.AddObject(script, False)
     return script
@@ -412,7 +420,7 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
         "mirror_topology", "generate_topology", "graph", lib_path)
     topo_py3 = _add_or_update_py3(
         gh_doc, "Mirror Topology", topo_code, ox + _COL_SCRIPT, oy + row,
-        input_names=["trigger"], output_names=["out", "graph"])
+        input_names=["trigger"], output_names=["result", "graph"])
     topo_panel = _add_or_update_panel(
         gh_doc, "Dot panel", ox + _COL_PANEL, oy + row)
     if topo_py3 and data_relay:
@@ -422,16 +430,15 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
     results.append(f"Topology: {'updated' if topo_py3 else 'SKIPPED (no Py3 class)'}")
 
     topo_objects = [o for o in [topo_py3, topo_panel] if o]
-    topo_grp = _group_objects(gh_doc, topo_objects, "Topology Capture",
-                              sd.Color.FromArgb(80, 135, 206, 250))
+    topo_grp = _group_objects(gh_doc, topo_objects, "Topology Capture")
 
     # --- Layout Capture ---
     row += _ROW_SPACING
     layout_code = _wrapper_code(
-        "mirror_layout", "write_layout", "out", lib_path)
+        "mirror_layout", "write_layout", "result", lib_path)
     layout_py3 = _add_or_update_py3(
         gh_doc, "Mirror Layout", layout_code, ox + _COL_SCRIPT, oy + row,
-        input_names=["trigger"], output_names=["out", "data_json"])
+        input_names=["trigger"], output_names=["result", "data_json"])
     layout_panel = _add_or_update_panel(
         gh_doc, "Layout output", ox + _COL_PANEL, oy + row)
     if layout_py3 and data_relay:
@@ -441,16 +448,15 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
     results.append(f"Layout: {'updated' if layout_py3 else 'SKIPPED'}")
 
     layout_objects = [o for o in [layout_py3, layout_panel] if o]
-    layout_grp = _group_objects(gh_doc, layout_objects, "Layout Capture",
-                               sd.Color.FromArgb(80, 144, 238, 144))
+    layout_grp = _group_objects(gh_doc, layout_objects, "Layout Capture")
 
     # --- Data Capture ---
     row += _ROW_SPACING
     data_code = _wrapper_code(
-        "mirror_data", "write_data", "out", lib_path)
+        "mirror_data", "write_data", "result", lib_path)
     data_py3 = _add_or_update_py3(
         gh_doc, "Mirror Data", data_code, ox + _COL_SCRIPT, oy + row,
-        input_names=["trigger"], output_names=["out", "data_json"])
+        input_names=["trigger"], output_names=["result", "data_json"])
     data_panel = _add_or_update_panel(
         gh_doc, "Data output", ox + _COL_PANEL, oy + row)
     if data_py3 and data_relay:
@@ -460,8 +466,7 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
     results.append(f"Data: {'updated' if data_py3 else 'SKIPPED'}")
 
     data_objects = [o for o in [data_py3, data_panel] if o]
-    data_grp = _group_objects(gh_doc, data_objects, "Data Capture",
-                              sd.Color.FromArgb(80, 255, 179, 135))
+    data_grp = _group_objects(gh_doc, data_objects, "Data Capture")
 
     # --- Canvas Capture ---
     row += _ROW_SPACING
@@ -472,7 +477,7 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
         guard=True)
     canvas_py3 = _add_or_update_py3(
         gh_doc, "Mirror Canvas", canvas_code, ox + _COL_SCRIPT, oy + row,
-        input_names=["guard", "trigger"], output_names=["out", "a"])
+        input_names=["guard", "trigger"], output_names=["result", "a"])
     canvas_toggle = _add_or_update_toggle(
         gh_doc, "Toggle", ox + _COL_SCRIPT - 200, oy + row, default_value=True)
     canvas_panel = _add_or_update_panel(
@@ -486,8 +491,7 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
     results.append(f"Canvas: {'updated' if canvas_py3 else 'SKIPPED'}")
 
     canvas_objects = [o for o in [canvas_py3, canvas_toggle, canvas_panel] if o]
-    canvas_grp = _group_objects(gh_doc, canvas_objects, "Canvas Capture",
-                                sd.Color.FromArgb(80, 255, 255, 130))
+    canvas_grp = _group_objects(gh_doc, canvas_objects, "Canvas Capture")
 
     # --- README Generation ---
     row += _ROW_SPACING * 2  # extra space for the input panels
@@ -530,7 +534,8 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
         input_names=["headline", "tiny_description", "tags", "authors",
                      "headline_image_url", "summary", "origin_story",
                      "detailed_description", "repo_url"],
-        output_names=["out", "a"])
+        output_names=["result", "a"],
+        input_access={"tags": 1, "authors": 1})
     readme_output = _add_or_update_panel(
         gh_doc, "README output",
         ox + _README_COL_OUTPUT, oy + row + len(readme_input_names) * 25)
@@ -555,8 +560,7 @@ def scaffold(gh_doc, canvas, lib_path=None, caller=None):
     results.append(f"README: {'updated' if readme_py3 else 'SKIPPED'}")
 
     readme_objects = [o for o in [readme_py3, readme_output] + readme_panels if o]
-    readme_grp = _group_objects(gh_doc, readme_objects, "README Generation",
-                                sd.Color.FromArgb(80, 221, 160, 221))
+    readme_grp = _group_objects(gh_doc, readme_objects, "README Generation")
 
     # --- Outer group ---
     all_subgroup_objects = (

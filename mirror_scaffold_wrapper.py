@@ -10,6 +10,7 @@ Input:  trigger   Output:  out
 Adjust LIB_PATH if your lib/ folder is not at ../lib relative to this .gh file.
 """
 import sys, os
+import importlib
 import Grasshopper as gh
 
 LIB_PATH = os.path.join(os.pardir, "lib")
@@ -17,9 +18,11 @@ LIB_PATH = os.path.join(os.pardir, "lib")
 _here = os.path.dirname(ghenv.Component.OnPingDocument().FilePath)
 sys.path.insert(0, os.path.join(_here, LIB_PATH))
 
+import mirror_scaffold
+importlib.reload(mirror_scaffold)
 from mirror_scaffold import scaffold
 
-out = scaffold(ghenv.Component.OnPingDocument(),
+a = scaffold(ghenv.Component.OnPingDocument(),
                gh.Instances.ActiveCanvas,
                lib_path=LIB_PATH,
                caller=ghenv.Component)
