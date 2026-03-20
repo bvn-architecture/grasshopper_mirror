@@ -61,14 +61,22 @@
     "name": "height",
     "type": "GH_NumberSlider",
     "values": [
+<<<<<<< HEAD
       2262.0
+=======
+      2221.0
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
     ]
   },
   "a4599816-cbc1-40cb-af2f-95c15603b142": {
     "name": "Crv",
     "type": "Param_Curve",
     "values": [
+<<<<<<< HEAD
       "<Grasshopper.Kernel.Types.GH_Curve object at 0x0000017DA406ED00>"
+=======
+      "<Grasshopper.Kernel.Types.GH_Curve object at 0x0000017DA4080080>"
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
     ]
   },
   "a548b899-dc73-4738-93a5-6ff0e2c1a8de": {
