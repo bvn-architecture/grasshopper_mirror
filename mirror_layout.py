@@ -75,4 +75,4 @@ def _write_layout(gh_doc):
 
 
 gh_doc = gh.Instances.ActiveCanvas.Document
-out = _write_layout(gh_doc)
+print(_write_layout(gh_doc))
