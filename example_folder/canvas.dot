@@ -36,6 +36,8 @@ digraph G {
 
     }
 
+<<<<<<< HEAD
+=======
     // group: Disabled Sphere (guid: 68377fed-ab48-43c3-b8c1-60ca21a6a5b5)
     subgraph "cluster_68377fed-ab48-43c3-b8c1-60ca21a6a5b5" {
         label="Disabled Sphere";
@@ -52,6 +54,7 @@ digraph G {
 
     }
 
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
     // group: Group (guid: 8bf0809e-94e0-49fa-a747-b240f51306a3)
     subgraph "cluster_8bf0809e-94e0-49fa-a747-b240f51306a3" {
         label="Group";
@@ -59,9 +62,15 @@ digraph G {
         fillcolor="#FF00001A";
         color="#FF0000";
         penwidth=1.5;
+<<<<<<< HEAD
+        // group: Topology (guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
+        subgraph "cluster_1b0cf89b-d554-4e63-8afd-740010804eda" {
+            label="Topology";
+=======
         // group: Topology Capture (guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
         subgraph "cluster_1b0cf89b-d554-4e63-8afd-740010804eda" {
             label="Topology Capture";
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
             style="filled,rounded";
             fillcolor="#FF00001A";
             color="#FF0000";
@@ -81,6 +90,8 @@ digraph G {
 
         }
 
+<<<<<<< HEAD
+=======
         // group: Layout capture (guid: 56e64cfd-71cb-4d51-b779-a71edcb1529a)
         subgraph "cluster_56e64cfd-71cb-4d51-b779-a71edcb1529a" {
             label="Layout capture";
@@ -125,6 +136,7 @@ digraph G {
 
         }
 
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
         // group: Canvas capture (guid: fabdc4c6-61f5-48a9-8d08-572ff3037aa1)
         subgraph "cluster_fabdc4c6-61f5-48a9-8d08-572ff3037aa1" {
             label="Canvas capture";
@@ -331,6 +343,16 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1">Vec<br/><font point-size="10">(Vector)</font></td><td port="out">out</td></tr>
         </table>>];
 
+<<<<<<< HEAD
+    // Py3 (guid: c0b933ba-833d-4c89-8091-f6bfff2c69a7)
+    "c0b933ba-833d-4c89-8091-f6bfff2c69a7" [margin=0, style=filled, fillcolor=white, label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td port="trigger_in">trigger</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+            <tr><td></td><td port="data_json_out">data_json</td></tr>
+        </table>>];
+
+=======
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
     // XY (guid: cdffa07a-a8b6-4077-978a-eda881b24570)
     "cdffa07a-a8b6-4077-978a-eda881b24570" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
@@ -350,6 +372,15 @@ digraph G {
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
+<<<<<<< HEAD
+    // Dot panel (guid: e729aa05-1744-4493-aeda-a661b4dd96eb)
+    "e729aa05-1744-4493-aeda-a661b4dd96eb" [margin=0, style=filled, fillcolor=white, label=<
+        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+            <tr><td port="in">in</td><td rowspan="1">Dot panel<br/><font point-size="10">(Panel)</font></td><td></td></tr>
+        </table>>];
+
+=======
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
 
     // --- Edges ---
     "0503685c-ca9b-4624-8fdc-4fd1300d18b3":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":headline_image_url_in;
@@ -366,7 +397,10 @@ digraph G {
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "c0b933ba-833d-4c89-8091-f6bfff2c69a7":trigger_in;
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "ca91fab9-226e-48e1-a131-43b3e11c0971":trigger_in;
     "41047c00-e8c0-42f0-99aa-d3177a8bd895":C_out -> "6c767123-f309-40da-af83-09b32ece5832":in;
+<<<<<<< HEAD
+=======
     "538a82a5-5a45-413d-b477-acc1e022367b":out_out -> "229ef839-bb38-49e6-bf74-aa20e27863ef":in;
+>>>>>>> 8849e6612b594da71fed1ee703f34f4f0efd834a
     "594fe024-8994-4d48-8f35-c2b50f9c20c5":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":repo_url_in;
     "59cb3897-f400-43f3-9461-0701f2ceb61b":R_out -> "10f0c688-9b64-4a5b-97aa-419aa174c25c":angle_in;
     "59cb3897-f400-43f3-9461-0701f2ceb61b":R_out -> "8d2a7382-056e-4ad9-8fd9-a6c23ca1934d":R_in;
