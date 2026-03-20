@@ -265,36 +265,53 @@ def _edges(nodes, param_map):
 def _dot(nodes, edges, groups):
     """Assemble the final DOT string from collected nodes and edges.
 
-    Nodes that belong to a group are emitted inside a
-    ``subgraph cluster_<guid>`` block.  Ungrouped nodes are emitted
-    at the top level.  Nested groups are flattened — a node is placed
-    in its *most specific* (innermost) group.
+    Groups are emitted as nested ``subgraph cluster_<guid>`` blocks.
+    A group that is a member of another group becomes a child subgraph.
+    Nodes are placed in the deepest (innermost) group that claims them.
+    Ungrouped nodes are emitted at the top level.
     """
-    # Build node GUID → node dict lookup
     node_by_guid = {n["guid"]: n for n in nodes}
+    group_by_guid = {g["guid"]: g for g in groups}
+    group_guids = set(group_by_guid)
 
-    # Determine which group each node belongs to.
-    # If a node is claimed by multiple groups (nested), assign it to the
-    # *smallest* group (fewest members) — that's the innermost one.
-    node_group = {}  # node_guid → group_guid
-    groups_sorted = sorted(groups, key=lambda g: g["guid"])
-    for grp in sorted(groups_sorted, key=lambda g: len(g["member_guids"])):
+    # --- Build group hierarchy ---
+    # A group is a child of another group if its GUID appears in the
+    # parent's member_guids.
+    group_parent = {}     # child_group_guid → parent_group_guid
+    group_children = {}   # group_guid → [child_group_guids]
+    for grp in groups:
+        children = []
+        for mg in grp["member_guids"]:
+            if mg in group_guids:
+                group_parent[mg] = grp["guid"]
+                children.append(mg)
+        children.sort()
+        group_children[grp["guid"]] = children
+
+    top_level_groups = sorted(
+        [g for g in groups if g["guid"] not in group_parent],
+        key=lambda g: g["guid"],
+    )
+
+    # --- Assign each node to its deepest (innermost) group ---
+    # Walk groups smallest-first so the innermost group wins.
+    node_to_group = {}  # node_guid → group_guid
+    for grp in sorted(groups, key=lambda g: len(g["member_guids"])):
         for mg in grp["member_guids"]:
             if mg in node_by_guid:
-                node_group[mg] = grp["guid"]
+                node_to_group[mg] = grp["guid"]
 
-    # Group lookup for emission
-    group_by_guid = {g["guid"]: g for g in groups_sorted}
+    # Collect direct child nodes per group (only nodes whose innermost
+    # group is this one — not nodes that belong to a deeper child group).
+    direct_nodes = {}  # group_guid → [node_guid, ...]
+    for ng, gg in node_to_group.items():
+        direct_nodes.setdefault(gg, []).append(ng)
+    for k in direct_nodes:
+        direct_nodes[k].sort()
 
-    # Collect node GUIDs per group (only renderable nodes)
-    grouped_nodes = {}  # group_guid → [node_guid, ...]
-    for ng, gg in node_group.items():
-        grouped_nodes.setdefault(gg, []).append(ng)
-    for k in grouped_nodes:
-        grouped_nodes[k].sort()
+    ungrouped = [n for n in nodes if n["guid"] not in node_to_group]
 
-    ungrouped = [n for n in nodes if n["guid"] not in node_group]
-
+    # --- Helpers ---
     def _emit_node(n, indent=4):
         """Return DOT lines for a single node."""
         pad = " " * indent
@@ -318,9 +335,28 @@ def _dot(nodes, edges, groups):
                 f' (type: {obj_type}, guid: {n["guid"]})'
             )
             if scribble_text:
-                # Include scribble content as a comment for diffability
                 for line in scribble_text.splitlines():
                     out.append(f'{pad}//   {line}')
+        return out
+
+    def _emit_group(grp, indent=4):
+        """Recursively emit a group as a subgraph cluster."""
+        pad = " " * indent
+        out = []
+        out.append(f'{pad}// group: {grp["nick"]} (guid: {grp["guid"]})')
+        out.append(f'{pad}subgraph "cluster_{grp["guid"]}" {{')
+        out.append(f'{pad}    label="{_esc(grp["nick"])}";')
+
+        # Emit child groups (nested subgraphs)
+        for cg in group_children.get(grp["guid"], []):
+            out.extend(_emit_group(group_by_guid[cg], indent=indent + 4))
+
+        # Emit direct child nodes
+        for ng in direct_nodes.get(grp["guid"], []):
+            out.extend(_emit_node(node_by_guid[ng], indent=indent + 4))
+
+        out.append(f'{pad}}}')
+        out.append("")
         return out
 
     # --- Build output ---
@@ -331,19 +367,11 @@ def _dot(nodes, edges, groups):
         "",
     ]
 
-    # Emit groups as subgraph clusters
-    if groups_sorted:
+    # Emit group hierarchy (starting from top-level groups)
+    if top_level_groups:
         lines.append("    // --- Groups ---")
-        for grp in groups_sorted:
-            member_node_guids = grouped_nodes.get(grp["guid"], [])
-            lines.append(f'    // group: {grp["nick"]} (guid: {grp["guid"]})')
-            lines.append(f'    subgraph "cluster_{grp["guid"]}" {{')
-            lines.append(f'        label="{_esc(grp["nick"])}";')
-            for mg in member_node_guids:
-                n = node_by_guid[mg]
-                lines.extend(_emit_node(n, indent=8))
-            lines.append("    }")
-            lines.append("")
+        for grp in top_level_groups:
+            lines.extend(_emit_group(grp))
 
     # Emit ungrouped nodes
     if ungrouped:
