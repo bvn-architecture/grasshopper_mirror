@@ -294,9 +294,10 @@ def _dot(nodes, edges, groups):
     )
 
     # --- Assign each node to its deepest (innermost) group ---
-    # Walk groups smallest-first so the innermost group wins.
+    # Walk groups largest-first so the innermost (smallest) group
+    # overwrites the parent's claim.  Last write wins.
     node_to_group = {}  # node_guid → group_guid
-    for grp in sorted(groups, key=lambda g: len(g["member_guids"])):
+    for grp in sorted(groups, key=lambda g: len(g["member_guids"]), reverse=True):
         for mg in grp["member_guids"]:
             if mg in node_by_guid:
                 node_to_group[mg] = grp["guid"]
