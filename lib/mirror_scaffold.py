@@ -130,6 +130,7 @@ def _find_by_nickname_exact(gh_doc, nickname):
 def _place(obj, x, y):
     """Set the pivot position of an object."""
     if obj.Attributes is None:
+        print("Creating attributes for object", obj.NickName)
         obj.CreateAttributes()
     obj.Attributes.Pivot = sd.PointF(float(x), float(y))
 
