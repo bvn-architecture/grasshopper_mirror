@@ -325,7 +325,7 @@ def _dot(nodes, edges, groups):
             )
             comment_name = n["nick"] or n["name"]
             out.append(f'{pad}// {comment_name} (guid: {n["guid"]})')
-            out.append(f'{pad}"{n["guid"]}" [margin=0, label={label}];')
+            out.append(f'{pad}"{n["guid"]}" [margin=0, style=filled, fillcolor=white, label={label}];')
             out.append("")
         elif n["kind"] == "other":
             obj_type = n.get("clr_type", "unknown")
@@ -347,9 +347,10 @@ def _dot(nodes, edges, groups):
         out.append(f'{pad}// group: {grp["nick"]} (guid: {grp["guid"]})')
         out.append(f'{pad}subgraph "cluster_{grp["guid"]}" {{')
         out.append(f'{pad}    label="{_esc(grp["nick"])}";')
-        out.append(f'{pad}    style=filled;')
+        out.append(f'{pad}    style="filled,rounded";')
         out.append(f'{pad}    fillcolor="#FF00001A";')
-        out.append(f'{pad}    color="#FF000040";')
+        out.append(f'{pad}    color="#FF0000";')
+        out.append(f'{pad}    penwidth=1.5;')
 
         # Emit child groups (nested subgraphs)
         for cg in group_children.get(grp["guid"], []):
