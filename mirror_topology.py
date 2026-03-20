@@ -200,9 +200,17 @@ def _collect(gh_doc):
         # -- Scribble / annotation / other ---------------------------------
         else:
             clr_type = obj.GetType().Name if hasattr(obj, "GetType") else "unknown"
+            # Capture scribble text if available
+            scribble_text = ""
+            if hasattr(obj, "Text"):
+                try:
+                    scribble_text = str(obj.Text)
+                except Exception:
+                    pass
             nodes.append({
                 "guid": guid, "nick": nick, "name": name,
-                "kind": "other", "clr_type": clr_type, "obj": obj,
+                "kind": "other", "clr_type": clr_type,
+                "scribble_text": scribble_text, "obj": obj,
             })
 
     return nodes, param_map, groups
@@ -304,10 +312,15 @@ def _dot(nodes, edges, groups):
         elif n["kind"] == "other":
             obj_type = n.get("clr_type", "unknown")
             comment_name = n["nick"] or n["name"]
+            scribble_text = n.get("scribble_text", "")
             out.append(
                 f'{pad}// [skipped] {comment_name}'
                 f' (type: {obj_type}, guid: {n["guid"]})'
             )
+            if scribble_text:
+                # Include scribble content as a comment for diffability
+                for line in scribble_text.splitlines():
+                    out.append(f'{pad}//   {line}')
         return out
 
     # --- Build output ---
