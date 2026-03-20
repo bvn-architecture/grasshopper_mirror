@@ -21,4 +21,5 @@ from mirror_scaffold import scaffold
 
 out = scaffold(ghenv.Component.OnPingDocument(),
                gh.Instances.ActiveCanvas,
-               lib_path=LIB_PATH)
+               lib_path=LIB_PATH,
+               caller=ghenv.Component)
