@@ -325,7 +325,27 @@ def _dot(nodes, edges, groups):
             )
             comment_name = n["nick"] or n["name"]
             out.append(f'{pad}// {comment_name} (guid: {n["guid"]})')
-            out.append(f'{pad}"{n["guid"]}" [margin=0, style=filled, fillcolor=white, label={label}];')
+
+            # Build node attributes — state affects visual style
+            obj = n.get("obj")
+            is_locked = getattr(obj, "Locked", False) if obj else False
+            is_hidden = getattr(obj, "Hidden", False) if obj else False
+
+            attrs = ["margin=0", "style=filled"]
+            if is_locked:
+                # Deactivated: grey border, grey text, light grey fill
+                attrs.append('fillcolor="#F0F0F0"')
+                attrs.append('color="#AAAAAA"')
+                attrs.append('fontcolor="#AAAAAA"')
+            elif is_hidden:
+                # Preview off: grey border, white fill
+                attrs.append('fillcolor=white')
+                attrs.append('color="#AAAAAA"')
+            else:
+                attrs.append('fillcolor=white')
+
+            attr_str = ", ".join(attrs)
+            out.append(f'{pad}"{n["guid"]}" [{attr_str}, label={label}];')
             out.append("")
         elif n["kind"] == "other":
             obj_type = n.get("clr_type", "unknown")
