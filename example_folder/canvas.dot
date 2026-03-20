@@ -2,243 +2,307 @@ digraph G {
     rankdir=LR;
     node [shape=plaintext];
 
-    // --- Nodes ---
-    // Panel (guid: 0503685c-ca9b-4624-8fdc-4fd1300d18b3)
-    "0503685c-ca9b-4624-8fdc-4fd1300d18b3" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1"><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
+    // --- Groups ---
+    // group: inputs (guid: 30e9dbe9-07fa-4e07-80a3-cdf74174e857)
+    subgraph "cluster_30e9dbe9-07fa-4e07-80a3-cdf74174e857" {
+        label="inputs";
+        style="filled,rounded";
+        fillcolor="#FF00001A";
+        color="#FF0000";
+        penwidth=1.5;
+        // big_angle (guid: 14465b62-ae35-49a8-bba2-e50b935551b5)
+        "14465b62-ae35-49a8-bba2-e50b935551b5" [margin=0, style=filled, fillcolor=white, label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td></td><td rowspan="1">big_angle<br/><font point-size="10">(Number)</font></td><td port="out">out</td></tr>
+            </table>>];
 
-    // Panel (guid: 0e61572b-aa9e-4013-bc74-2235ad271dc5)
-    "0e61572b-aa9e-4013-bc74-2235ad271dc5" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1"><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
+        // height (guid: 87d28aaa-18a9-41a5-86b7-4c1685edb815)
+        "87d28aaa-18a9-41a5-86b7-4c1685edb815" [margin=0, style=filled, fillcolor=white, label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td></td><td rowspan="1">height<br/><font point-size="10">(Number Slider)</font></td><td port="out">out</td></tr>
+            </table>>];
 
-    // Dot panel (guid: 0f3fe139-4de0-4a8a-8e4e-d6a5244d9ac7)
-    "0f3fe139-4de0-4a8a-8e4e-d6a5244d9ac7" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="in">in</td><td rowspan="1">Dot panel<br/><font point-size="10">(Panel)</font></td><td></td></tr>
-        </table>>];
+        // Crv (guid: a4599816-cbc1-40cb-af2f-95c15603b142)
+        "a4599816-cbc1-40cb-af2f-95c15603b142" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td></td><td rowspan="1">Crv<br/><font point-size="10">(Curve)</font></td><td port="out">out</td></tr>
+            </table>>];
 
+        // small_angle (guid: d9728bb0-9967-449f-b352-182acd5a7aef)
+        "d9728bb0-9967-449f-b352-182acd5a7aef" [margin=0, style=filled, fillcolor=white, label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td></td><td rowspan="1">small_angle<br/><font point-size="10">(Number)</font></td><td port="out">out</td></tr>
+            </table>>];
+
+    }
+
+    // group: Group (guid: 8bf0809e-94e0-49fa-a747-b240f51306a3)
+    subgraph "cluster_8bf0809e-94e0-49fa-a747-b240f51306a3" {
+        label="Group";
+        style="filled,rounded";
+        fillcolor="#FF00001A";
+        color="#FF0000";
+        penwidth=1.5;
+        // group: Topology (guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
+        subgraph "cluster_1b0cf89b-d554-4e63-8afd-740010804eda" {
+            label="Topology";
+            style="filled,rounded";
+            fillcolor="#FF00001A";
+            color="#FF0000";
+            penwidth=1.5;
+            // Dot panel (guid: 0f3fe139-4de0-4a8a-8e4e-d6a5244d9ac7)
+            "0f3fe139-4de0-4a8a-8e4e-d6a5244d9ac7" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td port="in">in</td><td rowspan="1">Dot panel<br/><font point-size="10">(Panel)</font></td><td></td></tr>
+                </table>>];
+
+            // Py3 (guid: 781f8f54-e6bf-4a21-9fd7-ef26e0b129df)
+            "781f8f54-e6bf-4a21-9fd7-ef26e0b129df" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td port="trigger_in">trigger</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+                    <tr><td></td><td port="graph_out">graph</td></tr>
+                </table>>];
+
+        }
+
+        // group: Canvas capture (guid: fabdc4c6-61f5-48a9-8d08-572ff3037aa1)
+        subgraph "cluster_fabdc4c6-61f5-48a9-8d08-572ff3037aa1" {
+            label="Canvas capture";
+            style="filled,rounded";
+            fillcolor="#FF00001A";
+            color="#FF0000";
+            penwidth=1.5;
+            // Panel (guid: 248a6660-9702-4d62-9527-becad29c7b6e)
+            "248a6660-9702-4d62-9527-becad29c7b6e" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
+                </table>>];
+
+            // Toggle (guid: 6b492f1a-716e-4f31-8247-16b28a652c2c)
+            "6b492f1a-716e-4f31-8247-16b28a652c2c" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Toggle<br/><font point-size="10">(Boolean Toggle)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Py3 (guid: ca91fab9-226e-48e1-a131-43b3e11c0971)
+            "ca91fab9-226e-48e1-a131-43b3e11c0971" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td port="guard_in">guard</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+                    <tr><td port="trigger_in">trigger</td><td port="a_out">a</td></tr>
+                </table>>];
+
+        }
+
+        // group: README generation (guid: feaa96f3-45e9-4713-9a51-0ff68815b284)
+        subgraph "cluster_feaa96f3-45e9-4713-9a51-0ff68815b284" {
+            label="README generation";
+            style="filled,rounded";
+            fillcolor="#FF00001A";
+            color="#FF0000";
+            penwidth=1.5;
+            // Headline Image (guid: 0503685c-ca9b-4624-8fdc-4fd1300d18b3)
+            "0503685c-ca9b-4624-8fdc-4fd1300d18b3" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Headline Image<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Authors (guid: 0e61572b-aa9e-4013-bc74-2235ad271dc5)
+            "0e61572b-aa9e-4013-bc74-2235ad271dc5" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Authors<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Origin Story (guid: 11ab1da8-3333-4b9b-92a0-b6f95e0290db)
+            "11ab1da8-3333-4b9b-92a0-b6f95e0290db" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Origin Story<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Summary (guid: 32eb75a4-9742-47ad-a957-d4ba6fb7211c)
+            "32eb75a4-9742-47ad-a957-d4ba6fb7211c" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Summary<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Repo URL (guid: 594fe024-8994-4d48-8f35-c2b50f9c20c5)
+            "594fe024-8994-4d48-8f35-c2b50f9c20c5" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Repo URL<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Detailed description (guid: 66069d6c-1e63-49a5-bb56-d3c1beac472a)
+            "66069d6c-1e63-49a5-bb56-d3c1beac472a" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Detailed description<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Headline (guid: a548b899-dc73-4738-93a5-6ff0e2c1a8de)
+            "a548b899-dc73-4738-93a5-6ff0e2c1a8de" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Headline<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+            // Tags (guid: a5d2bb92-5f85-45f2-ae8c-c83d216eba36)
+            "a5d2bb92-5f85-45f2-ae8c-c83d216eba36" [margin=0, style=filled, fillcolor=white, label=<
+                <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                    <tr><td></td><td rowspan="1">Tags<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
+                </table>>];
+
+        }
+
+        // Py3 (guid: d891e00a-55e2-46e5-8a40-46f87317161c)
+        "d891e00a-55e2-46e5-8a40-46f87317161c" [margin=0, style=filled, fillcolor=white, label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td port="headline_in">headline</td><td rowspan="9">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+                <tr><td port="tiny_description_in">tiny_description</td><td port="a_out">a</td></tr>
+                <tr><td port="tags_in">tags</td><td></td></tr>
+                <tr><td port="authors_in">authors</td><td></td></tr>
+                <tr><td port="headline_image_url_in">headline_image_url</td><td></td></tr>
+                <tr><td port="summary_in">summary</td><td></td></tr>
+                <tr><td port="origin_story_in">origin_story</td><td></td></tr>
+                <tr><td port="detailed_description_in">detailed_description</td><td></td></tr>
+                <tr><td port="repo_url_in">repo_url</td><td></td></tr>
+            </table>>];
+
+        // Panel (guid: fc27ac10-ee12-4d9e-8ddc-3bc94be044a9)
+        "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9" [margin=0, style=filled, fillcolor=white, label=<
+            <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
+                <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
+            </table>>];
+
+    }
+
+    // group: Dot output (guid: ae96d992-5951-4171-9867-c5a4d948e755)
+    subgraph "cluster_ae96d992-5951-4171-9867-c5a4d948e755" {
+        label="Dot output";
+        style="filled,rounded";
+        fillcolor="#FF00001A";
+        color="#FF0000";
+        penwidth=1.5;
+    }
+
+    // --- Nodes (ungrouped) ---
     // b2 (guid: 10f0c688-9b64-4a5b-97aa-419aa174c25c)
-    "10f0c688-9b64-4a5b-97aa-419aa174c25c" [margin=0, label=<
+    "10f0c688-9b64-4a5b-97aa-419aa174c25c" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="height_in">height</td><td rowspan="2">b2<br/><font point-size="10">(Cluster)</font></td><td port="base_out">base</td></tr>
             <tr><td port="angle_in">angle</td><td></td></tr>
         </table>>];
 
-    // Origin Story (guid: 11ab1da8-3333-4b9b-92a0-b6f95e0290db)
-    "11ab1da8-3333-4b9b-92a0-b6f95e0290db" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">Origin Story<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
-
-    // big_angle (guid: 14465b62-ae35-49a8-bba2-e50b935551b5)
-    "14465b62-ae35-49a8-bba2-e50b935551b5" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">big_angle<br/><font point-size="10">(Number)</font></td><td port="out">out</td></tr>
-        </table>>];
-
-    // [skipped] Topology (type: GH_Group, guid: 1b0cf89b-d554-4e63-8afd-740010804eda)
-    // Panel (guid: 248a6660-9702-4d62-9527-becad29c7b6e)
-    "248a6660-9702-4d62-9527-becad29c7b6e" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
-        </table>>];
-
     // Amp (guid: 296e8b38-2af3-4633-aa6e-20cd8f0bcac8)
-    "296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [margin=0, label=<
+    "296e8b38-2af3-4633-aa6e-20cd8f0bcac8" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="V_in">V</td><td rowspan="2">Amp<br/><font point-size="10">(Amplitude)</font></td><td port="V_out">V</td></tr>
             <tr><td port="A_in">A</td><td></td></tr>
         </table>>];
 
     // Rad1 (guid: 2a326121-470f-4022-9477-ef4b47e3853d)
-    "2a326121-470f-4022-9477-ef4b47e3853d" [margin=0, label=<
+    "2a326121-470f-4022-9477-ef4b47e3853d" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="D_in">D</td><td rowspan="1">Rad1<br/><font point-size="10">(Radians)</font></td><td port="R_out">R</td></tr>
         </table>>];
 
     // Panel (guid: 2f48438c-75c3-443c-a1c8-95eccd8670fc)
-    "2f48438c-75c3-443c-a1c8-95eccd8670fc" [margin=0, label=<
+    "2f48438c-75c3-443c-a1c8-95eccd8670fc" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] inputs (type: GH_Group, guid: 30e9dbe9-07fa-4e07-80a3-cdf74174e857)
-    // Summary (guid: 32eb75a4-9742-47ad-a957-d4ba6fb7211c)
-    "32eb75a4-9742-47ad-a957-d4ba6fb7211c" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">Summary<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
-
     // Data (guid: 3390e1b0-22d2-4152-8c5d-3a43828afe6c)
-    "3390e1b0-22d2-4152-8c5d-3a43828afe6c" [margin=0, label=<
+    "3390e1b0-22d2-4152-8c5d-3a43828afe6c" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1">Data</td><td port="out">out</td></tr>
         </table>>];
 
     // Flip (guid: 41047c00-e8c0-42f0-99aa-d3177a8bd895)
-    "41047c00-e8c0-42f0-99aa-d3177a8bd895" [margin=0, label=<
+    "41047c00-e8c0-42f0-99aa-d3177a8bd895" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="C_in">C</td><td rowspan="2">Flip<br/><font point-size="10">(Flip Curve)</font></td><td port="C_out">C</td></tr>
             <tr><td port="G_in">G</td><td port="F_out">F</td></tr>
         </table>>];
 
-    // Panel (guid: 594fe024-8994-4d48-8f35-c2b50f9c20c5)
-    "594fe024-8994-4d48-8f35-c2b50f9c20c5" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
-        </table>>];
-
     // Rad2 (guid: 59cb3897-f400-43f3-9461-0701f2ceb61b)
-    "59cb3897-f400-43f3-9461-0701f2ceb61b" [margin=0, label=<
+    "59cb3897-f400-43f3-9461-0701f2ceb61b" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="D_in">D</td><td rowspan="1">Rad2<br/><font point-size="10">(Radians)</font></td><td port="R_out">R</td></tr>
         </table>>];
 
     // Ellipse (guid: 5ad19c48-1e9f-4067-8bc7-fa66cd4a694e)
-    "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [margin=0, label=<
+    "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="P_in">P</td><td rowspan="3">Ellipse</td><td port="E_out">E</td></tr>
             <tr><td port="R1_in">R1</td><td port="F1_out">F1</td></tr>
             <tr><td port="R2_in">R2</td><td port="F2_out">F2</td></tr>
         </table>>];
 
-    // Detailed description (guid: 66069d6c-1e63-49a5-bb56-d3c1beac472a)
-    "66069d6c-1e63-49a5-bb56-d3c1beac472a" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">Detailed description<br/><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
-
     // [skipped] Scribble (type: GH_Scribble, guid: 67b4bcd1-d184-477d-9a4c-5d3bdc987b08)
-    // Toggle (guid: 6b492f1a-716e-4f31-8247-16b28a652c2c)
-    "6b492f1a-716e-4f31-8247-16b28a652c2c" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">Toggle<br/><font point-size="10">(Boolean Toggle)</font></td><td port="out">out</td></tr>
-        </table>>];
-
+    //   Normal model stuff
     // Line (guid: 6c767123-f309-40da-af83-09b32ece5832)
-    "6c767123-f309-40da-af83-09b32ece5832" [margin=0, label=<
+    "6c767123-f309-40da-af83-09b32ece5832" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1">Line</td><td port="out">out</td></tr>
         </table>>];
 
     // End (guid: 71ee981e-b545-4cb0-907c-8955b015922f)
-    "71ee981e-b545-4cb0-907c-8955b015922f" [margin=0, label=<
+    "71ee981e-b545-4cb0-907c-8955b015922f" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="C_in">C</td><td rowspan="2">End<br/><font point-size="10">(End Points)</font></td><td port="S_out">S</td></tr>
             <tr><td></td><td port="E_out">E</td></tr>
         </table>>];
 
-    // Py3 (guid: 781f8f54-e6bf-4a21-9fd7-ef26e0b129df)
-    "781f8f54-e6bf-4a21-9fd7-ef26e0b129df" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="trigger_in">trigger</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
-            <tr><td></td><td port="graph_out">graph</td></tr>
-        </table>>];
-
-    // height (guid: 87d28aaa-18a9-41a5-86b7-4c1685edb815)
-    "87d28aaa-18a9-41a5-86b7-4c1685edb815" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">height<br/><font point-size="10">(Number Slider)</font></td><td port="out">out</td></tr>
-        </table>>];
-
-    // [skipped] Group (type: GH_Group, guid: 8bf0809e-94e0-49fa-a747-b240f51306a3)
     // Dam (guid: 97f34864-804f-4c54-b9a3-e3352233461d)
-    "97f34864-804f-4c54-b9a3-e3352233461d" [margin=0, label=<
+    "97f34864-804f-4c54-b9a3-e3352233461d" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="A_in">A</td><td rowspan="1">Dam<br/><font point-size="10">(Data Dam)</font></td><td port="A_out">A</td></tr>
         </table>>];
 
-    // Crv (guid: a4599816-cbc1-40cb-af2f-95c15603b142)
-    "a4599816-cbc1-40cb-af2f-95c15603b142" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">Crv<br/><font point-size="10">(Curve)</font></td><td port="out">out</td></tr>
-        </table>>];
-
-    // Panel (guid: a548b899-dc73-4738-93a5-6ff0e2c1a8de)
-    "a548b899-dc73-4738-93a5-6ff0e2c1a8de" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1"><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
-
-    // Panel (guid: a5d2bb92-5f85-45f2-ae8c-c83d216eba36)
-    "a5d2bb92-5f85-45f2-ae8c-c83d216eba36" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1"><font point-size="10">(Panel)</font></td><td port="out">out</td></tr>
-        </table>>];
-
     // b1 (guid: a6456689-42ae-4206-a7a4-5324d1a4934a)
-    "a6456689-42ae-4206-a7a4-5324d1a4934a" [margin=0, label=<
+    "a6456689-42ae-4206-a7a4-5324d1a4934a" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="height_in">height</td><td rowspan="2">b1<br/><font point-size="10">(Cluster)</font></td><td port="base_out">base</td></tr>
             <tr><td port="angle_in">angle</td><td></td></tr>
         </table>>];
 
     // [skipped] Scribble (type: GH_Scribble, guid: ad517db8-cfed-4c3b-953c-33918527a2fb)
-    // [skipped] Dot output (type: GH_Group, guid: ae96d992-5951-4171-9867-c5a4d948e755)
+    //   Grasshopper Mirror stuff
     // Vec (guid: be341bd1-f76a-45e9-a82c-b36bca905729)
-    "be341bd1-f76a-45e9-a82c-b36bca905729" [margin=0, label=<
+    "be341bd1-f76a-45e9-a82c-b36bca905729" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1">Vec<br/><font point-size="10">(Vector)</font></td><td port="out">out</td></tr>
         </table>>];
 
-    // Py3 (guid: ca91fab9-226e-48e1-a131-43b3e11c0971)
-    "ca91fab9-226e-48e1-a131-43b3e11c0971" [margin=0, label=<
+    // Py3 (guid: c0b933ba-833d-4c89-8091-f6bfff2c69a7)
+    "c0b933ba-833d-4c89-8091-f6bfff2c69a7" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="guard_in">guard</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
-            <tr><td port="trigger_in">trigger</td><td port="a_out">a</td></tr>
+            <tr><td port="trigger_in">trigger</td><td rowspan="2">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
+            <tr><td></td><td port="data_json_out">data_json</td></tr>
         </table>>];
 
     // XY (guid: cdffa07a-a8b6-4077-978a-eda881b24570)
-    "cdffa07a-a8b6-4077-978a-eda881b24570" [margin=0, label=<
+    "cdffa07a-a8b6-4077-978a-eda881b24570" [margin=0, style=filled, fillcolor=white, color="#AAAAAA", label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="O_in">O</td><td rowspan="1">XY<br/><font point-size="10">(XY Plane)</font></td><td port="P_out">P</td></tr>
         </table>>];
 
-    // Py3 (guid: d891e00a-55e2-46e5-8a40-46f87317161c)
-    "d891e00a-55e2-46e5-8a40-46f87317161c" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="headline_in">headline</td><td rowspan="9">Py3<br/><font point-size="10">(Python 3 Script)</font></td><td port="out_out">out</td></tr>
-            <tr><td port="tiny_description_in">tiny_description</td><td port="a_out">a</td></tr>
-            <tr><td port="tags_in">tags</td><td></td></tr>
-            <tr><td port="authors_in">authors</td><td></td></tr>
-            <tr><td port="headline_image_url_in">headline_image_url</td><td></td></tr>
-            <tr><td port="summary_in">summary</td><td></td></tr>
-            <tr><td port="origin_story_in">origin_story</td><td></td></tr>
-            <tr><td port="detailed_description_in">detailed_description</td><td></td></tr>
-            <tr><td port="repo_url_in">repo_url</td><td></td></tr>
-        </table>>];
-
     // Move (guid: d8a179fc-7fab-4814-b4b9-20be26bfe82c)
-    "d8a179fc-7fab-4814-b4b9-20be26bfe82c" [margin=0, label=<
+    "d8a179fc-7fab-4814-b4b9-20be26bfe82c" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="G_in">G</td><td rowspan="2">Move</td><td port="G_out">G</td></tr>
             <tr><td port="T_in">T</td><td port="X_out">X</td></tr>
         </table>>];
 
-    // small_angle (guid: d9728bb0-9967-449f-b352-182acd5a7aef)
-    "d9728bb0-9967-449f-b352-182acd5a7aef" [margin=0, label=<
-        <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td></td><td rowspan="1">small_angle<br/><font point-size="10">(Number)</font></td><td port="out">out</td></tr>
-        </table>>];
-
     // Panel (guid: db3162a4-9892-487b-b2fa-a2d005e3726b)
-    "db3162a4-9892-487b-b2fa-a2d005e3726b" [margin=0, label=<
+    "db3162a4-9892-487b-b2fa-a2d005e3726b" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
             <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] Canvas capture (type: GH_Group, guid: fabdc4c6-61f5-48a9-8d08-572ff3037aa1)
-    // Panel (guid: fc27ac10-ee12-4d9e-8ddc-3bc94be044a9)
-    "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9" [margin=0, label=<
+    // Dot panel (guid: e729aa05-1744-4493-aeda-a661b4dd96eb)
+    "e729aa05-1744-4493-aeda-a661b4dd96eb" [margin=0, style=filled, fillcolor=white, label=<
         <table border="0" cellborder="1" cellspacing="0" cellpadding="4">
-            <tr><td port="in">in</td><td rowspan="1"><font point-size="10">(Panel)</font></td><td></td></tr>
+            <tr><td port="in">in</td><td rowspan="1">Dot panel<br/><font point-size="10">(Panel)</font></td><td></td></tr>
         </table>>];
 
-    // [skipped] README generation (type: GH_Group, guid: feaa96f3-45e9-4713-9a51-0ff68815b284)
 
     // --- Edges ---
     "0503685c-ca9b-4624-8fdc-4fd1300d18b3":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":headline_image_url_in;
@@ -251,8 +315,10 @@ digraph G {
     "2a326121-470f-4022-9477-ef4b47e3853d":R_out -> "a6456689-42ae-4206-a7a4-5324d1a4934a":angle_in;
     "32eb75a4-9742-47ad-a957-d4ba6fb7211c":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":summary_in;
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "781f8f54-e6bf-4a21-9fd7-ef26e0b129df":trigger_in;
+    "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "c0b933ba-833d-4c89-8091-f6bfff2c69a7":trigger_in;
     "3390e1b0-22d2-4152-8c5d-3a43828afe6c":out -> "ca91fab9-226e-48e1-a131-43b3e11c0971":trigger_in;
     "41047c00-e8c0-42f0-99aa-d3177a8bd895":C_out -> "6c767123-f309-40da-af83-09b32ece5832":in;
+    "594fe024-8994-4d48-8f35-c2b50f9c20c5":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":repo_url_in;
     "59cb3897-f400-43f3-9461-0701f2ceb61b":R_out -> "10f0c688-9b64-4a5b-97aa-419aa174c25c":angle_in;
     "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":E_out -> "97f34864-804f-4c54-b9a3-e3352233461d":A_in;
     "66069d6c-1e63-49a5-bb56-d3c1beac472a":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":detailed_description_in;
@@ -271,6 +337,7 @@ digraph G {
     "a5d2bb92-5f85-45f2-ae8c-c83d216eba36":out -> "d891e00a-55e2-46e5-8a40-46f87317161c":tags_in;
     "a6456689-42ae-4206-a7a4-5324d1a4934a":base_out -> "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":R1_in;
     "be341bd1-f76a-45e9-a82c-b36bca905729":out -> "296e8b38-2af3-4633-aa6e-20cd8f0bcac8":V_in;
+    "c0b933ba-833d-4c89-8091-f6bfff2c69a7":out_out -> "e729aa05-1744-4493-aeda-a661b4dd96eb":in;
     "ca91fab9-226e-48e1-a131-43b3e11c0971":a_out -> "248a6660-9702-4d62-9527-becad29c7b6e":in;
     "cdffa07a-a8b6-4077-978a-eda881b24570":P_out -> "5ad19c48-1e9f-4067-8bc7-fa66cd4a694e":P_in;
     "d891e00a-55e2-46e5-8a40-46f87317161c":a_out -> "fc27ac10-ee12-4d9e-8ddc-3bc94be044a9":in;
